@@ -1,0 +1,101 @@
+Mutant,File,Line,Index,Mutator,Status,Equivalent,Confidence,Time,Comments
+3,org/apache/commons/collections4/bidimap/TreeBidiMap.java,1287,8,VoidMethodCallMutator,NO_COVERAGE,no,high,5 min,"Key,value are external to function, and can be checked if null or not"
+36,org/apache/commons/collections4/bidimap/TreeBidiMap.java,1404,9,NegateConditionalsMutator,NO_COVERAGE,no,high,10 min,nodeCount is external for the function
+198,org/apache/commons/collections4/bidimap/TreeBidiMap.java,780,18,ReturnValsMutator,NO_COVERAGE,no,high,5 min,return value mutated
+302,org/apache/commons/collections4/bidimap/TreeBidiMap.java,1183,188,VoidMethodCallMutator,NO_COVERAGE,no,high,15min,swaps the node
+441,org/apache/commons/collections4/trie/AbstractPatriciaTrie.java,1246,20,ReturnValsMutator,NO_COVERAGE,no,high,2 min,
+604,org/apache/commons/collections4/trie/AbstractPatriciaTrie.java,874,9,ReturnValsMutator,NO_COVERAGE,no,high,3 min,returns null
+709,org/apache/commons/collections4/map/MultiKeyMap.java,382,78,ReturnValsMutator,NO_COVERAGE,no,high,2 min,return value mutated
+791,org/apache/commons/collections4/map/MultiKeyMap.java,710,72,NegateConditionalsMutator,NO_COVERAGE,no,medium,10 min,
+812,org/apache/commons/collections4/map/MultiKeyMap.java,322,45,NegateConditionalsMutator,NO_COVERAGE,no,high,15min,
+818,org/apache/commons/collections4/map/MultiKeyMap.java,464,39,NegateConditionalsMutator,NO_COVERAGE,no ,high,1 min,Similar to mutant812
+1469,org/apache/commons/collections4/map/Flat3Map.java,166,108,ReturnValsMutator,NO_COVERAGE,no,high,5 min,can result in returning unexpected value
+1524,org/apache/commons/collections4/map/Flat3Map.java,398,33,NegateConditionalsMutator,NO_COVERAGE,no,high,5 min,Implementation for size<4 shifted to >=4
+1551,org/apache/commons/collections4/map/Flat3Map.java,562,496,NegateConditionalsMutator,NO_COVERAGE,no,medium,15min,second condition might not satisfy
+1628,org/apache/commons/collections4/list/TreeList.java,839,54,NegateConditionalsMutator,NO_COVERAGE,no,high,10 min,
+1632,org/apache/commons/collections4/list/TreeList.java,866,163,NegateConditionalsMutator,NO_COVERAGE,no,low,15min,
+1660,org/apache/commons/collections4/list/TreeList.java,687,25,VoidMethodCallMutator,NO_COVERAGE,no,high,3 min,Mutated method has some functionality
+1860,org/apache/commons/collections4/map/AbstractHashedMap.java,1306,43,VoidMethodCallMutator,NO_COVERAGE,yes,medium,15min,
+1870,org/apache/commons/collections4/map/AbstractHashedMap.java,255,85,NegateConditionalsMutator,NO_COVERAGE,no,high,15min,NP exception
+1879,org/apache/commons/collections4/map/AbstractHashedMap.java,830,9,ReturnValsMutator,NO_COVERAGE,no,high,5 min,return value mutated
+2334,org/apache/commons/collections4/list/AbstractLinkedList.java,646,18,NegateConditionalsMutator,NO_COVERAGE,no,medium,10 min,"execute 0 or infinite times, objects may not read"
+2388,org/apache/commons/collections4/list/AbstractLinkedList.java,439,21,ReturnValsMutator,NO_COVERAGE,no,high,2 min,
+2433,org/apache/commons/collections4/list/AbstractLinkedList.java,201,73,ReturnValsMutator,NO_COVERAGE,no,high,5 min,
+2435,org/apache/commons/collections4/list/AbstractLinkedList.java,408,5,NegateConditionalsMutator,NO_COVERAGE,no,high,3 min,returns unexpected string
+2774,org/apache/commons/collections4/map/StaticBucketMap.java,242,76,ReturnValsMutator,NO_COVERAGE,no,high,3 min,return value mutated
+2784,org/apache/commons/collections4/map/StaticBucketMap.java,419,5,NegateConditionalsMutator,NO_COVERAGE,no,high,2 min,"object must be equals to itself, so returns true"
+2857,org/apache/commons/collections4/map/AbstractReferenceMap.java,239,12,ReturnValsMutator,NO_COVERAGE,no,high,3 min,
+2879,org/apache/commons/collections4/map/AbstractReferenceMap.java,257,24,ReturnValsMutator,NO_COVERAGE,no,high,2 min,return value mutated
+2889,org/apache/commons/collections4/map/AbstractReferenceMap.java,209,4,VoidMethodCallMutator,NO_COVERAGE,no,high,5 min,
+2959,org/apache/commons/collections4/multiset/AbstractMapMultiSet.java,562,36,NegateConditionalsMutator,NO_COVERAGE,no,high,4 min,Can result in returning unexpected total value
+2977,org/apache/commons/collections4/multiset/AbstractMapMultiSet.java,490,46,ConditionalsBoundaryMutator,NO_COVERAGE,no,medium,5 min,Line 491 might throw outofbound exception
+3178,org/apache/commons/collections4/multimap/AbstractMultiValuedMap.java,290,41,MathMutator,NO_COVERAGE,no,medium,5 min,
+3182,org/apache/commons/collections4/multimap/AbstractMultiValuedMap.java,309,4,NegateConditionalsMutator,NO_COVERAGE,no,high,3 min,"map is external to the function, so mutation is killable"
+3349,org/apache/commons/collections4/list/AbstractLinkedList.java,1032,8,ReturnValsMutator,NO_COVERAGE,no,high,3 min,return value mutated
+3358,org/apache/commons/collections4/list/AbstractLinkedList.java,1071,11,ReturnValsMutator,NO_COVERAGE,no,high,10 min,returns null
+3469,org/apache/commons/collections4/collection/CompositeCollection.java,251,23,ReturnValsMutator,SURVIVED,no,high,5 min,
+3497,org/apache/commons/collections4/iterators/CollatingIterator.java,132,30,VoidMethodCallMutator,NO_COVERAGE,no,high,5 min,"Array iterators are external to the function, addIterator() has its functionality"
+3678,org/apache/commons/collections4/map/AbstractLinkedMap.java,250,78,IncrementsMutator,NO_COVERAGE,no,high,15min,Throws an exception
+3689,org/apache/commons/collections4/map/AbstractLinkedMap.java,199,20,ReturnValsMutator,NO_COVERAGE,no,high,2 min,return value mutated
+3889,org/apache/commons/collections4/comparators/ComparatorChain.java,189,31,VoidMethodCallMutator,NO_COVERAGE,no,high,5 min,Since the arguments used are external to the function.
+3971,org/apache/commons/collections4/SetUtils.java,383,5,ReturnValsMutator,NO_COVERAGE,no,high,3 min,
+4059,org/apache/commons/collections4/map/SingletonMap.java,590,32,ReturnValsMutator,NO_COVERAGE,no,high,1 min,return value mutated
+4194,org/apache/commons/collections4/multimap/AbstractMultiValuedMap.java,501,25,NegateConditionalsMutator,NO_COVERAGE,no,high,15min,Similar to mutant 8077
+4216,org/apache/commons/collections4/list/TreeList.java,206,16,VoidMethodCallMutator,NO_COVERAGE,no,high,5 min,"index is external to function, mutated method has some functionality"
+4225,org/apache/commons/collections4/list/TreeList.java,291,5,NegateConditionalsMutator,NO_COVERAGE,no,high,5 min,arguments are external to function.
+4251,org/apache/commons/collections4/list/TreeList.java,190,11,NegateConditionalsMutator,NO_COVERAGE,no,high,3 min,throws NP exception
+4258,org/apache/commons/collections4/map/PassiveExpiringMap.java,345,7,VoidMethodCallMutator,NO_COVERAGE,no,high,5 min,
+4337,org/apache/commons/collections4/map/AbstractReferenceMap.java,695,65,NegateConditionalsMutator,NO_COVERAGE,no,high,3 min,"If (!isEqualvalue()),then it might return different boolean value  than expected"
+4350,org/apache/commons/collections4/map/AbstractReferenceMap.java,749,23,NegateConditionalsMutator,NO_COVERAGE,no,medium,10 min,
+4380,org/apache/commons/collections4/iterators/PermutationIterator.java,117,76,ConditionalsBoundaryMutator,SURVIVED,no,medium,15min,throws an out of bound exception
+4485,org/apache/commons/collections4/trie/AbstractPatriciaTrie.java,2165,14,NegateConditionalsMutator,NO_COVERAGE,no,high,10 min,the loop executes opposite to intended 
+4490,org/apache/commons/collections4/trie/AbstractPatriciaTrie.java,2143,106,MathMutator,NO_COVERAGE,no,low,15min,Might effect the return value of the size
+4515,org/apache/commons/collections4/list/TreeList.java,1023,21,NegateConditionalsMutator,NO_COVERAGE,no,high,5 min,field next is assigned incorrect value
+4585,org/apache/commons/collections4/list/NodeCachingLinkedList.java,165,5,NegateConditionalsMutator,NO_COVERAGE,no,high,10 min,"if cache is not full, node is added to cache"
+4621,org/apache/commons/collections4/bidimap/DualTreeBidiMap.java,203,5,ReturnValsMutator,NO_COVERAGE,no,high,3 min,
+4674,org/apache/commons/collections4/bidimap/AbstractDualBidiMap.java,299,19,ReturnValsMutator,NO_COVERAGE,no,high,5 min,
+4705,org/apache/commons/collections4/list/AbstractLinkedList.java,916,24,MathMutator,NO_COVERAGE,no,high,1 min,Similar to mutant4706
+4706,org/apache/commons/collections4/list/AbstractLinkedList.java,917,32,MathMutator,NO_COVERAGE,no,high,15min,
+4730,org/apache/commons/collections4/list/AbstractLinkedList.java,891,4,VoidMethodCallMutator,NO_COVERAGE,no,high,2 min,checkModCount has some fuctional implementatino
+4853,org/apache/commons/collections4/bag/CollectionBag.java,142,27,NegateConditionalsMutator,SURVIVED,no,low,15min,"Bit confusing mutation, if = is mutated to != then it is killable."
+4878,org/apache/commons/collections4/functors/FunctorUtils.java,157,4,ReturnValsMutator,NO_COVERAGE,no,low,15min,"static method, but we can still write unit tests using mocking, power mocking"
+5019,org/apache/commons/collections4/trie/AbstractPatriciaTrie.java,2024,9,ReturnValsMutator,NO_COVERAGE,no,high,2 min,
+5075,org/apache/commons/collections4/ArrayStack.java,111,26,ReturnValsMutator,NO_COVERAGE,no,high,3 min,
+5084,org/apache/commons/collections4/ArrayStack.java,152,6,MathMutator,NO_COVERAGE,no,high,10 min,
+5092,org/apache/commons/collections4/functors/SwitchTransformer.java,132,9,NegateConditionalsMutator,SURVIVED,no,high,5 min,boolean clone is external to the function
+5121,org/apache/commons/collections4/multimap/AbstractMultiValuedMapDecorator.java,87,7,ReturnValsMutator,NO_COVERAGE,no,high,2 min,
+5253,org/apache/commons/collections4/functors/SwitchClosure.java,183,5,ReturnValsMutator,NO_COVERAGE,no,high,3 min,
+5254,org/apache/commons/collections4/functors/SwitchClosure.java,163,6,ReturnValsMutator,NO_COVERAGE,no,high,3 min,
+5365,org/apache/commons/collections4/multimap/AbstractListValuedMap.java,198,9,NegateConditionalsMutator,NO_COVERAGE,no,high,5 min,"returns unexpected values, when object is null"
+5462,org/apache/commons/collections4/multimap/TransformedMultiValuedMap.java,151,17,ReturnValsMutator,NO_COVERAGE,no,high,3 min,
+5487,org/apache/commons/collections4/map/Flat3Map.java,740,29,ReturnValsMutator,NO_COVERAGE,no,high,2 min,return value mutated
+5687,org/apache/commons/collections4/list/LazyList.java,175,22,ReturnValsMutator,NO_COVERAGE,no,high,3 min,returns null
+5880,org/apache/commons/collections4/functors/ConstantTransformer.java,115,39,NegateConditionalsMutator,NO_COVERAGE,no,high,10 min,return value of getConstant() is external to this function
+5886,org/apache/commons/collections4/functors/ConstantTransformer.java,125,19,MathMutator,NO_COVERAGE,no,high,10 min,"bitwise OR to bitwise subtraction, can result in different value"
+6180,org/apache/commons/collections4/collection/UnmodifiableBoundedCollection.java,171,6,ReturnValsMutator,NO_COVERAGE,no,high,3 min,
+6312,org/apache/commons/collections4/bidimap/AbstractDualBidiMap.java,803,5,NegateConditionalsMutator,NO_COVERAGE,no,high,3 min,last is external to the function
+6319,org/apache/commons/collections4/trie/KeyAnalyzer.java,141,4,NegateConditionalsMutator,NO_COVERAGE,no,high,4 min,
+6578,org/apache/commons/collections4/bidimap/TreeBidiMap.java,1632,37,NegateConditionalsMutator,NO_COVERAGE,no,high,5 min,NP exception
+6626,org/apache/commons/collections4/functors/ForClosure.java,93,5,ReturnValsMutator,NO_COVERAGE,no,high,5 min,object of class implemented closure interface is mutated
+6627,org/apache/commons/collections4/functors/ForClosure.java,103,5,ReturnValsMutator,NO_COVERAGE,no,high,2 min,
+6700,org/apache/commons/collections4/list/AbstractLinkedList.java,943,5,NegateConditionalsMutator,NO_COVERAGE,no,high,3 min,returns opposite boolean value
+6744,org/apache/commons/collections4/map/AbstractHashedMap.java,849,6,ReturnValsMutator,NO_COVERAGE,no,high,3 min,return value mutated
+6748,org/apache/commons/collections4/iterators/EntrySetMapIterator.java,132,19,ReturnValsMutator,NO_COVERAGE,no,high,5 min,return value mutated
+6749,org/apache/commons/collections4/iterators/EntrySetMapIterator.java,67,6,ReturnValsMutator,NO_COVERAGE,no,high,3 min,
+6846,org/apache/commons/collections4/multiset/SynchronizedMultiSet.java,86,5,NegateConditionalsMutator,NO_COVERAGE,no,high,10 min,checks an instance must be equal to itself
+6908,org/apache/commons/collections4/bidimap/UnmodifiableSortedBidiMap.java,129,11,ReturnValsMutator,NO_COVERAGE,no,high,3 min,returns null
+6941,org/apache/commons/collections4/map/AbstractSortedMapDecorator.java,87,6,ReturnValsMutator,NO_COVERAGE,no,medium,3 min,
+6970,org/apache/commons/collections4/set/UnmodifiableSortedSet.java,62,17,ReturnValsMutator,SURVIVED,no,high,3 min,returns null
+7235,org/apache/commons/collections4/iterators/AbstractOrderedMapIteratorDecorator.java,82,6,ReturnValsMutator,NO_COVERAGE,no,high,5 min,return value(parameter type) is mutated
+7401,org/apache/commons/collections4/multimap/AbstractMultiValuedMap.java,694,18,ReturnValsMutator,NO_COVERAGE,no,high,3 min,
+7447,org/apache/commons/collections4/bidimap/DualTreeBidiMap.java,255,8,ReturnValsMutator,NO_COVERAGE,no,high,3 min,
+7486,org/apache/commons/collections4/trie/AbstractPatriciaTrie.java,2407,33,NegateConditionalsMutator,NO_COVERAGE,no,low,15min,
+7623,org/apache/commons/collections4/multimap/ArrayListValuedHashMap.java,136,9,VoidMethodCallMutator,NO_COVERAGE,no,high,3 min,method has its functionality to perform
+7681,org/apache/commons/collections4/multimap/AbstractMultiValuedMap.java,871,9,ReturnValsMutator,NO_COVERAGE,no,high,3 min,return value mutated
+7778,org/apache/commons/collections4/bidimap/TreeBidiMap.java,1563,5,VoidMethodCallMutator,NO_COVERAGE,no,high,2 min,Similar to mutant3
+7923,org/apache/commons/collections4/bag/AbstractMapBag.java,433,9,ReturnValsMutator,NO_COVERAGE,no,high,3 min,
+8011,org/apache/commons/collections4/set/ListOrderedSet.java,422,7,ReturnValsMutator,NO_COVERAGE,no,high,3 min,
+8077,org/apache/commons/collections4/multimap/AbstractMultiValuedMap.java,761,11,NegateConditionalsMutator,NO_COVERAGE,no,high,15min,Can result in loss of values
+8091,org/apache/commons/collections4/map/ReferenceMap.java,196,4,VoidMethodCallMutator,NO_COVERAGE,no,low,15min,Mutates java’s internal function
+8152,org/apache/commons/collections4/multimap/AbstractMultiValuedMap.java,626,10,ReturnValsMutator,NO_COVERAGE,no,low,10 min,
+8301,org/apache/commons/collections4/map/Flat3Map.java,1112,6,ReturnValsMutator,NO_COVERAGE,no,high,5 min,results unexpected return value

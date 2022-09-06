@@ -1,0 +1,8 @@
+5039 rc:no (high) rb:yes (low)
+org/apache/commons/imaging/formats/png/PngImageParser.java:586 400 ConditionalsBoundaryMutator
+	jh:  
+	sd:  
+8254 rc:no (high) rb:yes (low)
+org/apache/commons/imaging/palette/MedianCutQuantizer.java:116 147 NegateConditionalsMutator
+	jh:  
+	sd:  

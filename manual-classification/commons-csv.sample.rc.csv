@@ -1,0 +1,117 @@
+Mutant,File,Line,Index,Mutator,Status,Equivalent,Confidence,Time,Comments
+35,org/apache/commons/csv/CSVFormat.java,831,130,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+37,org/apache/commons/csv/CSVFormat.java,838,158,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+43,org/apache/commons/csv/CSVFormat.java,857,235,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+68,org/apache/commons/csv/CSVFormat.java,1061,13,MathMutator,SURVIVED,yes,high,1 min,hashcode math mutator  but 31*1 and 31/1 are the same.
+69,org/apache/commons/csv/CSVFormat.java,1061,16,MathMutator,SURVIVED,no,high,1 min,hashcode math mutator
+70,org/apache/commons/csv/CSVFormat.java,1062,22,MathMutator,SURVIVED,no,high,1 min,hashcode math mutator
+71,org/apache/commons/csv/CSVFormat.java,1062,35,MathMutator,SURVIVED,no,high,1 min,hashcode math mutator
+72,org/apache/commons/csv/CSVFormat.java,1063,41,MathMutator,SURVIVED,no,high,1 min,hashcode math mutator
+73,org/apache/commons/csv/CSVFormat.java,1063,54,MathMutator,SURVIVED,no,high,1 min,hashcode math mutator
+74,org/apache/commons/csv/CSVFormat.java,1064,60,MathMutator,SURVIVED,no,high,1 min,hashcode math mutator
+75,org/apache/commons/csv/CSVFormat.java,1064,73,MathMutator,SURVIVED,no,high,1 min,hashcode math mutator
+76,org/apache/commons/csv/CSVFormat.java,1065,79,MathMutator,SURVIVED,no,high,1 min,hashcode math mutator
+77,org/apache/commons/csv/CSVFormat.java,1065,92,MathMutator,SURVIVED,no,high,1 min,hashcode math mutator
+78,org/apache/commons/csv/CSVFormat.java,1066,98,MathMutator,SURVIVED,no,high,1 min,hashcode math mutator
+79,org/apache/commons/csv/CSVFormat.java,1066,111,MathMutator,SURVIVED,no,high,1 min,hashcode math mutator
+80,org/apache/commons/csv/CSVFormat.java,1067,117,MathMutator,SURVIVED,no,high,1 min,hashcode math mutator
+81,org/apache/commons/csv/CSVFormat.java,1067,128,MathMutator,SURVIVED,no,high,1 min,hashcode math mutator
+82,org/apache/commons/csv/CSVFormat.java,1068,134,MathMutator,SURVIVED,no,high,1 min,hashcode math mutator
+83,org/apache/commons/csv/CSVFormat.java,1068,145,MathMutator,SURVIVED,no,high,1 min,hashcode math mutator
+84,org/apache/commons/csv/CSVFormat.java,1069,151,MathMutator,SURVIVED,no,high,1 min,hashcode math mutator
+85,org/apache/commons/csv/CSVFormat.java,1069,162,MathMutator,SURVIVED,no,high,1 min,hashcode math mutator
+86,org/apache/commons/csv/CSVFormat.java,1070,168,MathMutator,SURVIVED,no,high,1 min,hashcode math mutator
+87,org/apache/commons/csv/CSVFormat.java,1070,179,MathMutator,SURVIVED,no,high,1 min,hashcode math mutator
+88,org/apache/commons/csv/CSVFormat.java,1071,185,MathMutator,SURVIVED,no,high,1 min,hashcode math mutator
+89,org/apache/commons/csv/CSVFormat.java,1071,198,MathMutator,SURVIVED,no,high,1 min,hashcode math mutator
+90,org/apache/commons/csv/CSVFormat.java,1072,204,MathMutator,SURVIVED,no,high,1 min,hashcode math mutator
+91,org/apache/commons/csv/CSVFormat.java,1072,208,MathMutator,SURVIVED,no,high,1 min,hashcode math mutator
+93,org/apache/commons/csv/CSVFormat.java,1063,44,NegateConditionalsMutator,SURVIVED,no,high,1 min,hashcode negate conditional
+97,org/apache/commons/csv/CSVFormat.java,1067,120,NegateConditionalsMutator,SURVIVED,no,high,1 min,hashcode negate conditional
+98,org/apache/commons/csv/CSVFormat.java,1068,137,NegateConditionalsMutator,SURVIVED,no,high,1 min,hashcode negate conditional
+99,org/apache/commons/csv/CSVFormat.java,1069,154,NegateConditionalsMutator,SURVIVED,no,high,1 min,hashcode negate conditional
+100,org/apache/commons/csv/CSVFormat.java,1070,171,NegateConditionalsMutator,SURVIVED,no,high,1 min,hashcode negate conditional
+101,org/apache/commons/csv/CSVFormat.java,1071,188,NegateConditionalsMutator,SURVIVED,no,high,1 min,hashcode negate conditional
+102,org/apache/commons/csv/CSVFormat.java,1073,213,ReturnValsMutator,SURVIVED,no,high,1 min,return value of hash function always either 1 or 0.
+122,org/apache/commons/csv/CSVFormat.java,1259,30,NegateConditionalsMutator,NO_COVERAGE,no,medium,1 min,not sure about difference of behavior of IOUtils.copy() and printwithEscapes().
+123,org/apache/commons/csv/CSVFormat.java,1261,43,NegateConditionalsMutator,NO_COVERAGE,no,medium,1 min,typecasting when it's NOT the type->what happens?
+125,org/apache/commons/csv/CSVFormat.java,1260,36,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+147,org/apache/commons/csv/CSVFormat.java,1379,63,ConditionalsBoundaryMutator,NO_COVERAGE,yes,medium,1 min,when pos==start  nothing gets appended  BUT the builder is not necessarily empty and would be set to 0 then
+148,org/apache/commons/csv/CSVFormat.java,1398,129,ConditionalsBoundaryMutator,NO_COVERAGE,yes,high,1 min,nothing gets appended when pos==start
+149,org/apache/commons/csv/CSVFormat.java,1394,122,IncrementsMutator,NO_COVERAGE,no,high,1 min,
+150,org/apache/commons/csv/CSVFormat.java,1392,117,MathMutator,NO_COVERAGE,no,high,1 min,
+151,org/apache/commons/csv/CSVFormat.java,1375,36,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,
+152,org/apache/commons/csv/CSVFormat.java,1377,48,NegateConditionalsMutator,NO_COVERAGE,no,high,5 min,
+153,org/apache/commons/csv/CSVFormat.java,1377,51,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,
+154,org/apache/commons/csv/CSVFormat.java,1377,54,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,same as mutant 152  153
+155,org/apache/commons/csv/CSVFormat.java,1377,57,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,same as mutant 152  153  154
+156,org/apache/commons/csv/CSVFormat.java,1379,63,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,similar to mutant 159
+157,org/apache/commons/csv/CSVFormat.java,1383,83,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,
+158,org/apache/commons/csv/CSVFormat.java,1385,94,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,
+159,org/apache/commons/csv/CSVFormat.java,1398,129,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,for pos>start: StringIndexOutOfBoundsException  equivalent for single case pos==start
+160,org/apache/commons/csv/CSVFormat.java,1381,77,VoidMethodCallMutator,NO_COVERAGE,no,high,5 min,without resetting builder  you won't get the correct substring
+162,org/apache/commons/csv/CSVFormat.java,1343,60,ConditionalsBoundaryMutator,SURVIVED,yes,medium,2 min,sd: Nothing gets appended when positions are the same
+163,org/apache/commons/csv/CSVFormat.java,1361,121,ConditionalsBoundaryMutator,SURVIVED,yes,high,1 min,If nothing gets appended when the positions are same  and the object as such is not changed  then it is equivalent. 
+175,org/apache/commons/csv/CSVFormat.java,1537,65,ConditionalsBoundaryMutator,SURVIVED,no,high,1 min,conditionals boundary -> segment size is wrong
+176,org/apache/commons/csv/CSVFormat.java,1550,107,ConditionalsBoundaryMutator,SURVIVED,yes,high,1 min,sd is right (probably)  since stringbuilder.substring(0 0) will append empty string. So it depends on whether an appended empty string alters the object as such. If not  then it is an equivalent mutant.
+183,org/apache/commons/csv/CSVFormat.java,1521,12,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+186,org/apache/commons/csv/CSVFormat.java,1446,114,ConditionalsBoundaryMutator,SURVIVED,no,medium,1 min,condiitonals boundary -> wrong starting point for parser
+231,org/apache/commons/csv/CSVFormat.java,1622,31,ConditionalsBoundaryMutator,NO_COVERAGE,no,high,2 min,for pos==len charAt(pos) will throw exception. / pos len in-/decremented differently
+232,org/apache/commons/csv/CSVFormat.java,1622,36,ConditionalsBoundaryMutator,NO_COVERAGE,no,high,1 min,changes increment of pos
+233,org/apache/commons/csv/CSVFormat.java,1625,46,ConditionalsBoundaryMutator,NO_COVERAGE,no,high,1 min,changes decrement len
+234,org/apache/commons/csv/CSVFormat.java,1625,53,ConditionalsBoundaryMutator,NO_COVERAGE,no,medium,1 min,cond.boundary influences decrementation of len  which is boundary for substring
+235,org/apache/commons/csv/CSVFormat.java,1628,62,ConditionalsBoundaryMutator,NO_COVERAGE,yes,high,1 min,similar to mutant 236. substring(0 len) is the complete charsequence  that would be returned anyways
+236,org/apache/commons/csv/CSVFormat.java,1628,65,ConditionalsBoundaryMutator,NO_COVERAGE,yes,high,2 min,substring(0 len) is the complete charsequence  that would be returned anyways
+237,org/apache/commons/csv/CSVFormat.java,1623,39,IncrementsMutator,NO_COVERAGE,no,high,1 min,
+238,org/apache/commons/csv/CSVFormat.java,1626,56,IncrementsMutator,NO_COVERAGE,no,high,1 min,
+239,org/apache/commons/csv/CSVFormat.java,1625,50,MathMutator,NO_COVERAGE,no,high,1 min,
+240,org/apache/commons/csv/CSVFormat.java,1615,5,NegateConditionalsMutator,SURVIVED,no,low,1 min,"I still say not equivalent  but with low confidence  since it depends on the compiler behavior what happens when casting to a type that is not instance of String. But then again the question is whether the ""charSequence"" can ever not be an instance of String. But then again there wouldn't be the need to cover that possibility if it weren't possible. "
+241,org/apache/commons/csv/CSVFormat.java,1622,31,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,
+242,org/apache/commons/csv/CSVFormat.java,1622,36,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,
+243,org/apache/commons/csv/CSVFormat.java,1625,46,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,
+244,org/apache/commons/csv/CSVFormat.java,1625,53,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,
+245,org/apache/commons/csv/CSVFormat.java,1628,62,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,the subsequence will never be returned
+246,org/apache/commons/csv/CSVFormat.java,1628,65,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,similar to mutant 236  but this time the substring will not be returned when it should
+248,org/apache/commons/csv/CSVFormat.java,1628,78,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+265,org/apache/commons/csv/CSVFormat.java,1689,6,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+266,org/apache/commons/csv/CSVFormat.java,1700,41,ReturnValsMutator,SURVIVED,no,high,1 min,instead of constructor  RuntimeException will be thrown
+362,org/apache/commons/csv/Lexer.java,130,118,ReturnValsMutator,NO_COVERAGE,no,high,1 min,removes returned token in nextToken() method
+374,org/apache/commons/csv/Lexer.java,271,106,ReturnValsMutator,SURVIVED,no,high,5 min,"* (+sd: ""Return value is not used by the method called )"
+375,org/apache/commons/csv/Lexer.java,275,127,ReturnValsMutator,SURVIVED,no,high,5 min,"* (+sd: ""Return value is not used by the method called )"
+376,org/apache/commons/csv/Lexer.java,278,143,ReturnValsMutator,SURVIVED,no,high,5 min,"* (+sd: ""Return value is not used by the method called )"
+383,org/apache/commons/csv/Lexer.java,223,133,ReturnValsMutator,SURVIVED,no,high,5 min,"* (+sd: ""Return value is not used by the method called )"
+387,org/apache/commons/csv/Lexer.java,384,21,NegateConditionalsMutator,SURVIVED,no,high,2 min,EOL state will not be saved
+397,org/apache/commons/csv/Lexer.java,340,25,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+398,org/apache/commons/csv/Lexer.java,342,30,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+399,org/apache/commons/csv/Lexer.java,344,35,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+403,org/apache/commons/csv/Lexer.java,365,10,ConditionalsBoundaryMutator,SURVIVED,no,high,2 min,conditional boundary -> would always end in OutOfBoundsException
+472,org/apache/commons/csv/CSVParser.java,232,5,VoidMethodCallMutator,SURVIVED,no,high,5 min,removed call to notNull-Assertion  that would throw IllegalArgumentException. Without it  NullPointerExceptions will be thrown by program.
+473,org/apache/commons/csv/CSVParser.java,233,10,VoidMethodCallMutator,SURVIVED,no,high,5 min,removed call to notNull-Assertion  that would throw IllegalArgumentException. Without it  NullPointerExceptions will be thrown by program.
+477,org/apache/commons/csv/CSVParser.java,297,10,VoidMethodCallMutator,SURVIVED,no,high,5 min,removed call to notNull-Assertion  that would throw IllegalArgumentException. Without it  NullPointerExceptions will be thrown by program.
+481,org/apache/commons/csv/CSVParser.java,327,15,VoidMethodCallMutator,SURVIVED,no,high,5 min,removed call to notNull-Assertion  that would throw IllegalArgumentException. Without it  NullPointerExceptions will be thrown by program.
+484,org/apache/commons/csv/CSVParser.java,255,10,VoidMethodCallMutator,SURVIVED,no,high,5 min,removed call to notNull-Assertion  that would throw IllegalArgumentException. Without it  NullPointerExceptions will be thrown by program.
+504,org/apache/commons/csv/CSVPrinter.java,209,66,ConditionalsBoundaryMutator,NO_COVERAGE,no,high,1 min,index out of bounds for charAt(i+i)
+505,org/apache/commons/csv/CSVPrinter.java,210,76,IncrementsMutator,NO_COVERAGE,no,high,1 min,
+507,org/apache/commons/csv/CSVPrinter.java,209,63,MathMutator,NO_COVERAGE,no,high,1 min,
+508,org/apache/commons/csv/CSVPrinter.java,209,70,MathMutator,NO_COVERAGE,no,high,1 min,
+512,org/apache/commons/csv/CSVPrinter.java,209,66,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,
+513,org/apache/commons/csv/CSVPrinter.java,209,73,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,
+514,org/apache/commons/csv/CSVPrinter.java,201,19,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,remove of println() 
+534,org/apache/commons/csv/ExtendedBufferedReader.java,188,14,VoidMethodCallMutator,SURVIVED,no,high,5 min,removed call to BufferedReader close() -> does not effect the program output as such  but can be detected from outside
+554,org/apache/commons/csv/ExtendedBufferedReader.java,87,21,ConditionalsBoundaryMutator,SURVIVED,yes,high,5 min,conditionals boundary changed in if  but for loop still holds true  so no effect
+564,org/apache/commons/csv/ExtendedBufferedReader.java,106,122,MathMutator,SURVIVED,no,high,1 min,MathMutator -> position of buffer will be calculated wrongly
+572,org/apache/commons/csv/ExtendedBufferedReader.java,102,108,NegateConditionalsMutator,SURVIVED,no,high,1 min,negate conditional -> always throw IllegalArgumentException
+580,org/apache/commons/csv/CSVRecord.java,68,7,ReturnValsMutator,SURVIVED,no,high,1 min,"* (+sd: ""Return value is not used by the method called/ jh: return null instead of enum)"
+589,org/apache/commons/csv/CSVRecord.java,176,5,NegateConditionalsMutator,SURVIVED,no,high,1 min,"* (+sd: ""Return value is not used by the method called /jh: hasComment() returns the opposite)"
+590,org/apache/commons/csv/CSVRecord.java,176,13,ReturnValsMutator,SURVIVED,no,high,1 min,"* (+sd: ""Return value is not used by the method called /jh: return null instead of bool)"
+610,org/apache/commons/csv/CSVRecord.java,284,29,ReturnValsMutator,NO_COVERAGE,no,high,1 min,toString() returns null now
+622,org/apache/commons/csv/IOUtils.java,60,8,ReturnValsMutator,NO_COVERAGE,no,high,1 min,copy() returns null now
+623,org/apache/commons/csv/IOUtils.java,84,34,MathMutator,NO_COVERAGE,no,high,1 min,
+624,org/apache/commons/csv/IOUtils.java,81,15,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,
+625,org/apache/commons/csv/IOUtils.java,86,41,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+626,org/apache/commons/csv/IOUtils.java,108,8,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+627,org/apache/commons/csv/IOUtils.java,134,28,MathMutator,NO_COVERAGE,no,high,1 min,changes returned value of method
+628,org/apache/commons/csv/IOUtils.java,132,15,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,
+629,org/apache/commons/csv/IOUtils.java,136,35,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+630,org/apache/commons/csv/IOUtils.java,133,22,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,removed call to out.write(buffer 0 n)
+632,org/apache/commons/csv/Token.java,71,19,ReturnValsMutator,NO_COVERAGE,no,high,1 min,toString() returns null nowMutant,File,Line,Index,Mutator,Status,Equivalent,Confidence,Time,Comments

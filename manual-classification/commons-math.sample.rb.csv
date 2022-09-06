@@ -1,0 +1,101 @@
+Mutant,File,Line,Index,Mutator,Status,Equivalent,Confidence,Time,Comments
+319,org/apache/commons/math3/util/FastMath.java,2580,216,MathMutator,SURVIVED,no,high,2 min,the mutation effect propogating to line 2610 and then to return value.
+830,org/apache/commons/math3/util/FastMath.java,988,333,MathMutator,SURVIVED,yes,Low,15 min,"when functional execution reaches line 985,hiPrec array is not used in any return value or as an argument to a method"
+853,org/apache/commons/math3/util/FastMath.java,1012,20,ConditionalsBoundaryMutator,SURVIVED,no,high,2 min,"since x is extrnal to the function, it is killable."
+1935,org/apache/commons/math3/util/FastMath.java,3291,171,ReturnValsMutator,NO_COVERAGE,no,high,2 min,return value mutated.
+2710,org/apache/commons/math3/optim/nonlinear/scalar/noderiv/BOBYQAOptimizer.java,311,72,ConditionalsBoundaryMutator,NO_COVERAGE,no,high,15 min,"the values are assigned at unintended position of the array, which can be also tracked when the setEntry method is called for the entry of data at particular index"
+2835,org/apache/commons/math3/optim/nonlinear/scalar/noderiv/BOBYQAOptimizer.java,1087,3472,ConditionalsBoundaryMutator,SURVIVED,no,medium ,5 min,similar to mutant 4398
+3063,org/apache/commons/math3/optim/nonlinear/scalar/noderiv/BOBYQAOptimizer.java,797,1977,MathMutator,SURVIVED,yes,low,15 min,
+3368,org/apache/commons/math3/optim/nonlinear/scalar/noderiv/BOBYQAOptimizer.java,1180,3765,VoidMethodCallMutator,SURVIVED,no,high,1 min,
+3552,org/apache/commons/math3/optim/nonlinear/scalar/noderiv/BOBYQAOptimizer.java,1750,880,VoidMethodCallMutator,NO_COVERAGE,no,high,2 min,method has some impl
+3553,org/apache/commons/math3/optim/nonlinear/scalar/noderiv/BOBYQAOptimizer.java,1751,888,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,method has some impl
+3611,org/apache/commons/math3/optim/nonlinear/scalar/noderiv/BOBYQAOptimizer.java,2093,1118,ConditionalsBoundaryMutator,SURVIVED,no,low,15 min,"tempa,tempb are calculated by calling external functions."
+3639,org/apache/commons/math3/optim/nonlinear/scalar/noderiv/BOBYQAOptimizer.java,1973,616,IncrementsMutator,SURVIVED,no,medium ,25 min,"It effects loop in line 2018, and state gets updated with unintended value, so for the next iteration the state value is printed(through printState()) for each particular case and one can observe the change in output "
+3840,org/apache/commons/math3/optim/nonlinear/scalar/noderiv/BOBYQAOptimizer.java,1954,530,NegateConditionalsMutator,SURVIVED,no,low,15 min,"Due to mutation the loop may not execute, if possible we can set a counter in the external method whenever it is called from line 1956 or 1958 or 1960. "
+4034,org/apache/commons/math3/optimization/direct/BOBYQAOptimizer.java,1420,761,ConditionalsBoundaryMutator,SURVIVED,no,medium ,5 min,"when equal in the next line presav is assigned to predsq, but in further lines variables are updated which is not intended when =, this effect might propogate to the next for loop in line 1431,1432 to external setEntry."
+4050,org/apache/commons/math3/optimization/direct/BOBYQAOptimizer.java,1532,1354,ConditionalsBoundaryMutator,SURVIVED,yes,low,20 min,"When =,scale is 1."
+4398,org/apache/commons/math3/optimization/direct/BOBYQAOptimizer.java,1092,3472,ConditionalsBoundaryMutator,SURVIVED,no,medium ,15 min,"When =, the var ‘itest’ is assigned to zero, which can lead to not statisfy the next if loop in line 1095, which has some functionanlity perfroming to external functions."
+5102,org/apache/commons/math3/optimization/direct/BOBYQAOptimizer.java,1722,625,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+5121,org/apache/commons/math3/optimization/direct/BOBYQAOptimizer.java,2405,60,ConditionalsBoundaryMutator,SURVIVED,no,medium ,15 min,
+5135,org/apache/commons/math3/optimization/direct/BOBYQAOptimizer.java,2429,177,MathMutator,SURVIVED,no,high,3 min,
+5290,org/apache/commons/math3/optimization/direct/BOBYQAOptimizer.java,2111,1173,MathMutator,SURVIVED,yes,Low,15 min,
+6777,org/apache/commons/math3/linear/BlockRealMatrix.java,336,151,ReturnValsMutator,NO_COVERAGE,no,high,1 min,returns null.
+7607,org/apache/commons/math3/linear/BlockRealMatrix.java,1540,8,VoidMethodCallMutator,SURVIVED,no,high,1 min,method has some impl
+7776,org/apache/commons/math3/linear/BlockFieldMatrix.java,337,69,MathMutator,NO_COVERAGE,yes,low,15 min,
+7854,org/apache/commons/math3/linear/BlockFieldMatrix.java,1118,27,MathMutator,SURVIVED,no,high,2 min,"It effects the size of array in line 1123, and propogates to 1125"
+7975,org/apache/commons/math3/linear/BlockFieldMatrix.java,1011,26,MathMutator,SURVIVED,no,high,5 min,it effects line 1016
+8104,org/apache/commons/math3/linear/BlockFieldMatrix.java,545,227,IncrementsMutator,NO_COVERAGE,no,Low,15 min,"For each iteration the blockIndex is incremented, which effects line 520,538"
+8999,org/apache/commons/math3/geometry/euclidean/threed/Rotation.java,946,1254,ConditionalsBoundaryMutator,SURVIVED,no,medium ,10 min,If condition values are calculated by calling external functions
+10514,org/apache/commons/math3/stat/regression/MillerUpdatingRegression.java,1027,137,ConditionalsBoundaryMutator,SURVIVED,yes,high,5 min,"Length – 0, stands equivalent."
+10673,org/apache/commons/math3/stat/regression/MillerUpdatingRegression.java,734,170,ConditionalsBoundaryMutator,SURVIVED,yes,low,30 min,
+11441,org/apache/commons/math3/stat/inference/KolmogorovSmirnovTest.java,518,29,NegateConditionalsMutator,SURVIVED,no,high,5 min,since all the variable in the if condition can be calculated external to the function.
+11455,org/apache/commons/math3/stat/inference/KolmogorovSmirnovTest.java,537,135,ReturnValsMutator,SURVIVED,no,high,1 min,return value mutated.
+11488,org/apache/commons/math3/stat/inference/KolmogorovSmirnovTest.java,796,222,MathMutator,NO_COVERAGE,no,high,5 min,"values might get assigned at unintended position of array, and this propogates upto the return value of the fucntion."
+12061,org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java,618,263,MathMutator,SURVIVED,no,medium ,1 min,variable damps is external to the function.
+12299,org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java,686,84,NegateConditionalsMutator,SURVIVED,no,high,1 min,since all the variable in the if condition are external to the function
+12436,org/apache/commons/math3/optimization/direct/CMAESOptimizer.java,615,622,NegateConditionalsMutator,NO_COVERAGE,no,medium ,15 min,"!= to ==, here last result is updated when ==null, reflects to line 511"
+12743,org/apache/commons/math3/optimization/direct/CMAESOptimizer.java,777,48,MathMutator,SURVIVED,no,high,1 min,
+13271,org/apache/commons/math3/ode/nonstiff/GraggBulirschStoerIntegrator.java,730,803,ConditionalsBoundaryMutator,SURVIVED,no,medium ,15 min,"When <= loop is iterated one more extra time, unintended value gets assigned to hNew variable. For each iteration in do while loop the change can be observed throught line 646 which is assigned to external variable"
+14407,org/apache/commons/math3/linear/AbstractFieldMatrix.java,804,75,ReturnValsMutator,SURVIVED,no,high,3 min,return value mutated.
+15234,org/apache/commons/math3/linear/AbstractRealMatrix.java,808,36,ConditionalsBoundaryMutator,NO_COVERAGE,no,high,1 min,one can track how many times the method has been called.
+15552,org/apache/commons/math3/optim/nonlinear/vector/jacobian/LevenbergMarquardtOptimizer.java,493,936,NegateConditionalsMutator,SURVIVED,no,high,2 min,NP exception
+16036,org/apache/commons/math3/special/BesselJ.java,274,70,ConditionalsBoundaryMutator,SURVIVED,no,low,15 min,effect might propogate to return value
+17556,org/apache/commons/math3/stat/regression/SimpleRegression.java,866,382,ReturnValsMutator,NO_COVERAGE,no,high,1 min,return value mutated.
+18761,org/apache/commons/math3/geometry/euclidean/threed/FieldRotation.java,985,1603,ConditionalsBoundaryMutator,SURVIVED,no,medium ,2 min,similar to mutant 8999.
+19182,org/apache/commons/math3/util/FastMathCalc.java,149,244,MathMutator,NO_COVERAGE,no,high,5 min,"Mutation assigns unexpected values to the array, then it calls an external method in line 158 using this array as argument."
+19229,org/apache/commons/math3/util/FastMathCalc.java,626,23,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,method has some impl
+19300,org/apache/commons/math3/util/FastMathCalc.java,239,163,MathMutator,NO_COVERAGE,no,high,1 min,returns in unexpected value
+19302,org/apache/commons/math3/util/FastMathCalc.java,218,71,NegateConditionalsMutator,NO_COVERAGE,no,high,5 min,"with mutation the even entries might get skipped and one can keep track of which positional elements of the array FACT are argumented, and also other possibillities"
+19668,org/apache/commons/math3/linear/SparseFieldVector.java,201,52,ReturnValsMutator,NO_COVERAGE,no,high,1 min,return value mutated.
+23477,org/apache/commons/math3/special/Erf.java,200,389,MathMutator,SURVIVED,no,high,2 min,the effect propogates to the return value.
+23984,org/apache/commons/math3/analysis/interpolation/TricubicInterpolatingFunction.java,343,53,MathMutator,NO_COVERAGE,no,high,1 min,"since all the variable in the if condition are external to the function, mutation is killable."
+24935,org/apache/commons/math3/geometry/euclidean/twod/Vector2D.java,221,16,MathMutator,NO_COVERAGE,no,high,3 min,
+24964,org/apache/commons/math3/util/Precision.java,377,44,ConditionalsBoundaryMutator,SURVIVED,no,high,2 min,
+25379,org/apache/commons/math3/geometry/partitioning/utilities/OrderedTuple.java,141,44,ConditionalsBoundaryMutator,NO_COVERAGE,no,high,3 min,"When  =, it throws out of bound exception."
+25484,org/apache/commons/math3/geometry/partitioning/utilities/OrderedTuple.java,427,87,MathMutator,NO_COVERAGE,no,high,2 min,returns unexpected return value.
+25910,org/apache/commons/math3/distribution/PoissonDistribution.java,387,461,MathMutator,SURVIVED,no,Low,5 min,effect might propogate to return value
+26290,org/apache/commons/math3/stat/inference/TTest.java,361,5,VoidMethodCallMutator,SURVIVED,no,high,1 min,
+26332,org/apache/commons/math3/random/EmpiricalDistribution.java,639,18,ConditionalsBoundaryMutator,SURVIVED,no,high,1 min,"x, max are external to the function"
+26894,org/apache/commons/math3/distribution/TriangularDistribution.java,114,5,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+27450,org/apache/commons/math3/util/OpenIntToDoubleHashMap.java,309,157,MathMutator,SURVIVED,no,high,2 min,In each iteration ‘j’ value gets effected and this prpogates to the return value of the function
+27622,org/apache/commons/math3/stat/descriptive/MultivariateSummaryStatistics.java,401,78,MathMutator,SURVIVED,no,high,1 min,
+27993,org/apache/commons/math3/optimization/univariate/BrentOptimizer.java,84,11,ConditionalsBoundaryMutator,SURVIVED,no,high,3 min,"rel, MIN_realtive_tolerance are external to the function"
+28588,org/apache/commons/math3/ode/ContinuousOutputModel.java,263,55,ConditionalsBoundaryMutator,SURVIVED,no,high,3 min,"Since value in if condition can be calculated external to the function, and in line 264 external varibale is been updated."
+28905,org/apache/commons/math3/stat/regression/RegressionResults.java,240,5,NegateConditionalsMutator,SURVIVED,no,high,1 min,since parameters is external to the function
+28977,org/apache/commons/math3/geometry/euclidean/threed/PolyhedronsSet.java,590,32,NegateConditionalsMutator,SURVIVED,no,high,1 min,NP exception
+29894,org/apache/commons/math3/geometry/spherical/twod/SphericalPolygonsSet.java,523,256,ConditionalsBoundaryMutator,SURVIVED,no,Low,15 min,"< to <=, means the enclosingS2 object is updated in line 524, which was not intended when =, so the behaviour of return value might not be as expected"
+30167,org/apache/commons/math3/fitting/HarmonicFitter.java,302,125,MathMutator,SURVIVED,no,high,3 min,"Due to mutation, unexpected values are assigned to the variables and this effect propogates to the return value(i.e array aOmega)"
+30299,org/apache/commons/math3/analysis/solvers/UnivariateSolverUtils.java,140,134,NegateConditionalsMutator,NO_COVERAGE,no,medium ,5 min,
+30435,org/apache/commons/math3/optimization/univariate/BracketFinder.java,271,5,ReturnValsMutator,NO_COVERAGE,no,high,1 min,return value mutated.
+30492,org/apache/commons/math3/optimization/univariate/BracketFinder.java,182,364,MathMutator,SURVIVED,no,high,10 min,"this effects variable in line 183 and propogates to 191, line 199, which is assigned to variable external to the function"
+30926,org/apache/commons/math3/optim/univariate/BracketFinder.java,165,256,MathMutator,SURVIVED,no,high,5 min,"change propogates from line 165 to 192 and 192 to 200, which has an external variable."
+31042,org/apache/commons/math3/ml/clustering/KMeansPlusPlusClusterer.java,481,72,ReturnValsMutator,NO_COVERAGE,no,high,1 min,return value mutated.
+31184,org/apache/commons/math3/analysis/interpolation/TricubicSplineInterpolator.java,162,725,MathMutator,SURVIVED,no,high,2 min,
+31422,org/apache/commons/math3/stat/clustering/KMeansPlusPlusClusterer.java,356,270,MathMutator,SURVIVED,no,medium ,15 min,behaviour change of object ‘resultSet’ might be observed
+31798,org/apache/commons/math3/util/MathUtils.java,196,19,NegateConditionalsMutator,SURVIVED,no,high,1 min,since variables sign and magnitude are external to the function
+31805,org/apache/commons/math3/util/MathUtils.java,121,10,ConditionalsBoundaryMutator,SURVIVED,no,high,2 min,returns unexpected value.
+33790,org/apache/commons/math3/analysis/integration/gauss/HermiteRuleFactory.java,114,214,MathMutator,SURVIVED,no,high,2 min,"due to mutation, the effect propogates up to the return value of the function."
+35113,org/apache/commons/math3/ode/sampling/NordsieckStepInterpolator.java,243,76,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+35185,org/apache/commons/math3/ode/nonstiff/AdamsMoultonIntegrator.java,275,272,ConditionalsBoundaryMutator,SURVIVED,no,medium ,5 min,can be verified by checking the call to the method in line 279
+35234,org/apache/commons/math3/ode/nonstiff/AdamsMoultonIntegrator.java,297,373,VoidMethodCallMutator,SURVIVED,no,high,1 min,
+36471,org/apache/commons/math3/fitting/GaussianFitter.java,302,57,ReturnValsMutator,NO_COVERAGE,no,high,2 min,return value mutated.
+36784,org/apache/commons/math3/distribution/ZipfDistribution.java,446,15,ConditionalsBoundaryMutator,SURVIVED,no,high,2 min,variable t can be calculated by using the external variable x.
+37264,org/apache/commons/math3/analysis/solvers/BaseSecantSolver.java,217,207,ReturnValsMutator,SURVIVED,no,medium ,10 min,
+38724,org/apache/commons/math3/distribution/LaplaceDistribution.java,120,42,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+39480,org/apache/commons/math3/geometry/euclidean/twod/hull/MonotoneChain.java,163,114,ConditionalsBoundaryMutator,SURVIVED,no,low,15 min,"From > to >= , the hull list is updated with the point at unintended index."
+39481,org/apache/commons/math3/geometry/euclidean/twod/hull/MonotoneChain.java,166,137,ConditionalsBoundaryMutator,SURVIVED,yes,low,15 min,
+40470,org/apache/commons/math3/distribution/GumbelDistribution.java,149,4,ReturnValsMutator,SURVIVED,no,high,1 min,return value mutated.
+40490,org/apache/commons/math3/stat/descriptive/SynchronizedSummaryStatistics.java,341,11,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+40648,org/apache/commons/math3/ode/nonstiff/RungeKuttaStepInterpolator.java,194,88,ConditionalsBoundaryMutator,SURVIVED,no,high,1 min,yDotk is external and is assigned with null at K position instead of new double[0].
+40777,org/apache/commons/math3/fraction/BigFractionFormat.java,211,10,VoidMethodCallMutator,SURVIVED,no,high,1 min,
+40792,org/apache/commons/math3/fraction/BigFractionFormat.java,281,65,VoidMethodCallMutator,SURVIVED,no,high,1 min,
+41817,org/apache/commons/math3/ode/MultistepFieldIntegrator.java,232,10,VoidMethodCallMutator,SURVIVED,no,high,1 min,
+42042,org/apache/commons/math3/random/RandomDataImpl.java,446,8,ReturnValsMutator,NO_COVERAGE,no,high,1 min,return value mutated.
+42843,org/apache/commons/math3/ode/MultistepIntegrator.java,282,5,ReturnValsMutator,NO_COVERAGE,no,high,1 min,return value mutated.
+44150,org/apache/commons/math3/stat/descriptive/moment/VectorialMean.java,86,22,ReturnValsMutator,NO_COVERAGE,no,high,1 min,return value mutated.
+45081,org/apache/commons/math3/analysis/interpolation/TricubicInterpolator.java,130,9,ConditionalsBoundaryMutator,NO_COVERAGE,no,high,1 min,
+46108,org/apache/commons/math3/ml/neuralnet/twod/util/HitHistogram.java,68,74,MathMutator,NO_COVERAGE,no,high,1 min,hit array is assigned with unexpectd values.
+46176,org/apache/commons/math3/ml/neuralnet/twod/util/QuantizationError.java,65,104,NegateConditionalsMutator,NO_COVERAGE,no,high,2 min,Loop might not execute
+46295,org/apache/commons/math3/analysis/interpolation/PiecewiseBicubicSplineInterpolator.java,57,43,VoidMethodCallMutator,SURVIVED,no,high,1 min,
+47534,org/apache/commons/math3/stat/descriptive/rank/Median.java,94,11,ReturnValsMutator,NO_COVERAGE,no,high,1 min,returns null.
+47539,org/apache/commons/math3/analysis/function/Log.java,43,6,ReturnValsMutator,NO_COVERAGE,no,high,1 min,

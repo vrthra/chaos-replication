@@ -1,0 +1,101 @@
+Mutant,File,Line,Index,Mutator,Status,Equivalent,Confidence,Time,Comments
+35,org/apache/commons/net/ftp/FTPClient.java,970,37,NegateConditionalsMutator,NO_COVERAGE,no,high,5 min,I can observe changes from external variables inside loop
+44,org/apache/commons/net/ftp/FTPClient.java,864,166,ConditionalsBoundaryMutator,NO_COVERAGE,no,high,3 min,"When =0, next line 865 throws exception"
+67,org/apache/commons/net/ftp/FTPClient.java,891,248,NegateConditionalsMutator,NO_COVERAGE,no,high,15 min,
+126,org/apache/commons/net/ftp/FTPClient.java,1982,11,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,
+153,org/apache/commons/net/ftp/FTPClient.java,1167,7,ReturnValsMutator,NO_COVERAGE,no,high,1 min,return value mutated
+155,org/apache/commons/net/ftp/FTPClient.java,2679,7,ReturnValsMutator,NO_COVERAGE,no,high,1 min,return value mutated
+176,org/apache/commons/net/ftp/FTPClient.java,2319,38,ReturnValsMutator,NO_COVERAGE,no,high,1 min,throws an exception
+184,org/apache/commons/net/ftp/FTPClient.java,1406,10,NegateConditionalsMutator,NO_COVERAGE,no,high,3 min,
+200,org/apache/commons/net/ftp/FTPClient.java,3749,6,MathMutator,NO_COVERAGE,no,high,1 min,returns unexpected return value
+211,org/apache/commons/net/ftp/FTPClient.java,3467,36,ReturnValsMutator,NO_COVERAGE,no,high,2 min,
+274,org/apache/commons/net/ftp/FTPClient.java,3445,33,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,method has some impl
+311,org/apache/commons/net/ftp/FTPClient.java,1131,63,ReturnValsMutator,NO_COVERAGE,no,high,1 min,return value mutated
+317,org/apache/commons/net/ftp/FTPClient.java,3558,27,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,method has some impl
+376,org/apache/commons/net/ftp/FTPClient.java,1563,21,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+449,org/apache/commons/net/util/Base64.java,577,246,MathMutator,NO_COVERAGE,no,high,2 min,
+520,org/apache/commons/net/util/Base64.java,496,327,MathMutator,SURVIVED,no,high,2 min,Buffer is assigned with unexpected value
+531,org/apache/commons/net/util/Base64.java,503,432,MathMutator,NO_COVERAGE,no,high,5 min,
+615,org/apache/commons/net/util/Base64.java,389,5,NegateConditionalsMutator,SURVIVED,no,high,5 min,since buffer is external to the function
+617,org/apache/commons/net/util/Base64.java,394,43,NegateConditionalsMutator,SURVIVED,no,high,5 min,
+626,org/apache/commons/net/util/Base64.java,421,8,NegateConditionalsMutator,SURVIVED,no,high,1 min,
+789,org/apache/commons/net/telnet/Telnet.java,801,12,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+887,org/apache/commons/net/nntp/NNTPClient.java,232,44,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+1072,org/apache/commons/net/nntp/NNTPClient.java,751,7,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+1102,examples/ftp/FTPClientExample.java,326,1069,ConditionalsBoundaryMutator,NO_COVERAGE,no,low,5 min,
+1135,examples/ftp/FTPClientExample.java,139,253,NegateConditionalsMutator,NO_COVERAGE,no,medium,5 min,it effects line 390
+1174,examples/ftp/FTPClientExample.java,291,959,NegateConditionalsMutator,NO_COVERAGE,no,medium,10 min,
+1426,org/apache/commons/net/ftp/FTP.java,370,158,NegateConditionalsMutator,NO_COVERAGE,no,high,15 min,changes can  be observed externall to the function
+1462,org/apache/commons/net/ftp/FTP.java,849,6,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+1574,org/apache/commons/net/telnet/TelnetInputStream.java,128,12,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+1666,org/apache/commons/net/ftp/FTPSClient.java,219,5,NegateConditionalsMutator,NO_COVERAGE,no,high,5 min,negated isImplicit also call execAuth() method.
+1672,org/apache/commons/net/ftp/FTPSClient.java,607,8,ReturnValsMutator,NO_COVERAGE,no,high,2 min,returns null
+1715,org/apache/commons/net/ftp/FTPSClient.java,521,4,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,
+1740,org/apache/commons/net/ftp/FTPSClient.java,362,6,NegateConditionalsMutator,NO_COVERAGE,no,high,5 min,
+1761,org/apache/commons/net/ftp/FTPSClient.java,571,18,NegateConditionalsMutator,NO_COVERAGE,no,high,2 min,
+1808,org/apache/commons/net/pop3/POP3Client.java,418,33,MathMutator,NO_COVERAGE,no,high,3 min,"it effects the size of array, can be observed with the return value"
+1829,org/apache/commons/net/pop3/POP3Client.java,486,26,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+1839,org/apache/commons/net/pop3/POP3Client.java,222,65,ConditionalsBoundaryMutator,NO_COVERAGE,no,medium,15 min,
+1852,org/apache/commons/net/pop3/POP3Client.java,264,31,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+1891,examples/mail/IMAPExportMbox.java,122,86,IncrementsMutator,NO_COVERAGE,no,high,2 min,"the change can be observed from lines 262,265"
+1904,examples/mail/IMAPExportMbox.java,116,38,NegateConditionalsMutator,NO_COVERAGE,no,high,3 min,< to >= throws an out of bound execption
+1905,examples/mail/IMAPExportMbox.java,117,46,NegateConditionalsMutator,NO_COVERAGE,no,high,15 min,With mutation it satisfies all the conditions of elseif stmt and change propogates to line 232 and then further.
+1947,examples/mail/IMAPExportMbox.java,147,199,VoidMethodCallMutator,NO_COVERAGE,no,high,2 min,
+1984,org/apache/commons/net/nntp/Threader.java,171,194,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,NP exception
+2010,org/apache/commons/net/nntp/Threader.java,360,161,NegateConditionalsMutator,NO_COVERAGE,no,low,15 min,
+2169,org/apache/commons/net/nntp/Article.java,177,17,IncrementsMutator,NO_COVERAGE,no,high,1 min,
+2187,org/apache/commons/net/nntp/Article.java,105,135,ConditionalsBoundaryMutator,NO_COVERAGE,no,high,5 min,
+2214,org/apache/commons/net/nntp/Article.java,92,62,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,mutant  similar to 2216
+2216,org/apache/commons/net/nntp/Article.java,93,80,NegateConditionalsMutator,NO_COVERAGE,no,low,15 min,"With mutation, if condition might not satisfy and it doesn’t update start variable in side loop, this propogates to loop in line 129"
+2278,org/apache/commons/net/ftp/parser/MVSFTPEntryParser.java,374,62,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+2305,org/apache/commons/net/ftp/parser/MVSFTPEntryParser.java,521,106,NegateConditionalsMutator,NO_COVERAGE,no,high,5 min,
+2365,examples/telnet/TelnetClientExample.java,187,478,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+2375,examples/telnet/TelnetClientExample.java,229,628,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+2585,examples/ftp/TFTPExample.java,213,16,NegateConditionalsMutator,NO_COVERAGE,no,high,3 min,
+2653,org/apache/commons/net/ftp/parser/MLSxEntryParser.java,165,335,NegateConditionalsMutator,SURVIVED,no,high,3 min,
+2898,org/apache/commons/net/nntp/NNTP.java,344,5,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+2944,examples/mail/IMAPImportMbox.java,119,298,IncrementsMutator,NO_COVERAGE,no,high,2 min,change in ouput can be observed from line 146
+2980,examples/mail/IMAPImportMbox.java,162,59,NegateConditionalsMutator,NO_COVERAGE,no,high,10 min,
+2997,org/apache/commons/net/smtp/SMTP.java,224,105,NegateConditionalsMutator,NO_COVERAGE,no,high,5 min,Index out of bound exception
+3002,org/apache/commons/net/smtp/SMTP.java,250,164,NegateConditionalsMutator,NO_COVERAGE,no,high,2 min,
+3104,org/apache/commons/net/ntp/TimeInfo.java,208,195,ConditionalsBoundaryMutator,SURVIVED,no,medium,20 min,
+3208,org/apache/commons/net/imap/IMAPClient.java,254,24,NegateConditionalsMutator,NO_COVERAGE,no,high,3 min,NP exception
+3295,examples/ftp/ServerToServerFTP.java,213,377,VoidMethodCallMutator,NO_COVERAGE,no,high,2 min,
+3349,org/apache/commons/net/io/DotTerminatedMessageReader.java,212,12,NegateConditionalsMutator,NO_COVERAGE,no,high,5 min,eof is external to the function
+3513,org/apache/commons/net/ftp/FTPFile.java,529,57,NegateConditionalsMutator,NO_COVERAGE,no,high,3 min,
+3514,org/apache/commons/net/ftp/FTPFile.java,534,77,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+3516,org/apache/commons/net/ftp/FTPFile.java,459,5,NegateConditionalsMutator,NO_COVERAGE,no,high,2 min,
+3531,org/apache/commons/net/smtp/SMTPClient.java,176,6,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+3601,examples/mail/POP3Mail.java,141,301,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+3704,examples/mail/IMAPExportMbox.java,375,88,MathMutator,NO_COVERAGE,no,high,1 min,
+3906,org/apache/commons/net/io/FromNetASCIIInputStream.java,218,26,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+3975,org/apache/commons/net/tftp/TFTPDataPacket.java,88,27,ConditionalsBoundaryMutator,SURVIVED,yes,high,5 min,
+4017,org/apache/commons/net/pop3/POP3SClient.java,356,5,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+4039,org/apache/commons/net/imap/AuthenticatingIMAPClient.java,234,48,MathMutator,NO_COVERAGE,no,high,2 min,
+4041,org/apache/commons/net/imap/AuthenticatingIMAPClient.java,236,61,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+4054,org/apache/commons/net/imap/AuthenticatingIMAPClient.java,213,254,NegateConditionalsMutator,NO_COVERAGE,no,high,2 min,
+4674,org/apache/commons/net/time/TimeUDPClient.java,83,30,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+4679,org/apache/commons/net/nntp/NNTPReply.java,87,8,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,
+4682,org/apache/commons/net/nntp/NNTPReply.java,153,8,ConditionalsBoundaryMutator,NO_COVERAGE,no,high,2 min,reply is external to the function
+4784,org/apache/commons/net/DefaultSocketFactory.java,149,35,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+4795,org/apache/commons/net/DefaultSocketFactory.java,173,22,VoidMethodCallMutator,NO_COVERAGE,no,high,2 min,
+4896,examples/Main.java,82,150,NegateConditionalsMutator,NO_COVERAGE,no,high,15 min,
+4906,examples/Main.java,90,197,VoidMethodCallMutator,NO_COVERAGE,no,high,2 min,
+4984,org/apache/commons/net/imap/IMAPReply.java,171,13,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+5030,examples/unix/daytime.java,44,11,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+5049,examples/unix/rdate.java,66,6,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,
+5104,org/apache/commons/net/tftp/TFTPAckPacket.java,137,54,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+5156,examples/unix/rexec.java,101,143,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+5241,org/apache/commons/net/ftp/parser/VMSVersioningFTPEntryParser.java,81,9,VoidMethodCallMutator,SURVIVED,no,high,1 min,
+5276,examples/unix/fwhois.java,66,97,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+5284,org/apache/commons/net/nntp/ReplyIterator.java,49,9,NegateConditionalsMutator,NO_COVERAGE,no,high,2 min,
+5291,org/apache/commons/net/nntp/ReplyIterator.java,70,5,NegateConditionalsMutator,NO_COVERAGE,no,high,2 min,NP exception
+5322,org/apache/commons/net/finger/FingerClient.java,195,7,ReturnValsMutator,NO_COVERAGE,no,high,1 min,returns null
+5401,org/apache/commons/net/ftp/FTPSSocketFactory.java,88,11,ReturnValsMutator,NO_COVERAGE,no,high,3 min,
+5490,org/apache/commons/net/chargen/CharGenUDPClient.java,94,6,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+5499,examples/cidr/SubnetUtilsExample.java,68,313,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+5505,org/apache/commons/net/telnet/TelnetCommand.java,125,8,NegateConditionalsMutator,NO_COVERAGE,no,high,2 min,returns unexpected return value
+5513,org/apache/commons/net/tftp/TFTPPacket.java,259,20,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+5532,examples/mail/Utils.java,67,103,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+5572,org/apache/commons/net/util/KeyManagerUtils.java,225,11,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+5673,examples/mail/IMAPExportMbox.java,226,11,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,

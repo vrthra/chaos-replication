@@ -1,0 +1,101 @@
+Mutant,File,Line,Index,Mutator,Status,Equivalent,Confidence,Time,Comments
+32,org/apache/commons/io/FileUtils.java,730,15,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+147,org/apache/commons/io/FileUtils.java,1128,84,ConditionalsBoundaryMutator,SURVIVED,yes,medium,2 min,
+275,org/apache/commons/io/FileUtils.java,360,63,NegateConditionalsMutator,SURVIVED,no,high,1 min,
+306,org/apache/commons/io/FileUtils.java,2620,54,ConditionalsBoundaryMutator,SURVIVED,no,high,1 min,
+311,org/apache/commons/io/FileUtils.java,2612,13,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+317,org/apache/commons/io/FileUtils.java,2671,13,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+354,org/apache/commons/io/FileUtils.java,1790,111,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+373,org/apache/commons/io/FileUtils.java,2352,8,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+400,org/apache/commons/io/FilenameUtils.java,544,32,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+440,org/apache/commons/io/FilenameUtils.java,416,329,ConditionalsBoundaryMutator,SURVIVED,no,medium,1 min,
+576,org/apache/commons/io/FilenameUtils.java,664,158,ConditionalsBoundaryMutator,SURVIVED,no,high,1 min,
+656,org/apache/commons/io/FilenameUtils.java,1217,13,VoidMethodCallMutator,SURVIVED,no,high,1 min,
+832,org/apache/commons/io/IOUtils.java,2590,6,ConditionalsBoundaryMutator,SURVIVED,yes,high,5 min,nothing happens in skipfully/skip for inputOffset=0!
+846,org/apache/commons/io/IOUtils.java,2594,22,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+886,org/apache/commons/io/IOUtils.java,3203,8,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+888,org/apache/commons/io/IOUtils.java,3163,8,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+906,org/apache/commons/io/IOUtils.java,2849,60,ConditionalsBoundaryMutator,SURVIVED,yes,high,2 min,if n==0 then nothing will be substracted from remain and while loop is over anways
+943,org/apache/commons/io/IOUtils.java,618,5,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,
+1022,org/apache/commons/io/IOUtils.java,1708,18,ConditionalsBoundaryMutator,NO_COVERAGE,yes,low,2 min,"output.write(data  offset  chunk), -> depends on what happens when chunk is 0"
+1025,org/apache/commons/io/IOUtils.java,1705,4,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,
+1026,org/apache/commons/io/IOUtils.java,1708,18,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,
+1028,org/apache/commons/io/IOUtils.java,1815,18,ConditionalsBoundaryMutator,NO_COVERAGE,yes,low,1 min,"output.write(data  offset  chunk), -> depends on what happens when chunk is 0"
+1064,org/apache/commons/io/EndianUtils.java,170,6,MathMutator,SURVIVED,no,high,1 min,
+1138,org/apache/commons/io/EndianUtils.java,144,6,MathMutator,SURVIVED,no,high,1 min,
+1148,org/apache/commons/io/EndianUtils.java,67,5,MathMutator,SURVIVED,no,high,1 min,
+1292,org/apache/commons/io/input/XmlStreamReader.java,270,50,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,
+1368,org/apache/commons/io/input/XmlStreamReader.java,683,25,MathMutator,SURVIVED,no,high,1 min,
+1374,org/apache/commons/io/input/XmlStreamReader.java,658,18,ConditionalsBoundaryMutator,SURVIVED,no,high,1 min,substring(0 0) returns empty string
+1380,org/apache/commons/io/input/XmlStreamReader.java,715,54,ConditionalsBoundaryMutator,SURVIVED,no,high,1 min,
+1422,org/apache/commons/io/FileSystemUtils.java,284,57,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+1437,org/apache/commons/io/FileSystemUtils.java,322,85,ConditionalsBoundaryMutator,SURVIVED,no,high,1 min,
+1452,org/apache/commons/io/FileSystemUtils.java,360,52,ConditionalsBoundaryMutator,SURVIVED,no,high,1 min,
+1453,org/apache/commons/io/FileSystemUtils.java,370,90,ConditionalsBoundaryMutator,SURVIVED,no,high,1 min,
+1482,org/apache/commons/io/FileSystemUtils.java,532,164,VoidMethodCallMutator,SURVIVED,no,high,1 min,close()
+1484,org/apache/commons/io/FileSystemUtils.java,539,184,VoidMethodCallMutator,SURVIVED,no,high,1 min,close()
+1488,org/apache/commons/io/FileSystemUtils.java,557,276,VoidMethodCallMutator,SURVIVED,no,high,1 min,"IOUtils.closeQuietly(err),"
+1491,org/apache/commons/io/output/ByteArrayOutputStream.java,92,20,ConditionalsBoundaryMutator,SURVIVED,no,high,1 min,
+1520,org/apache/commons/io/output/ByteArrayOutputStream.java,340,15,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+1610,org/apache/commons/io/monitor/FileAlterationObserver.java,372,11,ConditionalsBoundaryMutator,SURVIVED,yes,high,1 min,because FileEntry.EMPTY_ENTRIES = new FileEntry[0]
+1622,org/apache/commons/io/monitor/FileAlterationObserver.java,279,25,VoidMethodCallMutator,SURVIVED,no,high,1 min,setter
+1643,org/apache/commons/io/input/BOMInputStream.java,234,94,ConditionalsBoundaryMutator,SURVIVED,no,high,1 min,
+1706,org/apache/commons/io/input/Tailer.java,359,8,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+1757,org/apache/commons/io/input/Tailer.java,465,265,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+1760,org/apache/commons/io/input/Tailer.java,478,317,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+1816,org/apache/commons/io/filefilter/FileFilterUtils.java,406,8,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+1861,org/apache/commons/io/input/ReversedLinesFileReader.java,285,39,ConditionalsBoundaryMutator,SURVIVED,no,high,1 min,
+1864,org/apache/commons/io/input/ReversedLinesFileReader.java,313,139,ConditionalsBoundaryMutator,SURVIVED,no,high,1 min,
+1936,org/apache/commons/io/input/CharSequenceInputStream.java,187,14,ConditionalsBoundaryMutator,SURVIVED,no,medium,1 min,
+1953,org/apache/commons/io/input/NullInputStream.java,117,5,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+1956,org/apache/commons/io/input/NullInputStream.java,307,4,ReturnValsMutator,NO_COVERAGE,no,medium,1 min,overridable method
+2003,org/apache/commons/io/HexDump.java,90,77,ConditionalsBoundaryMutator,SURVIVED,yes,high,1 min,
+2032,org/apache/commons/io/output/ProxyWriter.java,54,5,VoidMethodCallMutator,SURVIVED,no,low,1 min,beforeWrite: empty impl.?
+2057,org/apache/commons/io/output/ProxyWriter.java,178,30,VoidMethodCallMutator,SURVIVED,no,low,1 min,afterWrite: empty impl.?
+2073,org/apache/commons/io/input/BoundedInputStream.java,151,13,ConditionalsBoundaryMutator,NO_COVERAGE,no,medium,1 min,
+2079,org/apache/commons/io/input/BoundedInputStream.java,174,10,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,close()
+2082,org/apache/commons/io/input/BoundedInputStream.java,204,6,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+2103,org/apache/commons/io/input/BoundedInputStream.java,184,5,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,in.reset()
+2105,org/apache/commons/io/input/BoundedInputStream.java,140,13,MathMutator,NO_COVERAGE,no,high,1 min,
+2106,org/apache/commons/io/input/BoundedInputStream.java,142,35,MathMutator,NO_COVERAGE,no,high,1 min,
+2109,org/apache/commons/io/input/BoundedInputStream.java,163,6,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+2116,org/apache/commons/io/input/NullReader.java,290,4,ReturnValsMutator,NO_COVERAGE,no,medium,1 min,overridable method
+2153,org/apache/commons/io/input/ProxyReader.java,58,17,NegateConditionalsMutator,NO_COVERAGE,no,low,1 min,afterRead: empty impl.?
+2156,org/apache/commons/io/input/ProxyReader.java,56,5,VoidMethodCallMutator,NO_COVERAGE,no,low,1 min,beforeRead: empty impl.?
+2158,org/apache/commons/io/input/ProxyReader.java,61,39,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,handleException()
+2166,org/apache/commons/io/input/ProxyReader.java,78,31,ReturnValsMutator,SURVIVED,no,high,1 min,
+2175,org/apache/commons/io/input/ProxyReader.java,101,33,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,handleException()
+2182,org/apache/commons/io/input/ProxyReader.java,138,21,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+2202,org/apache/commons/io/input/ReaderInputStream.java,230,21,MathMutator,SURVIVED,no,high,1 min,
+2246,org/apache/commons/io/input/CharSequenceReader.java,142,6,ConditionalsBoundaryMutator,SURVIVED,no,high,1 min,
+2272,org/apache/commons/io/input/ObservableInputStream.java,145,52,ConditionalsBoundaryMutator,SURVIVED,yes,medium,1 min,depends on what happens when invoking observer with length 0
+2286,org/apache/commons/io/input/ObservableInputStream.java,163,48,VoidMethodCallMutator,SURVIVED,no,high,1 min,finishing observer
+2299,org/apache/commons/io/output/XmlStreamWriter.java,157,24,MathMutator,NO_COVERAGE,no,high,1 min,
+2302,org/apache/commons/io/output/XmlStreamWriter.java,195,175,MathMutator,NO_COVERAGE,no,high,1 min,
+2313,org/apache/commons/io/output/XmlStreamWriter.java,195,176,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,writer.write()
+2340,org/apache/commons/io/DirectoryWalker.java,356,45,VoidMethodCallMutator,SURVIVED,no,high,1 min,
+2398,org/apache/commons/io/input/ProxyInputStream.java,83,44,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+2513,org/apache/commons/io/filefilter/AndFileFilter.java,163,39,ConditionalsBoundaryMutator,SURVIVED,no,high,1 min,
+2527,org/apache/commons/io/monitor/FileEntry.java,146,17,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+2589,org/apache/commons/io/input/UnixLineEndingInputStream.java,60,29,ReturnValsMutator,SURVIVED,no,high,1 min,
+2621,org/apache/commons/io/output/ThresholdingOutputStream.java,142,5,VoidMethodCallMutator,SURVIVED,no,high,1 min,flush()
+2669,org/apache/commons/io/filefilter/OrFileFilter.java,105,7,ReturnValsMutator,SURVIVED,no,high,1 min,
+2693,org/apache/commons/io/output/LockableFileWriter.java,303,6,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,out.write()
+2713,org/apache/commons/io/LineIterator.java,109,81,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+2880,org/apache/commons/io/output/ProxyOutputStream.java,72,29,VoidMethodCallMutator,SURVIVED,no,low,1 min,afterRead: empty impl.?
+2891,org/apache/commons/io/CopyUtils.java,320,18,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,flush()
+2928,org/apache/commons/io/ThreadMonitor.java,71,32,VoidMethodCallMutator,SURVIVED,no,high,1 min,setter
+2953,org/apache/commons/io/filefilter/WildcardFilter.java,131,9,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+3027,org/apache/commons/io/comparator/CompositeFileComparator.java,114,34,NegateConditionalsMutator,SURVIVED,no,medium,1 min,if delegates[i] is ' ' then it's equal. But probably not in general
+3029,org/apache/commons/io/filefilter/SizeFileFilter.java,71,10,ConditionalsBoundaryMutator,SURVIVED,no,high,1 min,
+3060,org/apache/commons/io/output/DemuxOutputStream.java,66,12,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,
+3061,org/apache/commons/io/output/DemuxOutputStream.java,67,16,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,flush()
+3082,org/apache/commons/io/input/DemuxInputStream.java,57,12,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,NullPointerException
+3083,org/apache/commons/io/input/DemuxInputStream.java,59,16,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,close()
+3088,org/apache/commons/io/FileCleaningTracker.java,211,20,VoidMethodCallMutator,SURVIVED,no,high,1 min,
+3094,org/apache/commons/io/input/BOMInputStream.java,146,15,ConditionalsBoundaryMutator,SURVIVED,no,high,1 min,
+3136,org/apache/commons/io/FileCleaner.java,145,4,VoidMethodCallMutator,NO_COVERAGE,no,low,2 min,no impl of FileCleaningTracker exitWhenFinished() method found?
+3150,org/apache/commons/io/input/ClassLoaderObjectInputStream.java,71,20,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+3164,org/apache/commons/io/comparator/DirectoryFileComparator.java,76,9,ReturnValsMutator,SURVIVED,no,high,1 min,
+3174,org/apache/commons/io/filefilter/AgeFileFilter.java,155,5,NegateConditionalsMutator,SURVIVED,no,high,1 min,
+3197,org/apache/commons/io/output/NullWriter.java,50,4,ReturnValsMutator,NO_COVERAGE,no,high,1 min,

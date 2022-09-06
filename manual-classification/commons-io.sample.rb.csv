@@ -1,0 +1,101 @@
+Mutant,File,Line,Index,Mutator,Status,Equivalent,Confidence,Time,Comments
+32,org/apache/commons/io/FileUtils.java,730,15,ReturnValsMutator,NO_COVERAGE,no,high,2 min,since file1 and 2 are external to the function
+147,org/apache/commons/io/FileUtils.java,1128,84,ConditionalsBoundaryMutator,SURVIVED,yes,medium,15 min,"when pos==size, then the count is 0, so bytes copied =0, then break the loop."
+275,org/apache/commons/io/FileUtils.java,360,63,NegateConditionalsMutator,SURVIVED,no,medium,5 min,
+306,org/apache/commons/io/FileUtils.java,2620,54,ConditionalsBoundaryMutator,SURVIVED,no,medium,15 min,In case when the size of the first file is zero.
+311,org/apache/commons/io/FileUtils.java,2612,13,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+317,org/apache/commons/io/FileUtils.java,2671,13,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+354,org/apache/commons/io/FileUtils.java,1790,111,ReturnValsMutator,NO_COVERAGE,no,high,3 min,
+373,org/apache/commons/io/FileUtils.java,2352,8,VoidMethodCallMutator,NO_COVERAGE,no,high,5 min,method has some implementation
+400,org/apache/commons/io/FilenameUtils.java,544,32,ReturnValsMutator,NO_COVERAGE,no,high,2 min,
+440,org/apache/commons/io/FilenameUtils.java,416,329,ConditionalsBoundaryMutator,SURVIVED,no,high,5 min,change can be observed from line 419
+576,org/apache/commons/io/FilenameUtils.java,664,158,ConditionalsBoundaryMutator,SURVIVED,no,high,2 min,"condition for ch0==A, will not be executed."
+656,org/apache/commons/io/FilenameUtils.java,1217,13,VoidMethodCallMutator,SURVIVED,no,high,10 min,The method has some impl.
+832,org/apache/commons/io/IOUtils.java,2590,6,ConditionalsBoundaryMutator,SURVIVED,no,high,2 min,"since inputOffset is external to the function, can be unitested, one can check if any bytes have been read from the input stream"
+846,org/apache/commons/io/IOUtils.java,2594,22,ReturnValsMutator,NO_COVERAGE,no,high,1 min,return value mutated
+886,org/apache/commons/io/IOUtils.java,3203,8,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+888,org/apache/commons/io/IOUtils.java,3163,8,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+906,org/apache/commons/io/IOUtils.java,2849,60,ConditionalsBoundaryMutator,SURVIVED,yes,medium,10 min,"When n=0, reamin = remain-0;"
+943,org/apache/commons/io/IOUtils.java,618,5,NegateConditionalsMutator,NO_COVERAGE,no,high,2 min,
+1022,org/apache/commons/io/IOUtils.java,1708,18,ConditionalsBoundaryMutator,NO_COVERAGE,yes,medium,10 min,"when bytes ==0, chunk=0, then in 1710 nothing can be observed."
+1025,org/apache/commons/io/IOUtils.java,1705,4,NegateConditionalsMutator,NO_COVERAGE,no,high,3 min,"the data is external to the function, the output 1710 can be observed"
+1026,org/apache/commons/io/IOUtils.java,1708,18,NegateConditionalsMutator,NO_COVERAGE,no,high,15 min,Changes  observed from line 1710
+1028,org/apache/commons/io/IOUtils.java,1815,18,ConditionalsBoundaryMutator,NO_COVERAGE,yes,low,10 min,similar to mutant 1022
+1064,org/apache/commons/io/EndianUtils.java,170,6,MathMutator,SURVIVED,no,high,1 min,Can result in unexpected return value
+1138,org/apache/commons/io/EndianUtils.java,144,6,MathMutator,SURVIVED,no,high,1 min,Can result in unexpected return value
+1148,org/apache/commons/io/EndianUtils.java,67,5,MathMutator,SURVIVED,no,high,1 min,Can result in unexpected return value
+1292,org/apache/commons/io/input/XmlStreamReader.java,270,50,NegateConditionalsMutator,NO_COVERAGE,no,high,10 min,"unexpected ‘encoding’, which effects line 275"
+1368,org/apache/commons/io/input/XmlStreamReader.java,683,25,MathMutator,SURVIVED,no,high,2 min,"with mathmutator, different substrings are choose"
+1374,org/apache/commons/io/input/XmlStreamReader.java,658,18,ConditionalsBoundaryMutator,SURVIVED,no,high,15 min,"when i==0, then ‘mime’ is not null."
+1380,org/apache/commons/io/input/XmlStreamReader.java,715,54,ConditionalsBoundaryMutator,SURVIVED,no,low,15 min,"when offset==buffersize, then for one more iteration the variables inside loop are updated"
+1422,org/apache/commons/io/FileSystemUtils.java,284,57,ReturnValsMutator,NO_COVERAGE,no,high,2 min,
+1437,org/apache/commons/io/FileSystemUtils.java,322,85,ConditionalsBoundaryMutator,SURVIVED,no,medium,2 min,in line 323 get(0) will not be executed.
+1452,org/apache/commons/io/FileSystemUtils.java,360,52,ConditionalsBoundaryMutator,SURVIVED,no,high,2 min,CharAt(0) will not be verified in line 361.
+1453,org/apache/commons/io/FileSystemUtils.java,370,90,ConditionalsBoundaryMutator,SURVIVED,no,high,15 min,the loop can break at any time since line is external to the function
+1482,org/apache/commons/io/FileSystemUtils.java,532,164,VoidMethodCallMutator,SURVIVED,no,high,2 min,
+1484,org/apache/commons/io/FileSystemUtils.java,539,184,VoidMethodCallMutator,SURVIVED,no,high,2 min,
+1488,org/apache/commons/io/FileSystemUtils.java,557,276,VoidMethodCallMutator,SURVIVED,no,high,1 min,method has some implementation
+1491,org/apache/commons/io/output/ByteArrayOutputStream.java,92,20,ConditionalsBoundaryMutator,SURVIVED,no,high,2 min,size is external to the function
+1520,org/apache/commons/io/output/ByteArrayOutputStream.java,340,15,ReturnValsMutator,NO_COVERAGE,no,high,1 min,Count is external to the function
+1610,org/apache/commons/io/monitor/FileAlterationObserver.java,372,11,ConditionalsBoundaryMutator,SURVIVED,no,medium,2 min,The effect propogates to the return value of the function
+1622,org/apache/commons/io/monitor/FileAlterationObserver.java,279,25,VoidMethodCallMutator,SURVIVED,no,high,1 min,
+1643,org/apache/commons/io/input/BOMInputStream.java,234,94,ConditionalsBoundaryMutator,SURVIVED,no,medium,3 min,since the variables used are external to the function.
+1706,org/apache/commons/io/input/Tailer.java,359,8,ReturnValsMutator,NO_COVERAGE,no,high,2 min,returns null
+1757,org/apache/commons/io/input/Tailer.java,465,265,VoidMethodCallMutator,NO_COVERAGE,no,high,2 min,similar to mutant 1760
+1760,org/apache/commons/io/input/Tailer.java,478,317,VoidMethodCallMutator,NO_COVERAGE,no,high,3 min,
+1816,org/apache/commons/io/filefilter/FileFilterUtils.java,406,8,ReturnValsMutator,NO_COVERAGE,no,high,2 min,returns null
+1861,org/apache/commons/io/input/ReversedLinesFileReader.java,285,39,ConditionalsBoundaryMutator,SURVIVED,no,low,10 min,"since I, avoidNewlineSplitBufferSize are external to the function"
+1864,org/apache/commons/io/input/ReversedLinesFileReader.java,313,139,ConditionalsBoundaryMutator,SURVIVED,no,high,15 min,
+1936,org/apache/commons/io/input/CharSequenceInputStream.java,187,14,ConditionalsBoundaryMutator,SURVIVED,no,high,2 min,"n is external to the function, can be unittested."
+1953,org/apache/commons/io/input/NullInputStream.java,117,5,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+1956,org/apache/commons/io/input/NullInputStream.java,307,4,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+2003,org/apache/commons/io/HexDump.java,90,77,ConditionalsBoundaryMutator,SURVIVED,yes,medium,5 min,"When ==16 then it is updated again with same value, which shows no behavioural difference"
+2032,org/apache/commons/io/output/ProxyWriter.java,54,5,VoidMethodCallMutator,SURVIVED,no,high,2 min,I can also add some more functionality to the subclasses.
+2057,org/apache/commons/io/output/ProxyWriter.java,178,30,VoidMethodCallMutator,SURVIVED,no,low,2 min,The method can be overridden and added some functionality
+2073,org/apache/commons/io/input/BoundedInputStream.java,151,13,ConditionalsBoundaryMutator,NO_COVERAGE,no,high,2 min,since max and pos are external to the function.
+2079,org/apache/commons/io/input/BoundedInputStream.java,174,10,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,I can extend the class and write some implementation on function
+2082,org/apache/commons/io/input/BoundedInputStream.java,204,6,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+2103,org/apache/commons/io/input/BoundedInputStream.java,184,5,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+2105,org/apache/commons/io/input/BoundedInputStream.java,140,13,MathMutator,NO_COVERAGE,no,high,2 min,The effect propogates to the return value of the function
+2106,org/apache/commons/io/input/BoundedInputStream.java,142,35,MathMutator,NO_COVERAGE,no,high,1 min,Pos is assigned with unintended values and pos is external to the function
+2109,org/apache/commons/io/input/BoundedInputStream.java,163,6,ReturnValsMutator,NO_COVERAGE,no,high,2 min,return value mutated
+2116,org/apache/commons/io/input/NullReader.java,290,4,ReturnValsMutator,NO_COVERAGE,no,high,2 min,
+2153,org/apache/commons/io/input/ProxyReader.java,58,17,NegateConditionalsMutator,NO_COVERAGE,no,low,3 min,similar to mutant 2156
+2156,org/apache/commons/io/input/ProxyReader.java,56,5,VoidMethodCallMutator,NO_COVERAGE,no,low,15 min,Implementation can be added by overriding this method
+2158,org/apache/commons/io/input/ProxyReader.java,61,39,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+2166,org/apache/commons/io/input/ProxyReader.java,78,31,ReturnValsMutator,SURVIVED,no,high,2 min,return value mutated
+2175,org/apache/commons/io/input/ProxyReader.java,101,33,VoidMethodCallMutator,NO_COVERAGE,no,high,2 min,
+2182,org/apache/commons/io/input/ProxyReader.java,138,21,ReturnValsMutator,NO_COVERAGE,no,high,2 min,
+2202,org/apache/commons/io/input/ReaderInputStream.java,230,21,MathMutator,SURVIVED,no,high,3 min,"since b, off, len are external to the function."
+2246,org/apache/commons/io/input/CharSequenceReader.java,142,6,ConditionalsBoundaryMutator,SURVIVED,no,high,2 min,
+2272,org/apache/commons/io/input/ObservableInputStream.java,145,52,ConditionalsBoundaryMutator,SURVIVED,no,high,10 min,
+2286,org/apache/commons/io/input/ObservableInputStream.java,163,48,VoidMethodCallMutator,SURVIVED,no,high,1 min,
+2299,org/apache/commons/io/output/XmlStreamWriter.java,157,24,MathMutator,NO_COVERAGE,no,high,2 min,Different size value is propogated further in the function.
+2302,org/apache/commons/io/output/XmlStreamWriter.java,195,175,MathMutator,NO_COVERAGE,no,high,2 min,can result in different write than expected.
+2313,org/apache/commons/io/output/XmlStreamWriter.java,195,176,VoidMethodCallMutator,NO_COVERAGE,no,high,2 min,
+2340,org/apache/commons/io/DirectoryWalker.java,356,45,VoidMethodCallMutator,SURVIVED,no,high,2 min,method has some implementation
+2398,org/apache/commons/io/input/ProxyInputStream.java,83,44,ReturnValsMutator,NO_COVERAGE,no,high,2 min,
+2513,org/apache/commons/io/filefilter/AndFileFilter.java,163,39,ConditionalsBoundaryMutator,SURVIVED,no,medium,10 min,"in line 166, get(0) is also called, which might be appended in line 167"
+2527,org/apache/commons/io/monitor/FileEntry.java,146,17,ReturnValsMutator,NO_COVERAGE,no,high,2 min,
+2589,org/apache/commons/io/input/UnixLineEndingInputStream.java,60,29,ReturnValsMutator,SURVIVED,no,high,2 min,
+2621,org/apache/commons/io/output/ThresholdingOutputStream.java,142,5,VoidMethodCallMutator,SURVIVED,no,high,2 min,I can add some functionality by overriding the method
+2669,org/apache/commons/io/filefilter/OrFileFilter.java,105,7,ReturnValsMutator,SURVIVED,no,high,2 min,
+2693,org/apache/commons/io/output/LockableFileWriter.java,303,6,VoidMethodCallMutator,NO_COVERAGE,no,high,10 min,
+2713,org/apache/commons/io/LineIterator.java,109,81,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,method has some implementation
+2880,org/apache/commons/io/output/ProxyOutputStream.java,72,29,VoidMethodCallMutator,SURVIVED,no,high,3 min,can be overriden and implementation can be added.
+2891,org/apache/commons/io/CopyUtils.java,320,18,VoidMethodCallMutator,NO_COVERAGE,no,high,2 min,Method can be overridden by subclasses and added some functionality.
+2928,org/apache/commons/io/ThreadMonitor.java,71,32,VoidMethodCallMutator,SURVIVED,no,high,2 min,
+2953,org/apache/commons/io/filefilter/WildcardFilter.java,131,9,ReturnValsMutator,NO_COVERAGE,no,high,2 min,return value mutated.
+3027,org/apache/commons/io/comparator/CompositeFileComparator.java,114,34,NegateConditionalsMutator,SURVIVED,no,high,3 min,"Char ‘,’ is only appende when i<=0, which might also effect line 120."
+3029,org/apache/commons/io/filefilter/SizeFileFilter.java,71,10,ConditionalsBoundaryMutator,SURVIVED,no,high,2 min,size is external to the function
+3060,org/apache/commons/io/output/DemuxOutputStream.java,66,12,NegateConditionalsMutator,NO_COVERAGE,no,high,2 min,
+3061,org/apache/commons/io/output/DemuxOutputStream.java,67,16,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+3082,org/apache/commons/io/input/DemuxInputStream.java,57,12,NegateConditionalsMutator,NO_COVERAGE,no,medium,2 min,Stream is closed only when  input is null
+3083,org/apache/commons/io/input/DemuxInputStream.java,59,16,VoidMethodCallMutator,NO_COVERAGE,no,high,2 min,subclasses can overrride and add functionality.
+3088,org/apache/commons/io/FileCleaningTracker.java,211,20,VoidMethodCallMutator,SURVIVED,no,high,2 min,
+3094,org/apache/commons/io/input/BOMInputStream.java,146,15,ConditionalsBoundaryMutator,SURVIVED,no,high,3 min,"bom1,bom2 are external to the function"
+3136,org/apache/commons/io/FileCleaner.java,145,4,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+3150,org/apache/commons/io/input/ClassLoaderObjectInputStream.java,71,20,ReturnValsMutator,NO_COVERAGE,no,high,2 min,return value mutated
+3164,org/apache/commons/io/comparator/DirectoryFileComparator.java,76,9,ReturnValsMutator,SURVIVED,no,high,1 min,
+3174,org/apache/commons/io/filefilter/AgeFileFilter.java,155,5,NegateConditionalsMutator,SURVIVED,no,high,3 min,return unexpected string.
+3197,org/apache/commons/io/output/NullWriter.java,50,4,ReturnValsMutator,NO_COVERAGE,no,high,3 min,

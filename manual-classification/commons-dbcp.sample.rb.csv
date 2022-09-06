@@ -1,0 +1,101 @@
+Mutant,File,Line,Index,Mutator,Status,Equivalent,Confidence,Time,Comments
+2,org/apache/commons/dbcp2/DelegatingDatabaseMetaData.java,64,16,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+3,org/apache/commons/dbcp2/DelegatingDatabaseMetaData.java,72,7,ReturnValsMutator,SURVIVED,no,high,1 min,
+16,org/apache/commons/dbcp2/DelegatingDatabaseMetaData.java,115,21,ReturnValsMutator,NO_COVERAGE,no,high,2 min,Return value mutated.
+91,org/apache/commons/dbcp2/DelegatingDatabaseMetaData.java,442,13,NegateConditionalsMutator,NO_COVERAGE,no,high,10 min,
+101,org/apache/commons/dbcp2/DelegatingDatabaseMetaData.java,474,7,ReturnValsMutator,SURVIVED,no,high,1 min,
+131,org/apache/commons/dbcp2/DelegatingDatabaseMetaData.java,574,7,ReturnValsMutator,SURVIVED,no,high,1 min,
+180,org/apache/commons/dbcp2/DelegatingDatabaseMetaData.java,758,7,ReturnValsMutator,SURVIVED,no,high,1 min,
+223,org/apache/commons/dbcp2/DelegatingDatabaseMetaData.java,936,24,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+279,org/apache/commons/dbcp2/DelegatingDatabaseMetaData.java,1131,17,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+315,org/apache/commons/dbcp2/DelegatingDatabaseMetaData.java,1221,16,VoidMethodCallMutator,NO_COVERAGE,no,high,2 min,The method has some implementation
+319,org/apache/commons/dbcp2/DelegatingDatabaseMetaData.java,1269,7,ReturnValsMutator,SURVIVED,no,high,1 min,
+323,org/apache/commons/dbcp2/DelegatingDatabaseMetaData.java,1282,20,ReturnValsMutator,NO_COVERAGE,no,high,2 min,Return value mutated
+337,org/apache/commons/dbcp2/DelegatingDatabaseMetaData.java,1329,7,ReturnValsMutator,SURVIVED,no,high,1 min,Simillar to 364
+360,org/apache/commons/dbcp2/DelegatingDatabaseMetaData.java,1401,16,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+364,org/apache/commons/dbcp2/DelegatingDatabaseMetaData.java,1419,7,ReturnValsMutator,SURVIVED,no,high,2 min,Return value mutated
+388,org/apache/commons/dbcp2/DelegatingDatabaseMetaData.java,1499,7,ReturnValsMutator,SURVIVED,no,high,2 min,
+404,org/apache/commons/dbcp2/DelegatingDatabaseMetaData.java,1552,20,ReturnValsMutator,NO_COVERAGE,no,high,2 min,
+411,org/apache/commons/dbcp2/DelegatingDatabaseMetaData.java,1571,16,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+417,org/apache/commons/dbcp2/DelegatingDatabaseMetaData.java,1591,16,VoidMethodCallMutator,NO_COVERAGE,no,high,2 min,It has some implementation
+455,org/apache/commons/dbcp2/DelegatingDatabaseMetaData.java,1725,20,ReturnValsMutator,NO_COVERAGE,no,high,2 min,
+504,org/apache/commons/dbcp2/DelegatingDatabaseMetaData.java,1886,16,VoidMethodCallMutator,NO_COVERAGE,no,high,3 min,method has some implementation
+522,org/apache/commons/dbcp2/DelegatingResultSet.java,138,8,ReturnValsMutator,SURVIVED,no,high,2 min,
+592,org/apache/commons/dbcp2/DelegatingResultSet.java,388,8,ReturnValsMutator,SURVIVED,no,high,1 min,
+611,org/apache/commons/dbcp2/DelegatingResultSet.java,451,21,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+612,org/apache/commons/dbcp2/DelegatingResultSet.java,450,17,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+623,org/apache/commons/dbcp2/DelegatingResultSet.java,491,22,ReturnValsMutator,NO_COVERAGE,no,high,1 min,Throws exception
+663,org/apache/commons/dbcp2/DelegatingResultSet.java,635,17,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+728,org/apache/commons/dbcp2/DelegatingResultSet.java,876,21,ReturnValsMutator,NO_COVERAGE,no,high,3 min,Throws exception
+760,org/apache/commons/dbcp2/DelegatingResultSet.java,960,18,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+769,org/apache/commons/dbcp2/DelegatingResultSet.java,990,16,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+824,org/apache/commons/dbcp2/DelegatingResultSet.java,1173,20,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+825,org/apache/commons/dbcp2/DelegatingResultSet.java,1172,16,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+887,org/apache/commons/dbcp2/DelegatingResultSet.java,1413,19,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+891,org/apache/commons/dbcp2/DelegatingResultSet.java,1460,20,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+923,org/apache/commons/dbcp2/DelegatingResultSet.java,1580,19,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+935,org/apache/commons/dbcp2/DelegatingResultSet.java,1652,19,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+1001,org/apache/commons/dbcp2/DelegatingResultSet.java,1964,19,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+1087,org/apache/commons/dbcp2/DelegatingCallableStatement.java,215,4,VoidMethodCallMutator,SURVIVED,no,high,2 min,
+1090,org/apache/commons/dbcp2/DelegatingCallableStatement.java,231,25,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+1122,org/apache/commons/dbcp2/DelegatingCallableStatement.java,320,12,ReturnValsMutator,SURVIVED,no,high,1 min,
+1142,org/apache/commons/dbcp2/DelegatingCallableStatement.java,375,12,ReturnValsMutator,SURVIVED,no,high,1 min,
+1149,org/apache/commons/dbcp2/DelegatingCallableStatement.java,388,21,VoidMethodCallMutator,NO_COVERAGE,no,high,2 min,
+1191,org/apache/commons/dbcp2/DelegatingCallableStatement.java,510,26,ReturnValsMutator,NO_COVERAGE,no,high,1 min,Throws exception
+1231,org/apache/commons/dbcp2/DelegatingCallableStatement.java,620,25,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+1240,org/apache/commons/dbcp2/DelegatingCallableStatement.java,637,4,VoidMethodCallMutator,SURVIVED,no,high,1 min,
+1272,org/apache/commons/dbcp2/DelegatingCallableStatement.java,725,4,VoidMethodCallMutator,SURVIVED,no,high,2 min,
+1283,org/apache/commons/dbcp2/DelegatingCallableStatement.java,761,24,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+1332,org/apache/commons/dbcp2/DelegatingCallableStatement.java,954,4,VoidMethodCallMutator,SURVIVED,no,high,2 min,
+1382,org/apache/commons/dbcp2/DelegatingCallableStatement.java,1123,4,VoidMethodCallMutator,SURVIVED,no,high,2 min,
+1409,org/apache/commons/dbcp2/DelegatingCallableStatement.java,1214,4,VoidMethodCallMutator,SURVIVED,no,high,1 min,
+1755,org/apache/commons/dbcp2/DelegatingConnection.java,360,21,VoidMethodCallMutator,NO_COVERAGE,no,high,2 min,
+1761,org/apache/commons/dbcp2/DelegatingConnection.java,820,24,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+1762,org/apache/commons/dbcp2/DelegatingConnection.java,815,4,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+1811,org/apache/commons/dbcp2/DelegatingConnection.java,920,12,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+1940,org/apache/commons/dbcp2/DelegatingConnection.java,685,4,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+1962,org/apache/commons/dbcp2/DelegatingConnection.java,647,22,VoidMethodCallMutator,NO_COVERAGE,no,high,2 min,
+2102,org/apache/commons/dbcp2/datasources/PerUserPoolDataSource.java,652,133,VoidMethodCallMutator,SURVIVED,no,high,1 min,
+2169,org/apache/commons/dbcp2/datasources/PerUserPoolDataSource.java,928,4,VoidMethodCallMutator,SURVIVED,no,high,1 min,
+2229,org/apache/commons/dbcp2/DelegatingStatement.java,70,12,VoidMethodCallMutator,NO_COVERAGE,yes,low,15 min,'statement’ casted to DeligatedStatement.
+2271,org/apache/commons/dbcp2/DelegatingStatement.java,214,30,ReturnValsMutator,NO_COVERAGE,no,high,1 min,Return value mutated
+2360,org/apache/commons/dbcp2/DelegatingStatement.java,490,4,VoidMethodCallMutator,SURVIVED,no,high,1 min,simillar to 2395
+2364,org/apache/commons/dbcp2/DelegatingStatement.java,501,4,VoidMethodCallMutator,SURVIVED,no,high,1 min,simillar to 2395
+2385,org/apache/commons/dbcp2/DelegatingStatement.java,569,11,ReturnValsMutator,SURVIVED,no,high,1 min,Return value mutated
+2387,org/apache/commons/dbcp2/DelegatingStatement.java,567,4,VoidMethodCallMutator,SURVIVED,no,high,1 min,simillar to 2395
+2395,org/apache/commons/dbcp2/DelegatingStatement.java,589,4,VoidMethodCallMutator,SURVIVED,no,high,1 min,method throws exception
+2470,org/apache/commons/dbcp2/DelegatingPreparedStatement.java,110,20,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+2513,org/apache/commons/dbcp2/DelegatingPreparedStatement.java,263,4,VoidMethodCallMutator,SURVIVED,no,high,1 min,
+2515,org/apache/commons/dbcp2/DelegatingPreparedStatement.java,267,23,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+2596,org/apache/commons/dbcp2/DelegatingPreparedStatement.java,531,24,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+2783,org/apache/commons/dbcp2/cpdsadapter/DriverAdapterCPDS.java,275,96,NegateConditionalsMutator,SURVIVED,no,high,2 min,NP exception
+2784,org/apache/commons/dbcp2/cpdsadapter/DriverAdapterCPDS.java,275,99,NegateConditionalsMutator,SURVIVED,no,high,1 min,NP exception
+2819,org/apache/commons/dbcp2/cpdsadapter/DriverAdapterCPDS.java,174,77,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,connectionProperties is external to the function
+2877,org/apache/commons/dbcp2/cpdsadapter/DriverAdapterCPDS.java,776,217,ReturnValsMutator,NO_COVERAGE,no,high,1 min,Returns null
+2895,org/apache/commons/dbcp2/PStmtKey.java,423,75,NegateConditionalsMutator,NO_COVERAGE,no,high,2 min,
+2942,org/apache/commons/dbcp2/PStmtKey.java,837,188,ReturnValsMutator,NO_COVERAGE,no,high,1 min,since resultSetType is external to the function
+2997,org/apache/commons/dbcp2/Jdbc41Bridge.java,113,14,ReturnValsMutator,NO_COVERAGE,no,high,2 min,
+3001,org/apache/commons/dbcp2/Jdbc41Bridge.java,152,55,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,
+3036,org/apache/commons/dbcp2/Jdbc41Bridge.java,192,210,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+3050,org/apache/commons/dbcp2/Jdbc41Bridge.java,262,107,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,
+3068,org/apache/commons/dbcp2/Jdbc41Bridge.java,250,63,ReturnValsMutator,NO_COVERAGE,no,high,2 min,Return value mutated
+3123,org/apache/commons/dbcp2/datasources/InstanceKeyDataSource.java,964,249,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+3163,org/apache/commons/dbcp2/datasources/InstanceKeyDataSource.java,540,4,VoidMethodCallMutator,SURVIVED,no,high,5 min,
+3224,org/apache/commons/dbcp2/datasources/InstanceKeyDataSourceFactory.java,152,10,NegateConditionalsMutator,SURVIVED,no,high,1 min,NP exception
+3255,org/apache/commons/dbcp2/datasources/InstanceKeyDataSourceFactory.java,230,349,NegateConditionalsMutator,SURVIVED,no,high,2 min,NP exception
+3261,org/apache/commons/dbcp2/datasources/InstanceKeyDataSourceFactory.java,245,418,NegateConditionalsMutator,SURVIVED,no,high,1 min,NP exception
+3265,org/apache/commons/dbcp2/datasources/InstanceKeyDataSourceFactory.java,257,461,NegateConditionalsMutator,SURVIVED,no,high,1 min,NP exception
+3295,org/apache/commons/dbcp2/datasources/InstanceKeyDataSourceFactory.java,253,447,VoidMethodCallMutator,NO_COVERAGE,no,high,2 min,method has some implementation
+3326,org/apache/commons/dbcp2/PoolableConnectionFactory.java,181,5,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+3415,org/apache/commons/dbcp2/cpdsadapter/PooledConnectionImpl.java,293,23,ReturnValsMutator,NO_COVERAGE,no,high,2 min,Throws exception
+3531,org/apache/commons/dbcp2/datasources/CPDSConnectionFactory.java,285,61,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+3632,org/apache/commons/dbcp2/cpdsadapter/ConnectionImpl.java,305,15,ReturnValsMutator,NO_COVERAGE,no,high,1 min,Throws exception
+3661,org/apache/commons/dbcp2/cpdsadapter/ConnectionImpl.java,228,31,VoidMethodCallMutator,NO_COVERAGE,no,high,2 min,
+3776,org/apache/commons/dbcp2/datasources/SharedPoolDataSource.java,230,4,VoidMethodCallMutator,NO_COVERAGE,no,high,2 min,method has some implementation
+3792,org/apache/commons/dbcp2/datasources/SharedPoolDataSource.java,191,126,VoidMethodCallMutator,SURVIVED,no,high,2 min,
+3793,org/apache/commons/dbcp2/datasources/SharedPoolDataSource.java,192,132,VoidMethodCallMutator,SURVIVED,no,high,1 min,
+3844,org/apache/commons/dbcp2/datasources/PerUserPoolDataSourceFactory.java,59,86,NegateConditionalsMutator,SURVIVED,no,high,1 min,NP exception
+3978,org/apache/commons/dbcp2/Utils.java,89,4,NegateConditionalsMutator,NO_COVERAGE,no,high,2 min,autoclosable is external to function
+4070,org/apache/commons/dbcp2/PoolingDataSource.java,147,70,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+4101,org/apache/commons/dbcp2/DriverManagerConnectionFactory.java,131,5,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+4148,org/apache/commons/dbcp2/managed/DataSourceXAConnectionFactory.java,176,5,VoidMethodCallMutator,NO_COVERAGE,no,high,2 min,

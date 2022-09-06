@@ -1,0 +1,115 @@
+68 rc:no (high) rb:yes (high)
+    rc: hashcode math mutator
+    rb: Mutation from * to / has no effect when the operand is 1
+69 rc:no (high) rb:no (medium)
+    rc: hashcode math mutator
+    rb: "Return value(int) of hash code change is observed
+71 rc:no (high) rb:yes (high)
+org/apache/commons/csv/CSVFormat.java:1062 35 MathMutator
+    rc: hashcode math mutator 
+    rb: "With quote mode parameter as null mutation has no effect i.e. + 0 to – 0 "
+75 rc:no (high) rb:yes (high)
+org/apache/commons/csv/CSVFormat.java:1064 73 MathMutator
+    rc: hashcode math mutator 
+    rb: Similar to mutant 71 
+77 rc:no (high) rb:yes (high)
+org/apache/commons/csv/CSVFormat.java:1065 92 MathMutator
+    rc: hashcode math mutator 
+    rb: Similar to mutant 71 
+79 rc:no (high) rb:yes (high)
+org/apache/commons/csv/CSVFormat.java:1066 111 MathMutator
+    rc: hashcode math mutator 
+    rb: Similar to mutant 71 
+91 rc:no (high) rb:yes (high)
+org/apache/commons/csv/CSVFormat.java:1072 208 MathMutator
+    rc: hashcode math mutator 
+    rb: Similar to mutant 71 
+162 rc:no (high) rb:yes (medium)
+    rc: conditionals boundary -> starting too early to append
+    rb: Nothing gets appended if the positions are same
+163 rc:yes (high) rb:no (high)
+    rb: This loop is executed for the last segment and mutation makes no difference
+    rc: (same as 32)
+175 rc:no (high) rb:yes (high)
+org/apache/commons/csv/CSVFormat.java:1537 65 ConditionalsBoundaryMutator
+    rc: conditionals boundary -> segment size is wrong 
+    rb: Nothing gets appended with pos=0. 
+176 rc:no (high) rb:yes (high)
+    rc: conditionals boundary -> last segmentwill be written twice
+    rb: "Mutation only work for pos = 0
+186 rc:no (medium) rb:yes (medium)
+org/apache/commons/csv/CSVFormat.java:1446 114 ConditionalsBoundaryMutator
+    rc: condiitonals boundary -> wrong starting point for parser 
+    rb: With mutation the comment char at start of value might not be quoted. 
+240 rc:no (low) rb:yes (low)
+org/apache/commons/csv/CSVFormat.java:1615 5 NegateConditionalsMutator
+    rc: "I still say not equivalent  but with low confidence  since it depends on the compiler behavior what happens when casting to a type that is not instance of String. But then again the question is whether the ""charSequence"" can ever not be an instance of String. But then again there wouldn't be the need to cover that possibility if it weren't possible. " 
+    rb:  
+266 rc:no (high) rb:yes (high)
+org/apache/commons/csv/CSVFormat.java:1700 41 ReturnValsMutator
+    rc: instead of constructor  RuntimeException will be thrown 
+    rb: "Return value of with header has default boolean value of allow duplicate header names as false so the mutation has no effect."
+374 rc:no (high) rb:yes (high)
+org/apache/commons/csv/Lexer.java:271 106 ReturnValsMutator
+    rc: "* (sd: ""Return value is not used by the method called )" 
+    rb: Similar to mutant 383 
+375 rc:no (high) rb:yes (high)
+org/apache/commons/csv/Lexer.java:275 127 ReturnValsMutator
+    rc: "* (sd: ""Return value is not used by the method called )" 
+    rb: Similar to mutant 383 
+376 rc:no (high) rb:yes (high)
+org/apache/commons/csv/Lexer.java:278 143 ReturnValsMutator
+    rc: "* (sd: ""Return value is not used by the method called )" 
+    rb: Similar to mutant 383 
+383 rc:no (high) rb:yes (high)
+org/apache/commons/csv/Lexer.java:223 133 ReturnValsMutator
+    rc: "* (sd: ""Return value is not used by the method called )" 
+    rb: "Return value is not used by the method called  and the properties of objects get updated."
+387 rc:no (high) rb:yes (medium)
+org/apache/commons/csv/Lexer.java:384 21 NegateConditionalsMutator
+    rc: EOL state will not be saved 
+    rb: The presence of \r or \n is considered as end of the line. Check note 
+403 rc:no (high) rb:yes (high)
+org/apache/commons/csv/Lexer.java:365 10 ConditionalsBoundaryMutator
+    rc: conditional boundary -> would always end in OutOfBoundsException 
+    rb: empty token content with length zero has no effect with  trimmingtrailingspaces method. 
+472 rc:no (high) rb:yes (high)
+org/apache/commons/csv/CSVParser.java:232 5 VoidMethodCallMutator
+    rc: removed call to notNull-Assertion  that would throw IllegalArgumentException. Without it  NullPointerExceptions will be thrown by program. 
+    rb: "Call to assertion.notNull() returns nothing rather verifies the input parameters. Input parameters of parse(xy z) cannot be null."
+473 rc:no (high) rb:yes (high)
+org/apache/commons/csv/CSVParser.java:233 10 VoidMethodCallMutator
+    rc: removed call to notNull-Assertion  that would throw IllegalArgumentException. Without it  NullPointerExceptions will be thrown by program. 
+    rb: similar to mutant 472 
+477 rc:no (high) rb:yes (high)
+org/apache/commons/csv/CSVParser.java:297 10 VoidMethodCallMutator
+    rc: removed call to notNull-Assertion  that would throw IllegalArgumentException. Without it  NullPointerExceptions will be thrown by program. 
+    rb: similar to mutant 472 
+481 rc:no (high) rb:yes (medium)
+org/apache/commons/csv/CSVParser.java:327 15 VoidMethodCallMutator
+    rc: removed call to notNull-Assertion  that would throw IllegalArgumentException. Without it  NullPointerExceptions will be thrown by program. 
+    rb: Effects only when the argument(i.e format) passed is null. 
+484 rc:no (high) rb:yes (medium)
+org/apache/commons/csv/CSVParser.java:255 10 VoidMethodCallMutator
+    rc: removed call to notNull-Assertion  that would throw IllegalArgumentException. Without it  NullPointerExceptions will be thrown by program. 
+    rb: Effects only when the argument(i.e format) passed is null. 
+534 rc:no (high) rb:yes (low)
+org/apache/commons/csv/ExtendedBufferedReader.java:188 14 VoidMethodCallMutator
+    rc: removed call to BufferedReader close() -> does not effect the program output as such  but can be detected from outside 
+    rb: Found no observational change 
+572 rc:no (high) rb:yes (medium)
+org/apache/commons/csv/ExtendedBufferedReader.java:102 108 NegateConditionalsMutator
+    rc: negate conditional -> always throw IllegalArgumentException 
+    rb: This mutated stmt never executed 
+580 rc:no (high) rb:yes (high)
+org/apache/commons/csv/CSVRecord.java:68 7 ReturnValsMutator
+    rc: "* (sd: ""Return value is not used by the method called/ rc: return null instead of enum)" 
+    rb: "Because it return null due to the enum Unknown_coulmn so when it is mutated to null  no behavioural change is observed"
+589 rc:no (high) rb:yes (high)
+org/apache/commons/csv/CSVRecord.java:176 5 NegateConditionalsMutator
+    rc: "* (sd: ""Return value is not used by the method called /jh: hasComment() returns the opposite)" 
+    rb: "Can be different with other sample.csv check detail note"
+590 rc:no (high) rb:yes (high)
+org/apache/commons/csv/CSVRecord.java:176 13 ReturnValsMutator
+    rc: "* (sd: ""Return value is not used by the method called /jh: return null instead of bool)" 
+    rb: Logically similar to the mutant 589 

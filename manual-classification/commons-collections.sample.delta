@@ -1,0 +1,20 @@
+3469 rc:yes (low) rb:no (high)
+org/apache/commons/collections4/collection/CompositeCollection.java:251 23 ReturnValsMutator
+    rc: remove() no impl found?
+    rb:
+4194 rc:no (high) rb:yes (medium)
+org/apache/commons/collections4/multimap/AbstractMultiValuedMap.java:501 25 NegateConditionalsMutator
+    rc:
+    rb:
+7623 rc: (yes) rb:no (high)
+org/apache/commons/collections4/multimap/ArrayListValuedHashMap.java:136 9 VoidMethodCallMutator
+    rc: no implementation doWriteObject ?
+    rb: method has its functionality to perform
+7923 rc: (yes) rb:no (high)
+org/apache/commons/collections4/bag/AbstractMapBag.java:433 9 ReturnValsMutator
+    rc: ? there's returns in 432 and 434  not in 433
+    rb:
+8077 rc:no (high) rb:yes (low)
+org/apache/commons/collections4/multimap/AbstractMultiValuedMap.java:761 11 NegateConditionalsMutator
+    rc:
+    rb:

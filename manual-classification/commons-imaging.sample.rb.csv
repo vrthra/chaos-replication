@@ -1,0 +1,101 @@
+Mutant,File,Line,Index,Mutator,Status,Equivalent,Confidence,Time,Comments
+190,org/apache/commons/imaging/color/ColorConversions.java,375,33,NegateConditionalsMutator,SURVIVED,no,high,3 min,
+851,org/apache/commons/imaging/common/ByteConversions.java,358,7,MathMutator,SURVIVED,no,medium,15 min,if mutation is & to |
+1115,org/apache/commons/imaging/formats/jpeg/decoder/Dct.java,276,101,MathMutator,SURVIVED,no,high,2 min,propogates through and effects line 298
+1457,org/apache/commons/imaging/formats/gif/GifImageParser.java,139,117,MathMutator,NO_COVERAGE,no,high,2 min,
+1517,org/apache/commons/imaging/formats/gif/GifImageParser.java,822,235,ConditionalsBoundaryMutator,SURVIVED,no,medium,15 min,"condition gets verified and assigns different value for > and >=, and colorTableSizeInFormat propogates to line 917."
+1954,org/apache/commons/imaging/formats/pcx/PcxWriter.java,144,151,ConditionalsBoundaryMutator,SURVIVED,no,high,3 min,check line 160
+1993,org/apache/commons/imaging/formats/pcx/PcxWriter.java,134,101,NegateConditionalsMutator,NO_COVERAGE,no,high,2 min,planesWanted is external to the function
+2215,org/apache/commons/imaging/formats/ico/IcoImageParser.java,65,4,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+2346,org/apache/commons/imaging/formats/ico/IcoImageParser.java,671,181,MathMutator,SURVIVED,no,high,5 min,Effect is propogated
+2531,org/apache/commons/imaging/formats/xpm/XpmImageParser.java,267,5,VoidMethodCallMutator,SURVIVED,no,high,2 min,sets the stringbuilder length to zero.
+2996,org/apache/commons/imaging/formats/jpeg/decoder/JpegDecoder.java,417,25,MathMutator,SURVIVED,no,high,3 min,
+3368,org/apache/commons/imaging/palette/PaletteFactory.java,250,118,ConditionalsBoundaryMutator,SURVIVED,no,medium,5 min,Double.MAX_VALUE is external to the function.
+3371,org/apache/commons/imaging/palette/PaletteFactory.java,247,102,NegateConditionalsMutator,SURVIVED,no,medium,15 min,"In the first iteration the bestV may not be update if condition in line 250 not satisfied, results in unexpected bestV"
+3374,org/apache/commons/imaging/palette/PaletteFactory.java,204,121,ConditionalsBoundaryMutator,SURVIVED,no,high,15 min,">= to > leads to one extra iteration, which effects line209 and it propogates till the return value(result)"
+3386,org/apache/commons/imaging/palette/PaletteFactory.java,182,20,VoidMethodCallMutator,NO_COVERAGE,no,high,3 min,Method has some implementation
+3391,org/apache/commons/imaging/palette/PaletteFactory.java,145,51,ConditionalsBoundaryMutator,SURVIVED,no,high,10 min,sum is external to the function
+3484,org/apache/commons/imaging/palette/PaletteFactory.java,58,33,NegateConditionalsMutator,NO_COVERAGE,no,high,4 min,
+3728,org/apache/commons/imaging/formats/pcx/PcxImageParser.java,269,158,MathMutator,SURVIVED,no,high,3 min,results in unexpected returnobject argumnets
+3961,org/apache/commons/imaging/formats/jpeg/JpegImageParser.java,1148,61,ConditionalsBoundaryMutator,NO_COVERAGE,no,high,2 min,can lead to out of bound exception
+4030,org/apache/commons/imaging/formats/jpeg/JpegImageParser.java,824,536,NegateConditionalsMutator,SURVIVED,no,high,1 min,Similar to mutant 4074
+4034,org/apache/commons/imaging/formats/jpeg/JpegImageParser.java,832,574,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,Similar to mutant 4074
+4069,org/apache/commons/imaging/formats/jpeg/JpegImageParser.java,898,932,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,Similar to mutant 4074
+4074,org/apache/commons/imaging/formats/jpeg/JpegImageParser.java,900,950,NegateConditionalsMutator,NO_COVERAGE,no,medium,15 min,"It effects the colorType and transparent variable by passing unintended condition, which can also effect the return value."
+4102,org/apache/commons/imaging/formats/jpeg/JpegImageParser.java,936,1152,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,ColorType is assigned with unexpected value
+4203,org/apache/commons/imaging/formats/tiff/TiffDirectory.java,612,10,NegateConditionalsMutator,NO_COVERAGE,no,high,3 min,"since tag, mustExist are external to the function"
+4235,org/apache/commons/imaging/formats/tiff/TiffDirectory.java,427,91,ReturnValsMutator,NO_COVERAGE,no,high,1 min,return value mutated
+4703,org/apache/commons/imaging/common/BinaryFunctions.java,270,18,MathMutator,SURVIVED,no,high,1 min,
+4779,org/apache/commons/imaging/common/BinaryFunctions.java,222,36,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,
+4871,org/apache/commons/imaging/formats/tiff/write/TiffOutputDirectory.java,530,10,NegateConditionalsMutator,NO_COVERAGE,no,high,2 min,"tagInfo, values are external to the function"
+4903,org/apache/commons/imaging/formats/tiff/write/TiffOutputDirectory.java,178,5,NegateConditionalsMutator,NO_COVERAGE,no,high,2 min,
+4935,org/apache/commons/imaging/formats/tiff/write/TiffOutputDirectory.java,261,57,VoidMethodCallMutator,NO_COVERAGE,no,high,3 min,
+4939,org/apache/commons/imaging/formats/tiff/write/TiffOutputDirectory.java,405,5,NegateConditionalsMutator,SURVIVED,no,high,5 min,"tagInfo, values are external to the function"
+4965,org/apache/commons/imaging/formats/tiff/write/TiffOutputDirectory.java,465,57,VoidMethodCallMutator,NO_COVERAGE,no,high,2 min,
+4971,org/apache/commons/imaging/formats/tiff/write/TiffOutputDirectory.java,613,6,ReturnValsMutator,NO_COVERAGE,no,high,2 min,Return value mutated
+5027,org/apache/commons/imaging/formats/png/PngImageParser.java,681,93,VoidMethodCallMutator,NO_COVERAGE,no,high,2 min,
+5039,org/apache/commons/imaging/formats/png/PngImageParser.java,586,400,ConditionalsBoundaryMutator,SURVIVED,no,high,15 min,When diff==0, then gammaCorrection might not be created and it effects further functionality of this function
+5075,org/apache/commons/imaging/formats/png/PngImageParser.java,107,36,MathMutator,NO_COVERAGE,no,high,2 min,
+5082,org/apache/commons/imaging/formats/png/PngImageParser.java,239,17,NegateConditionalsMutator,SURVIVED,no,high,5 min,"Since arguments to the method are external, and in chunks may or not be null."
+5245,org/apache/commons/imaging/Imaging.java,869,6,ReturnValsMutator,NO_COVERAGE,no,high,3 min,Return value mutated
+5453,org/apache/commons/imaging/formats/psd/PsdImageParser.java,225,157,NegateConditionalsMutator,SURVIVED,no,medium,5 min,maxBlocksToRead are external to the function
+5656,org/apache/commons/imaging/formats/tiff/TiffImageParser.java,587,185,NegateConditionalsMutator,SURVIVED,no,Low,10 min,It effects line 648
+5857,org/apache/commons/imaging/formats/tiff/datareaders/DataReaderTiled.java,91,143,IncrementsMutator,NO_COVERAGE,no,high,5 min,"It effects line 97, I.e setRGB at different value of I and j"
+6012,org/apache/commons/imaging/formats/tiff/datareaders/DataReaderStrips.java,153,321,MathMutator,NO_COVERAGE,no,high,3 min,
+6027,org/apache/commons/imaging/formats/tiff/datareaders/DataReaderStrips.java,139,208,NegateConditionalsMutator,SURVIVED,no,high,3 min,
+6050,org/apache/commons/imaging/formats/tiff/datareaders/DataReaderStrips.java,235,26,MathMutator,SURVIVED,no,low,10 min,"It is updating the local variables but effecting line 251,277."
+6072,org/apache/commons/imaging/formats/tiff/datareaders/DataReaderStrips.java,266,151,VoidMethodCallMutator,SURVIVED,no,high,5 min,Method has some implementation
+6108,org/apache/commons/imaging/palette/ColorSpaceSubset.java,83,100,NegateConditionalsMutator,NO_COVERAGE,no,high,3 min,maxs array is external to the function.
+6189,org/apache/commons/imaging/palette/ColorSpaceSubset.java,160,186,MathMutator,SURVIVED,no,low,15 min,"variable rgb is global, can effect other functions"
+6317,org/apache/commons/imaging/internal/Debug.java,221,22,VoidMethodCallMutator,SURVIVED,no,medium,10 min,
+6594,org/apache/commons/imaging/formats/jpeg/iptc/IptcParser.java,382,177,VoidMethodCallMutator,SURVIVED,no,high,2 min,Subclasses can extend the class and add functionality to flush.
+6837,org/apache/commons/imaging/formats/icns/IcnsImageParser.java,314,254,MathMutator,NO_COVERAGE,no,high,1 min,
+6845,org/apache/commons/imaging/formats/icns/IcnsImageParser.java,287,63,NegateConditionalsMutator,NO_COVERAGE,no,high,2 min,The image type is assigned to the unintended one’s
+6853,org/apache/commons/imaging/formats/icns/IcnsImageParser.java,310,226,NegateConditionalsMutator,NO_COVERAGE,no,high,5 min,
+6861,org/apache/commons/imaging/formats/icns/IcnsImageParser.java,313,248,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,Method has some implementation
+6904,org/apache/commons/imaging/formats/tiff/datareaders/BitInputStream.java,115,272,MathMutator,NO_COVERAGE,no,high,1 min,
+6940,org/apache/commons/imaging/formats/tiff/datareaders/BitInputStream.java,79,114,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+7107,org/apache/commons/imaging/formats/bmp/PixelParserRgb.java,52,83,MathMutator,SURVIVED,no,high,1 min,
+7249,org/apache/commons/imaging/formats/tiff/photometricinterpreters/PhotometricInterpreterLogLuv.java,35,7,MathMutator,NO_COVERAGE,no,high,1 min,
+7286,org/apache/commons/imaging/formats/tiff/photometricinterpreters/PhotometricInterpreterLogLuv.java,98,207,MathMutator,NO_COVERAGE,no,medium,5 min,behaviour of the passed object imageBuilder would be changed due to the change of propogation
+7322,org/apache/commons/imaging/ImageParser.java,934,13,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+7401,org/apache/commons/imaging/formats/tiff/write/TiffImageWriterLossless.java,236,136,ConditionalsBoundaryMutator,SURVIVED,no,low,15 min,effects line 255 and propogates futher.
+7520,org/apache/commons/imaging/palette/ColorGroup.java,75,214,MathMutator,SURVIVED,no,high,2 min,
+7594,org/apache/commons/imaging/common/bytesource/ByteSourceInputStream.java,126,19,ConditionalsBoundaryMutator,SURVIVED,no,medium,5 min,"off is external to the function, can be unit tested"
+7664,org/apache/commons/imaging/formats/bmp/PixelParserBitFields.java,106,217,InvertNegsMutator,SURVIVED,no,low,10 min,
+7702,org/apache/commons/imaging/formats/bmp/PixelParserBitFields.java,116,23,MathMutator,NO_COVERAGE,no,high,2 min,
+8254,org/apache/commons/imaging/palette/MedianCutQuantizer.java,116,147,NegateConditionalsMutator,SURVIVED,no,high,15 min,since mediancut is external to the function, we can keep track of the calls
+8269,org/apache/commons/imaging/FormatCompliance.java,130,37,ReturnValsMutator,NO_COVERAGE,no,high,1 min,Return value mutated
+8329,org/apache/commons/imaging/formats/jpeg/JpegUtils.java,141,94,ReturnValsMutator,NO_COVERAGE,no,high,2 min,marker is external to the function
+8366,org/apache/commons/imaging/formats/tiff/photometricinterpreters/PhotometricInterpreterYCbCr.java,55,36,MathMutator,NO_COVERAGE,no,high,2 min,"It effects line 59,63,64"
+8398,org/apache/commons/imaging/formats/tiff/photometricinterpreters/PhotometricInterpreterYCbCr.java,82,104,MathMutator,NO_COVERAGE,no,low,2 min,Since imageBuilder is external to the function and the behaviour can be untitested after the function
+8433,org/apache/commons/imaging/palette/QuantizedPalette.java,54,32,MathMutator,SURVIVED,no,high,1 min,
+8462,org/apache/commons/imaging/formats/icns/IcnsType.java,154,52,ReturnValsMutator,NO_COVERAGE,no,high,1 min,throws exception
+8476,org/apache/commons/imaging/formats/icns/IcnsType.java,118,33,ReturnValsMutator,NO_COVERAGE,no,high,1 min,return value mutated to null
+8533,org/apache/commons/imaging/common/ImageBuilder.java,71,8,ConditionalsBoundaryMutator,SURVIVED,no,high,1 min,width is external to the function
+8899,org/apache/commons/imaging/common/bytesource/ByteSourceInputStream.java,248,34,NegateConditionalsMutator,NO_COVERAGE,no,high,15 min,streamLength is external and is updated in line 251.
+8920,org/apache/commons/imaging/palette/MostPopulatedBoxesMedianCut.java,77,204,IncrementsMutator,NO_COVERAGE,no,low,15 min,
+8963,org/apache/commons/imaging/formats/jpeg/JpegImageMetadata.java,131,9,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+8974,org/apache/commons/imaging/formats/jpeg/JpegImageMetadata.java,86,14,ReturnValsMutator,NO_COVERAGE,no,high,2 min,
+8985,org/apache/commons/imaging/formats/jpeg/JpegImageMetadata.java,184,58,ReturnValsMutator,NO_COVERAGE,no,high,1 min,throws exception
+9142,org/apache/commons/imaging/icc/IccProfileInfo.java,75,5,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+9243,org/apache/commons/imaging/icc/IccTag.java,71,28,ReturnValsMutator,SURVIVED,no,high,1 min,
+9338,org/apache/commons/imaging/formats/pnm/PpmFileInfo.java,111,64,MathMutator,NO_COVERAGE,no,high,1 min,
+9432,org/apache/commons/imaging/formats/tiff/taginfos/TagInfoGpsText.java,152,136,ReturnValsMutator,NO_COVERAGE,no,high,1 min,Return value mutated
+9445,org/apache/commons/imaging/formats/pcx/PcxImageParser.java,226,188,MathMutator,NO_COVERAGE,no,high,2 min,Can result in unexpected printing
+9560,org/apache/commons/imaging/ColorTools.java,245,56,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+9851,org/apache/commons/imaging/formats/png/chunks/PngChunkItxt.java,109,5,ReturnValsMutator,NO_COVERAGE,no,high,1 min,Return value mutated
+10179,org/apache/commons/imaging/formats/tiff/TiffContents.java,100,139,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+10220,org/apache/commons/imaging/common/BinaryConstant.java,55,21,NegateConditionalsMutator,NO_COVERAGE,no,high,2 min,
+10252,org/apache/commons/imaging/formats/psd/dataparsers/DataParserIndexed.java,26,85,IncrementsMutator,SURVIVED,no,high,3 min,
+10493,org/apache/commons/imaging/formats/tiff/fieldtypes/FieldTypeRational.java,46,26,ReturnValsMutator,NO_COVERAGE,no,medium,5 min,Return value mutated
+10588,org/apache/commons/imaging/formats/psd/dataparsers/DataParserRgb.java,25,11,MathMutator,SURVIVED,no,high,1 min,
+10622,org/apache/commons/imaging/formats/pnm/PamFileInfo.java,139,67,MathMutator,SURVIVED,no,high,1 min,Results in unexpected return value
+10632,org/apache/commons/imaging/common/mylzw/BitsToByteInputStream.java,39,20,MathMutator,NO_COVERAGE,no,high,3 min,'i’ value gets effected.
+10755,org/apache/commons/imaging/formats/png/PngWriter.java,332,4,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,since rgb is external to the function
+10934,org/apache/commons/imaging/formats/tiff/fieldtypes/FieldTypeShort.java,49,59,NegateConditionalsMutator,NO_COVERAGE,no,high,2 min,
+10952,org/apache/commons/imaging/formats/tiff/fieldtypes/FieldTypeDouble.java,51,59,ConditionalsBoundaryMutator,NO_COVERAGE,no,high,3 min,out of bound exception
+11276,org/apache/commons/imaging/formats/tiff/taginfos/TagInfo.java,108,4,ReturnValsMutator,SURVIVED,no,high,1 min,
+11308,org/apache/commons/imaging/formats/tiff/write/TiffOutputDirectory.java,603,7,NegateConditionalsMutator,SURVIVED,no,high,3 min,
+11448,org/apache/commons/imaging/formats/png/transparencyfilters/TransparencyFilterGrayscale.java,38,6,NegateConditionalsMutator,SURVIVED,no,high,1 min,
+11526,org/apache/commons/imaging/formats/jpeg/segments/ComSegment.java,47,31,ReturnValsMutator,NO_COVERAGE,no,high,1 min,Return value mutated

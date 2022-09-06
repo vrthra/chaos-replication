@@ -1,0 +1,101 @@
+Mutant,File,Line,Index,Mutator,Status,Equivalent,Confidence,Time,Comments
+6,org/apache/commons/configuration2/plist/PropertyListParserTokenManager.java,568,14,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,
+9,org/apache/commons/configuration2/plist/PropertyListParserTokenManager.java,582,5,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,
+12,org/apache/commons/configuration2/plist/PropertyListParserTokenManager.java,662,150,ConditionalsBoundaryMutator,SURVIVED,yes,high,1 min,jjmatchedKind is already = 6
+49,org/apache/commons/configuration2/plist/PropertyListParserTokenManager.java,691,299,NegateConditionalsMutator,SURVIVED,no,high,1 min,
+57,org/apache/commons/configuration2/plist/PropertyListParserTokenManager.java,737,505,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,
+65,org/apache/commons/configuration2/plist/PropertyListParserTokenManager.java,724,440,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,read()
+67,org/apache/commons/configuration2/plist/PropertyListParserTokenManager.java,764,20,IncrementsMutator,NO_COVERAGE,no,high,1 min,
+82,org/apache/commons/configuration2/plist/PropertyListParserTokenManager.java,185,134,ConditionalsBoundaryMutator,SURVIVED,yes,high,1 min,kind is already = 27
+91,org/apache/commons/configuration2/plist/PropertyListParserTokenManager.java,277,510,ConditionalsBoundaryMutator,NO_COVERAGE,yes,high,1 min,kind is already = 27
+123,org/apache/commons/configuration2/plist/PropertyListParserTokenManager.java,297,597,MathMutator,NO_COVERAGE,no,high,1 min,
+124,org/apache/commons/configuration2/plist/PropertyListParserTokenManager.java,300,607,MathMutator,NO_COVERAGE,no,high,1 min,
+131,org/apache/commons/configuration2/plist/PropertyListParserTokenManager.java,339,758,MathMutator,NO_COVERAGE,no,high,1 min,
+138,org/apache/commons/configuration2/plist/PropertyListParserTokenManager.java,158,36,NegateConditionalsMutator,SURVIVED,no,high,1 min,
+191,org/apache/commons/configuration2/plist/PropertyListParserTokenManager.java,348,788,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,
+193,org/apache/commons/configuration2/plist/PropertyListParserTokenManager.java,355,821,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,
+221,org/apache/commons/configuration2/plist/PropertyListParserTokenManager.java,292,573,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+261,org/apache/commons/configuration2/plist/PropertyListParserTokenManager.java,431,124,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,
+273,org/apache/commons/configuration2/plist/PropertyListParserTokenManager.java,68,30,ReturnValsMutator,SURVIVED,no,high,1 min,
+275,org/apache/commons/configuration2/plist/PropertyListParserTokenManager.java,72,45,ReturnValsMutator,SURVIVED,no,high,1 min,
+281,org/apache/commons/configuration2/plist/PropertyListParserTokenManager.java,85,97,ReturnValsMutator,SURVIVED,no,high,1 min,
+286,org/apache/commons/configuration2/plist/PropertyListParserTokenManager.java,397,7,ReturnValsMutator,SURVIVED,no,high,1 min,
+289,org/apache/commons/configuration2/plist/PropertyListParserTokenManager.java,110,78,MathMutator,SURVIVED,no,high,1 min,
+303,org/apache/commons/configuration2/plist/PropertyListParserTokenManager.java,497,45,ReturnValsMutator,SURVIVED,no,high,1 min,
+325,org/apache/commons/configuration2/plist/PropertyListParserTokenManager.java,36,72,MathMutator,NO_COVERAGE,no,high,1 min,
+339,org/apache/commons/configuration2/plist/PropertyListParserTokenManager.java,43,102,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+340,org/apache/commons/configuration2/plist/PropertyListParserTokenManager.java,44,107,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+344,org/apache/commons/configuration2/plist/PropertyListParser.java,394,116,IncrementsMutator,NO_COVERAGE,no,high,1 min,
+357,org/apache/commons/configuration2/plist/PropertyListParser.java,442,110,IncrementsMutator,NO_COVERAGE,no,high,1 min,
+386,org/apache/commons/configuration2/plist/PropertyListParser.java,431,41,ConditionalsBoundaryMutator,NO_COVERAGE,no,high,1 min ,IndexOutOfBounds Exception
+395,org/apache/commons/configuration2/plist/PropertyListParser.java,452,50,ConditionalsBoundaryMutator,NO_COVERAGE,no,high,1 min,IndexOutOfBounds Exception
+397,org/apache/commons/configuration2/plist/PropertyListParser.java,452,58,IncrementsMutator,NO_COVERAGE,no,high,1 min,wrong re-initialization
+399,org/apache/commons/configuration2/plist/PropertyListParser.java,452,50,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,wrong re-initialization
+438,org/apache/commons/configuration2/plist/PropertyListParser.java,515,14,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,
+439,org/apache/commons/configuration2/plist/PropertyListParser.java,516,19,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,
+454,org/apache/commons/configuration2/plist/PropertyListParser.java,342,13,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+508,org/apache/commons/configuration2/plist/PropertyListParser.java,547,104,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,won't skip certain jj_expentry
+513,org/apache/commons/configuration2/plist/PropertyListParser.java,467,94,ConditionalsBoundaryMutator,SURVIVED,no,high,2 min,
+519,org/apache/commons/configuration2/plist/PropertyListParser.java,464,75,NegateConditionalsMutator,SURVIVED,no,high,5 min,alters class variable (int array)
+521,org/apache/commons/configuration2/plist/PropertyListParser.java,467,94,NegateConditionalsMutator,SURVIVED,no,high,1 min,
+700,org/apache/commons/configuration2/AbstractConfiguration.java,1146,10,NegateConditionalsMutator,SURVIVED,no,high,1 min,null is not the problem  but the given defaults will never be set in the mutated version
+826,org/apache/commons/configuration2/convert/PropertyConverter.java,161,232,ReturnValsMutator,NO_COVERAGE,no,high,1 min,returns null instead of File?
+974,org/apache/commons/configuration2/plist/SimpleCharStream.java,83,237,MathMutator,NO_COVERAGE,no,high,1 min,
+980,org/apache/commons/configuration2/plist/SimpleCharStream.java,57,108,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,System.arraycopy call removed
+981,org/apache/commons/configuration2/plist/SimpleCharStream.java,58,122,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,System.arraycopy call removed
+1022,org/apache/commons/configuration2/plist/SimpleCharStream.java,409,61,MathMutator,NO_COVERAGE,no,high,1 min,indeces in arraycopy
+1023,org/apache/commons/configuration2/plist/SimpleCharStream.java,409,63,MathMutator,NO_COVERAGE,no ,high,1 min,indeces in arraycopy
+1031,org/apache/commons/configuration2/plist/SimpleCharStream.java,386,8,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+1041,org/apache/commons/configuration2/plist/SimpleCharStream.java,287,27,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,
+1047,org/apache/commons/configuration2/plist/SimpleCharStream.java,172,109,MathMutator,NO_COVERAGE,no,high,1 min,
+1051,org/apache/commons/configuration2/plist/SimpleCharStream.java,154,46,NegateConditionalsMutator,SURVIVED,no,high,1 min,
+1067,org/apache/commons/configuration2/plist/SimpleCharStream.java,437,40,MathMutator,NO_COVERAGE,no,high,1 min,
+1072,org/apache/commons/configuration2/plist/SimpleCharStream.java,446,108,MathMutator,NO_COVERAGE,no,high,1 min,
+1080,org/apache/commons/configuration2/plist/SimpleCharStream.java,452,132,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,
+1081,org/apache/commons/configuration2/plist/SimpleCharStream.java,457,156,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,
+1254,org/apache/commons/configuration2/DynamicCombinedConfiguration.java,120,39,VoidMethodCallMutator,SURVIVED,no,high,1 min,logger will not be initialized
+1324,org/apache/commons/configuration2/DynamicCombinedConfiguration.java,473,7,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+1326,org/apache/commons/configuration2/DynamicCombinedConfiguration.java,467,8,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+1352,org/apache/commons/configuration2/DynamicCombinedConfiguration.java,710,4,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,
+2051,org/apache/commons/configuration2/CombinedConfiguration.java,909,91,VoidMethodCallMutator,SURVIVED,no,high,1 min,
+2218,org/apache/commons/configuration2/plist/PropertyListConfiguration.java,195,19,VoidMethodCallMutator,SURVIVED,no,high,1 min,
+2234,org/apache/commons/configuration2/plist/PropertyListConfiguration.java,258,104,NegateConditionalsMutator,SURVIVED,no,high,1 min,out.print()
+2336,org/apache/commons/configuration2/tree/DefaultConfigurationKey.java,263,40,ConditionalsBoundaryMutator,SURVIVED,no,high,1 min,IndexOutOfBounds Exception
+2569,org/apache/commons/configuration2/CompositeConfiguration.java,202,58,NegateConditionalsMutator,SURVIVED,no,high,1 min,mutated version sets throwExceptionOnMissing flag differently/will probably have type conversion problem
+2583,org/apache/commons/configuration2/CompositeConfiguration.java,263,53,VoidMethodCallMutator,SURVIVED,no,high,1 min,write lock will not be released if endWrite() is not called
+2588,org/apache/commons/configuration2/CompositeConfiguration.java,319,20,VoidMethodCallMutator,SURVIVED,no,high,1 min,mutated version sets throwExceptionOnMissing flag differently
+2646,org/apache/commons/configuration2/plist/XMLPropertyListConfiguration.java,209,39,VoidMethodCallMutator,SURVIVED,no,high,1 min,
+2693,org/apache/commons/configuration2/plist/XMLPropertyListConfiguration.java,420,369,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,print()
+2805,org/apache/commons/configuration2/PatternSubtreeConfigurationWrapper.java,98,9,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+2834,org/apache/commons/configuration2/PatternSubtreeConfigurationWrapper.java,254,9,ReturnValsMutator,NO_COVERAGE,no,high,1 min ,
+2840,org/apache/commons/configuration2/PatternSubtreeConfigurationWrapper.java,284,9,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+2847,org/apache/commons/configuration2/PatternSubtreeConfigurationWrapper.java,308,6,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+2858,org/apache/commons/configuration2/PatternSubtreeConfigurationWrapper.java,427,6,VoidMethodCallMutator,SURVIVED,no,high,1 min,
+2908,org/apache/commons/configuration2/tree/xpath/XPathExpressionEngine.java,452,37,MathMutator,SURVIVED,no,high,1 min,
+2926,org/apache/commons/configuration2/tree/xpath/XPathExpressionEngine.java,313,48,ConditionalsBoundaryMutator,SURVIVED,no,high,1 min,
+3169,org/apache/commons/configuration2/io/VFSFileSystem.java,315,92,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+3172,org/apache/commons/configuration2/io/VFSFileSystem.java,98,40,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,
+3192,org/apache/commons/configuration2/io/VFSFileSystem.java,211,36,NegateConditionalsMutator,NO_COVERAGE,no,medium,3 min,
+3773,org/apache/commons/configuration2/XMLConfiguration.java,1275,9,NegateConditionalsMutator,SURVIVED,no,high,1 min,
+3870,org/apache/commons/configuration2/convert/LegacyListDelimiterHandler.java,281,15,ConditionalsBoundaryMutator,SURVIVED,no,high,1 min,(same as 3871) returns wrong number of trailing backslashes
+3871,org/apache/commons/configuration2/convert/LegacyListDelimiterHandler.java,283,23,IncrementsMutator,SURVIVED,no,high,1 min,returns wrong number of trailing backslashes
+4055,org/apache/commons/configuration2/DatabaseConfiguration.java,164,12,VoidMethodCallMutator,SURVIVED,no,high,1 min,logger will not be initialized
+4081,org/apache/commons/configuration2/DatabaseConfiguration.java,236,5,ReturnValsMutator,NO_COVERAGE,no,high,1 min,returns null instead of string?
+4291,org/apache/commons/configuration2/tree/xpath/ConfigurationNodeIteratorBase.java,104,6,ConditionalsBoundaryMutator,SURVIVED,no,medium,1 min,
+4403,org/apache/commons/configuration2/plist/ParseException.java,174,117,NegateConditionalsMutator,NO_COVERAGE,no,medium,1 min,
+4409,org/apache/commons/configuration2/plist/ParseException.java,108,124,ConditionalsBoundaryMutator,SURVIVED,no,medium,5 min,what happens if retVal > expectedTokenSeq?
+4585,org/apache/commons/configuration2/resolver/CatalogResolver.java,438,106,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+4671,org/apache/commons/configuration2/ConfigurationXMLReader.java,348,28,VoidMethodCallMutator,SURVIVED,no,high,1 min,missing SAX event at beginning of parsing document
+4758,org/apache/commons/configuration2/spring/ConfigurationPropertiesFactoryBean.java,170,5,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+4792,org/apache/commons/configuration2/io/FileUtils.java,89,78,NegateConditionalsMutator,SURVIVED,no,high,1 min,does not decode url correctly bc of missing while loop
+4933,org/apache/commons/configuration2/BaseHierarchicalConfiguration.java,1046,18,ReturnValsMutator,SURVIVED,no,high,1 min,
+5081,org/apache/commons/configuration2/tree/MergeCombiner.java,140,72,ConditionalsBoundaryMutator,SURVIVED,yes,medium,1 min,as of now  the case nodes.size() ==1 is handled before. If that weren't the case  it wouldn't be equal
+5545,org/apache/commons/configuration2/YAMLConfiguration.java,126,29,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+5566,org/apache/commons/configuration2/tree/TreeUtils.java,61,83,NegateConditionalsMutator,SURVIVED,no,high,1 min,
+5568,org/apache/commons/configuration2/tree/TreeUtils.java,55,61,VoidMethodCallMutator,SURVIVED,no,high,1 min,stream.print()
+5572,org/apache/commons/configuration2/tree/TreeUtils.java,72,134,VoidMethodCallMutator,SURVIVED,no,high,1 min,stream.print()
+5627,org/apache/commons/configuration2/builder/INIBuilderParametersImpl.java,56,16,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,same as 5629
+5629,org/apache/commons/configuration2/builder/INIBuilderParametersImpl.java,58,38,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,call to copy method removed
+5705,org/apache/commons/configuration2/resolver/DefaultEntityResolver.java,106,49,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+5708,org/apache/commons/configuration2/io/DefaultFileSystem.java,325,6,ReturnValsMutator,NO_COVERAGE,no,high,1 min,returns null instead of string?
+5990,org/apache/commons/configuration2/builder/combined/MultiWrapDynaClass.java,78,8,ReturnValsMutator,NO_COVERAGE,no,high,1 min,

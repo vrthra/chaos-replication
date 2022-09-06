@@ -1,0 +1,101 @@
+Mutant,File,Line,Index,Mutator,Status,Equivalent,Confidence,Time,Comments
+6,org/apache/commons/configuration2/plist/PropertyListParserTokenManager.java,568,14,NegateConditionalsMutator,NO_COVERAGE,no,high,15 min,
+9,org/apache/commons/configuration2/plist/PropertyListParserTokenManager.java,582,5,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,since lexState is external
+12,org/apache/commons/configuration2/plist/PropertyListParserTokenManager.java,662,150,ConditionalsBoundaryMutator,SURVIVED,yes,medium,15 min,similar to mutant 91
+49,org/apache/commons/configuration2/plist/PropertyListParserTokenManager.java,691,299,NegateConditionalsMutator,SURVIVED,no,high,5 min,
+57,org/apache/commons/configuration2/plist/PropertyListParserTokenManager.java,737,505,NegateConditionalsMutator,NO_COVERAGE,no,high,5 min,throws unexpected TokenMgrError.
+65,org/apache/commons/configuration2/plist/PropertyListParserTokenManager.java,724,440,VoidMethodCallMutator,NO_COVERAGE,no,high,3 min,it has some implementation
+67,org/apache/commons/configuration2/plist/PropertyListParserTokenManager.java,764,20,IncrementsMutator,NO_COVERAGE,no,high,2 min,"Since the start,end arguments are external to the method"
+82,org/apache/commons/configuration2/plist/PropertyListParserTokenManager.java,185,134,ConditionalsBoundaryMutator,SURVIVED,yes,medium,15 min,similar to mutant 91
+91,org/apache/commons/configuration2/plist/PropertyListParserTokenManager.java,277,510,ConditionalsBoundaryMutator,NO_COVERAGE,yes,medium,10 min,"> to >=, since kind is assigned to 27 in the next line 278., and line 279 does not comes under if loop( line 277)"
+123,org/apache/commons/configuration2/plist/PropertyListParserTokenManager.java,297,597,MathMutator,NO_COVERAGE,no,high,3 min,Might assign value at different position of array
+124,org/apache/commons/configuration2/plist/PropertyListParserTokenManager.java,300,607,MathMutator,NO_COVERAGE,no,high,3 min,
+131,org/apache/commons/configuration2/plist/PropertyListParserTokenManager.java,339,758,MathMutator,NO_COVERAGE,no,high,10 min,might effect the next switch cases
+138,org/apache/commons/configuration2/plist/PropertyListParserTokenManager.java,158,36,NegateConditionalsMutator,SURVIVED,no,high,3 min,
+191,org/apache/commons/configuration2/plist/PropertyListParserTokenManager.java,348,788,NegateConditionalsMutator,NO_COVERAGE,no,high,5 min,it can effect line 382
+193,org/apache/commons/configuration2/plist/PropertyListParserTokenManager.java,355,821,NegateConditionalsMutator,NO_COVERAGE,no,high,5 min,it can effect line 382
+221,org/apache/commons/configuration2/plist/PropertyListParserTokenManager.java,292,573,VoidMethodCallMutator,NO_COVERAGE,no,high,3 min,Method has some implementation
+261,org/apache/commons/configuration2/plist/PropertyListParserTokenManager.java,431,124,NegateConditionalsMutator,NO_COVERAGE,no,high,3 min,
+273,org/apache/commons/configuration2/plist/PropertyListParserTokenManager.java,68,30,ReturnValsMutator,SURVIVED,no,high,2 min,returns unexpected values
+275,org/apache/commons/configuration2/plist/PropertyListParserTokenManager.java,72,45,ReturnValsMutator,SURVIVED,no,high,2 min,Since curChar is external to the function
+281,org/apache/commons/configuration2/plist/PropertyListParserTokenManager.java,85,97,ReturnValsMutator,SURVIVED,no,high,5 min,return value mutated
+286,org/apache/commons/configuration2/plist/PropertyListParserTokenManager.java,397,7,ReturnValsMutator,SURVIVED,no,high,2 min,
+289,org/apache/commons/configuration2/plist/PropertyListParserTokenManager.java,110,78,MathMutator,SURVIVED,no,high,3 min,
+303,org/apache/commons/configuration2/plist/PropertyListParserTokenManager.java,497,45,ReturnValsMutator,SURVIVED,no,high,2 min,
+325,org/apache/commons/configuration2/plist/PropertyListParserTokenManager.java,36,72,MathMutator,NO_COVERAGE,no,high,5 min,"since pos, active0 are external to function"
+339,org/apache/commons/configuration2/plist/PropertyListParserTokenManager.java,43,102,ReturnValsMutator,NO_COVERAGE,no,high,2 min,Return value mutated
+340,org/apache/commons/configuration2/plist/PropertyListParserTokenManager.java,44,107,ReturnValsMutator,NO_COVERAGE,no,high,2 min,
+344,org/apache/commons/configuration2/plist/PropertyListParser.java,394,116,IncrementsMutator,NO_COVERAGE,no,high,4 min,since jj_lal[] is external to the function
+357,org/apache/commons/configuration2/plist/PropertyListParser.java,442,110,IncrementsMutator,NO_COVERAGE,no,high,3 min,
+386,org/apache/commons/configuration2/plist/PropertyListParser.java,431,41,ConditionalsBoundaryMutator,NO_COVERAGE,no,high,5 min,"jj_la1[] is external to the function, can be unit tested by positional values of array."
+395,org/apache/commons/configuration2/plist/PropertyListParser.java,452,50,ConditionalsBoundaryMutator,NO_COVERAGE,no,high,2 min,Out of bound error
+397,org/apache/commons/configuration2/plist/PropertyListParser.java,452,58,IncrementsMutator,NO_COVERAGE,no,high,2 min,
+399,org/apache/commons/configuration2/plist/PropertyListParser.java,452,50,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,similar to mutant 519
+438,org/apache/commons/configuration2/plist/PropertyListParser.java,515,14,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,"token and index are external to the function, so killable"
+439,org/apache/commons/configuration2/plist/PropertyListParser.java,516,19,NegateConditionalsMutator,NO_COVERAGE,no,high,3 min,"token and index are external to the function, so killable"
+454,org/apache/commons/configuration2/plist/PropertyListParser.java,342,13,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+508,org/apache/commons/configuration2/plist/PropertyListParser.java,547,104,NegateConditionalsMutator,NO_COVERAGE,no,high,15 min,it effects line 552
+513,org/apache/commons/configuration2/plist/PropertyListParser.java,467,94,ConditionalsBoundaryMutator,SURVIVED,no,low,15 min,
+519,org/apache/commons/configuration2/plist/PropertyListParser.java,464,75,NegateConditionalsMutator,SURVIVED,no,high,10 min,Out of bound error
+521,org/apache/commons/configuration2/plist/PropertyListParser.java,467,94,NegateConditionalsMutator,SURVIVED,no,high,3 min,c.first is updated
+700,org/apache/commons/configuration2/AbstractConfiguration.java,1146,10,NegateConditionalsMutator,SURVIVED,no,low,2 min,
+826,org/apache/commons/configuration2/convert/PropertyConverter.java,161,232,ReturnValsMutator,NO_COVERAGE,no,low,10 min,
+974,org/apache/commons/configuration2/plist/SimpleCharStream.java,83,237,MathMutator,NO_COVERAGE,no,high,2 min,
+980,org/apache/commons/configuration2/plist/SimpleCharStream.java,57,108,VoidMethodCallMutator,NO_COVERAGE,no,high,2 min,
+981,org/apache/commons/configuration2/plist/SimpleCharStream.java,58,122,VoidMethodCallMutator,NO_COVERAGE,no,high,3 min,
+1022,org/apache/commons/configuration2/plist/SimpleCharStream.java,409,61,MathMutator,NO_COVERAGE,no,high,2 min,data is copied at different positions of the array
+1023,org/apache/commons/configuration2/plist/SimpleCharStream.java,409,63,MathMutator,NO_COVERAGE,no,high,1 min,similar to mutant 1022
+1031,org/apache/commons/configuration2/plist/SimpleCharStream.java,386,8,VoidMethodCallMutator,NO_COVERAGE,no,high,5 min,Method has some implementation
+1041,org/apache/commons/configuration2/plist/SimpleCharStream.java,287,27,NegateConditionalsMutator,NO_COVERAGE,no,high,3 min,since buffer and buffersize are external to the function
+1047,org/apache/commons/configuration2/plist/SimpleCharStream.java,172,109,MathMutator,NO_COVERAGE,no,high,3 min,Since char c is external to the function
+1051,org/apache/commons/configuration2/plist/SimpleCharStream.java,154,46,NegateConditionalsMutator,SURVIVED,no,high,3 min,
+1067,org/apache/commons/configuration2/plist/SimpleCharStream.java,437,40,MathMutator,NO_COVERAGE,no,high,2 min,
+1072,org/apache/commons/configuration2/plist/SimpleCharStream.java,446,108,MathMutator,NO_COVERAGE,no,high,3 min,It effects line 455
+1080,org/apache/commons/configuration2/plist/SimpleCharStream.java,452,132,NegateConditionalsMutator,NO_COVERAGE,no,high,2 min,
+1081,org/apache/commons/configuration2/plist/SimpleCharStream.java,457,156,NegateConditionalsMutator,NO_COVERAGE,no,high,5 min,"bufline[] array is external to the function, it gets effected, can be unit tested with that array."
+1254,org/apache/commons/configuration2/DynamicCombinedConfiguration.java,120,39,VoidMethodCallMutator,SURVIVED,no,high,3 min,Method has some implementation
+1324,org/apache/commons/configuration2/DynamicCombinedConfiguration.java,473,7,ReturnValsMutator,NO_COVERAGE,no,high,2 min,
+1326,org/apache/commons/configuration2/DynamicCombinedConfiguration.java,467,8,ReturnValsMutator,NO_COVERAGE,no,high,1 min,return value mutated
+1352,org/apache/commons/configuration2/DynamicCombinedConfiguration.java,710,4,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,key is external to the function
+2051,org/apache/commons/configuration2/CombinedConfiguration.java,909,91,VoidMethodCallMutator,SURVIVED,no,high,2 min,Method has some implementation
+2218,org/apache/commons/configuration2/plist/PropertyListConfiguration.java,195,19,VoidMethodCallMutator,SURVIVED,no,high,10 min,
+2234,org/apache/commons/configuration2/plist/PropertyListConfiguration.java,258,104,NegateConditionalsMutator,SURVIVED,no,high,2 min,"!= to ==, checked with line 260"
+2336,org/apache/commons/configuration2/tree/DefaultConfigurationKey.java,263,40,ConditionalsBoundaryMutator,SURVIVED,no,high,2 min,
+2569,org/apache/commons/configuration2/CompositeConfiguration.java,202,58,NegateConditionalsMutator,SURVIVED,no,high,2 min,config is external to the function
+2583,org/apache/commons/configuration2/CompositeConfiguration.java,263,53,VoidMethodCallMutator,SURVIVED,no,high,5 min,"It has no impl, but subclasses can override it an add some functionality"
+2588,org/apache/commons/configuration2/CompositeConfiguration.java,319,20,VoidMethodCallMutator,SURVIVED,no,high,5 min,
+2646,org/apache/commons/configuration2/plist/XMLPropertyListConfiguration.java,209,39,VoidMethodCallMutator,SURVIVED,no,low,10 min,
+2693,org/apache/commons/configuration2/plist/XMLPropertyListConfiguration.java,420,369,VoidMethodCallMutator,NO_COVERAGE,no,high,15 min,Here one can extend the print and check for any changes
+2805,org/apache/commons/configuration2/PatternSubtreeConfigurationWrapper.java,98,9,ReturnValsMutator,NO_COVERAGE,no,high,1 min,return value mutated
+2834,org/apache/commons/configuration2/PatternSubtreeConfigurationWrapper.java,254,9,ReturnValsMutator,NO_COVERAGE,no,high,2 min,
+2840,org/apache/commons/configuration2/PatternSubtreeConfigurationWrapper.java,284,9,ReturnValsMutator,NO_COVERAGE,no,high,2 min,
+2847,org/apache/commons/configuration2/PatternSubtreeConfigurationWrapper.java,308,6,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+2858,org/apache/commons/configuration2/PatternSubtreeConfigurationWrapper.java,427,6,VoidMethodCallMutator,SURVIVED,no,high,3 min,can be overridden and add some implementation
+2908,org/apache/commons/configuration2/tree/xpath/XPathExpressionEngine.java,452,37,MathMutator,SURVIVED,no,medium,10 min,
+2926,org/apache/commons/configuration2/tree/xpath/XPathExpressionEngine.java,313,48,ConditionalsBoundaryMutator,SURVIVED,no,high,3 min,"since key is external and index is found using external call, unit tests can be written"
+3169,org/apache/commons/configuration2/io/VFSFileSystem.java,315,92,VoidMethodCallMutator,NO_COVERAGE,no,high,3 min,Method has some implementation
+3172,org/apache/commons/configuration2/io/VFSFileSystem.java,98,40,NegateConditionalsMutator,NO_COVERAGE,no,high,3 min,
+3192,org/apache/commons/configuration2/io/VFSFileSystem.java,211,36,NegateConditionalsMutator,NO_COVERAGE,no,medium,5 min,
+3773,org/apache/commons/configuration2/XMLConfiguration.java,1275,9,NegateConditionalsMutator,SURVIVED,no,high,1 min,NP exception
+3870,org/apache/commons/configuration2/convert/LegacyListDelimiterHandler.java,281,15,ConditionalsBoundaryMutator,SURVIVED,no,high,3 min,since Line is external to the function
+3871,org/apache/commons/configuration2/convert/LegacyListDelimiterHandler.java,283,23,IncrementsMutator,SURVIVED,no,high,2 min,retunrs in unexpected bsCount value.
+4055,org/apache/commons/configuration2/DatabaseConfiguration.java,164,12,VoidMethodCallMutator,SURVIVED,no,high,1 min,
+4081,org/apache/commons/configuration2/DatabaseConfiguration.java,236,5,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+4291,org/apache/commons/configuration2/tree/xpath/ConfigurationNodeIteratorBase.java,104,6,ConditionalsBoundaryMutator,SURVIVED,no,high,3 min,
+4403,org/apache/commons/configuration2/plist/ParseException.java,174,117,NegateConditionalsMutator,NO_COVERAGE,no,high,2 min,
+4409,org/apache/commons/configuration2/plist/ParseException.java,108,124,ConditionalsBoundaryMutator,SURVIVED,no,high,15 min,change can be observed in line109.
+4585,org/apache/commons/configuration2/resolver/CatalogResolver.java,438,106,VoidMethodCallMutator,NO_COVERAGE,no,high,3 min,prints the message
+4671,org/apache/commons/configuration2/ConfigurationXMLReader.java,348,28,VoidMethodCallMutator,SURVIVED,no,high,5 min,subclasses can override the method and perform some impl.
+4758,org/apache/commons/configuration2/spring/ConfigurationPropertiesFactoryBean.java,170,5,ReturnValsMutator,NO_COVERAGE,no,high,2 min,
+4792,org/apache/commons/configuration2/io/FileUtils.java,89,78,NegateConditionalsMutator,SURVIVED,no,low,10 min,it might effect line 87.
+4933,org/apache/commons/configuration2/BaseHierarchicalConfiguration.java,1046,18,ReturnValsMutator,SURVIVED,no,high,1 min,returns null
+5081,org/apache/commons/configuration2/tree/MergeCombiner.java,140,72,ConditionalsBoundaryMutator,SURVIVED,yes,low,15 min,"When ==1, 131 line is satisfied an it returns."
+5545,org/apache/commons/configuration2/YAMLConfiguration.java,126,29,VoidMethodCallMutator,NO_COVERAGE,no,high,2 min,
+5566,org/apache/commons/configuration2/tree/TreeUtils.java,61,83,NegateConditionalsMutator,SURVIVED,no,high,2 min,
+5568,org/apache/commons/configuration2/tree/TreeUtils.java,55,61,VoidMethodCallMutator,SURVIVED,no,low,1 min,similar to mutant 5572
+5572,org/apache/commons/configuration2/tree/TreeUtils.java,72,134,VoidMethodCallMutator,SURVIVED,no,low,10 min,
+5627,org/apache/commons/configuration2/builder/INIBuilderParametersImpl.java,56,16,VoidMethodCallMutator,NO_COVERAGE,no,high,2 min,Similar to mutant 5629
+5629,org/apache/commons/configuration2/builder/INIBuilderParametersImpl.java,58,38,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,Method has some implementation
+5705,org/apache/commons/configuration2/resolver/DefaultEntityResolver.java,106,49,VoidMethodCallMutator,NO_COVERAGE,no,high,2 min,systemId is modified
+5708,org/apache/commons/configuration2/io/DefaultFileSystem.java,325,6,ReturnValsMutator,NO_COVERAGE,no,high,5 min,
+5990,org/apache/commons/configuration2/builder/combined/MultiWrapDynaClass.java,78,8,ReturnValsMutator,NO_COVERAGE,no,high,2 min,

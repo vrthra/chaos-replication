@@ -1,0 +1,101 @@
+Mutant,File,Line,Index,Mutator,Status,Equivalent,Confidence,Time,Comments
+273,org/apache/commons/compress/compressors/bzip2/BlockSort.java,886,367,NegateConditionalsMutator,SURVIVED,no,high,5 min,m influences vswap ~(quicksort) runtime and positions where values will be swaped
+318,org/apache/commons/compress/compressors/bzip2/BlockSort.java,623,104,MathMutator,SURVIVED,no,medium,5 min,influences duration of HAMMER loop
+369,org/apache/commons/compress/compressors/bzip2/BlockSort.java,722,556,MathMutator,NO_COVERAGE,no,medium,5 min,influences duration of HAMMER loop
+385,org/apache/commons/compress/compressors/bzip2/BlockSort.java,745,643,MathMutator,SURVIVED,no,medium,5 min,influences duration of HAMMER loop
+537,org/apache/commons/compress/compressors/bzip2/BlockSort.java,1047,655,MathMutator,SURVIVED,no,medium,5 min,bit shift operation changes
+552,org/apache/commons/compress/compressors/bzip2/BlockSort.java,937,71,NegateConditionalsMutator,SURVIVED,no,high,1 min,
+553,org/apache/commons/compress/compressors/bzip2/BlockSort.java,940,107,NegateConditionalsMutator,SURVIVED,no,medium,5 min,char [] quadrant fields won't be set to 0
+580,org/apache/commons/compress/compressors/bzip2/BlockSort.java,796,15,ConditionalsBoundaryMutator,SURVIVED,no,medium,5 min,changes returned value
+788,org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java,284,589,MathMutator,NO_COVERAGE,no,high,10 min,because change in int array class variable weight is observed
+875,org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java,778,87,NegateConditionalsMutator,SURVIVED,no,high,5 min,Decrement if ge influences Assignment of class variable later
+889,org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java,897,450,ConditionalsBoundaryMutator,SURVIVED,no,medium,5 min,changes duration of for-loop and therefore assignment of int array field
+1019,org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java,1061,50,ConditionalsBoundaryMutator,SURVIVED,no,medium,1 min,
+1118,org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java,653,33,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+1152,org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java,1163,98,MathMutator,NO_COVERAGE,no,high,1 min,
+1486,org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java,488,43,ConditionalsBoundaryMutator,SURVIVED,no,high,1 min,
+1567,org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java,352,51,MathMutator,SURVIVED,no,high,1 min,changes value of class variable
+1631,org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java,633,237,VoidMethodCallMutator,SURVIVED,no,high,1 min,removed method is important
+1750,org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java,163,47,MathMutator,SURVIVED,no,high,1 min,
+1893,org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java,825,7,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,changes setting of class variables
+1911,org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java,933,20,MathMutator,NO_COVERAGE,no,high,1 min,
+1922,org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java,943,139,MathMutator,NO_COVERAGE,no,high,1 min,
+1929,org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java,934,45,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,
+1936,org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java,946,151,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,
+1998,org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java,788,40,VoidMethodCallMutator,SURVIVED,no,medium,1 min,count method not found by IntelliJ
+2091,org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java,1122,15,MathMutator,SURVIVED,no,high,1 min,
+2094,org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java,1131,43,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,
+2118,org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java,396,42,NegateConditionalsMutator,SURVIVED,no,high,1 min,
+2191,org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java,1088,11,NegateConditionalsMutator,SURVIVED,no,medium,1 min,"""count()"" method not found by IntelliJ"
+2198,org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java,538,132,MathMutator,SURVIVED,no,high,1 min,
+2293,org/apache/commons/compress/archivers/sevenz/SevenZFile.java,937,215,ConditionalsBoundaryMutator,SURVIVED,no,high,1 min,
+2348,org/apache/commons/compress/archivers/sevenz/SevenZFile.java,1054,10,NegateConditionalsMutator,SURVIVED,no,high,1 min,
+2351,org/apache/commons/compress/archivers/sevenz/SevenZFile.java,1105,13,ConditionalsBoundaryMutator,SURVIVED,yes,high,1 min,x+=cnt when cnt is 0 
+2361,org/apache/commons/compress/archivers/sevenz/SevenZFile.java,412,10,NegateConditionalsMutator,NO_COVERAGE,no,medium,1 min,buffer won't be read
+2392,org/apache/commons/compress/archivers/sevenz/SevenZFile.java,783,152,MathMutator,SURVIVED,no,high,1 min,
+2395,org/apache/commons/compress/archivers/sevenz/SevenZFile.java,791,207,MathMutator,SURVIVED,no,high,1 min,
+2455,org/apache/commons/compress/archivers/sevenz/SevenZFile.java,697,346,ConditionalsBoundaryMutator,SURVIVED,no,high,1 min,
+2572,org/apache/commons/compress/archivers/sevenz/SevenZFile.java,1143,79,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+2913,org/apache/commons/compress/archivers/tar/TarArchiveEntry.java,1130,5,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,
+2942,org/apache/commons/compress/archivers/tar/TarArchiveEntry.java,946,6,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,
+2957,org/apache/commons/compress/archivers/tar/TarArchiveEntry.java,910,5,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,
+3383,org/apache/commons/compress/archivers/zip/ZipFile.java,660,38,VoidMethodCallMutator,SURVIVED,no,high,1 min,setter
+3489,org/apache/commons/compress/archivers/zip/ZipArchiveEntry.java,242,12,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+3784,org/apache/commons/compress/archivers/cpio/CpioArchiveInputStream.java,176,13,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+3822,org/apache/commons/compress/archivers/cpio/CpioArchiveInputStream.java,558,71,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+3912,org/apache/commons/compress/archivers/cpio/CpioArchiveInputStream.java,438,42,VoidMethodCallMutator,SURVIVED,no,high,1 min,
+3939,org/apache/commons/compress/archivers/cpio/CpioArchiveInputStream.java,519,59,MathMutator,NO_COVERAGE,no,high,1 min,
+3996,org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java,617,57,VoidMethodCallMutator,SURVIVED,no,high,1 min,
+4003,org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java,294,43,VoidMethodCallMutator,SURVIVED,no,high,1 min,flush()
+4015,org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java,669,37,ReturnValsMutator,SURVIVED,no,high,1 min,
+4101,org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java,184,9,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+4212,org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java,527,16,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,
+4236,org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java,568,14,NegateConditionalsMutator,SURVIVED,no,high,1 min,
+4361,org/apache/commons/compress/compressors/lz77support/LZ77Compressor.java,344,43,ConditionalsBoundaryMutator,SURVIVED,no,high,1 min,
+4707,org/apache/commons/compress/archivers/dump/DumpArchiveInputStream.java,492,130,MathMutator,SURVIVED,no,high,1 min,
+4775,org/apache/commons/compress/archivers/zip/ZipUtil.java,352,29,NegateConditionalsMutator,NO_COVERAGE,no,medium,1 min,
+4781,org/apache/commons/compress/archivers/zip/ZipUtil.java,302,13,VoidMethodCallMutator,NO_COVERAGE,no,low,5 min,a void copy method?
+5074,org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java,911,13,MathMutator,NO_COVERAGE,no,high,1 min,hash
+5089,org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java,691,16,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+5127,org/apache/commons/compress/compressors/lz4/BlockLZ4CompressorOutputStream.java,292,40,NegateConditionalsMutator,SURVIVED,no,high,1 min,pairsToKeep and pairLength increased too much?
+5315,org/apache/commons/compress/archivers/dump/DumpArchiveEntry.java,412,36,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,
+5318,org/apache/commons/compress/archivers/dump/DumpArchiveEntry.java,421,61,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,
+5342,org/apache/commons/compress/archivers/dump/DumpArchiveEntry.java,696,5,ReturnValsMutator,NO_COVERAGE,no,high,1 min,getter
+5347,org/apache/commons/compress/archivers/dump/DumpArchiveEntry.java,752,5,ReturnValsMutator,NO_COVERAGE,no,high,1 min,getter
+5363,org/apache/commons/compress/archivers/dump/DumpArchiveEntry.java,394,8,MathMutator,SURVIVED,no,high,1 min,
+5375,org/apache/commons/compress/archivers/dump/DumpArchiveEntry.java,472,113,MathMutator,SURVIVED,no,high,1 min,
+5428,org/apache/commons/compress/archivers/zip/X0017_StrongEncryptionHeader.java,336,43,MathMutator,NO_COVERAGE,no,high,1 min,
+5448,org/apache/commons/compress/archivers/zip/X0017_StrongEncryptionHeader.java,351,179,MathMutator,NO_COVERAGE,no,high,1 min,
+5450,org/apache/commons/compress/archivers/zip/X0017_StrongEncryptionHeader.java,351,183,MathMutator,NO_COVERAGE,no,high,1 min,
+5456,org/apache/commons/compress/archivers/zip/X0017_StrongEncryptionHeader.java,354,217,MathMutator,NO_COVERAGE,no,high,1 min,
+5461,org/apache/commons/compress/archivers/zip/X0017_StrongEncryptionHeader.java,355,233,MathMutator,NO_COVERAGE,no,high,1 min,
+5482,org/apache/commons/compress/archivers/zip/X0017_StrongEncryptionHeader.java,365,343,MathMutator,NO_COVERAGE,no,high,1 min,
+5699,org/apache/commons/compress/compressors/snappy/FramedSnappyCompressorInputStream.java,188,9,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+6396,org/apache/commons/compress/compressors/lz4/FramedLZ4CompressorOutputStream.java,220,75,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,flush()
+7078,org/apache/commons/compress/archivers/zip/BinaryTree.java,145,160,ConditionalsBoundaryMutator,SURVIVED,no,high,2 min,
+7152,org/apache/commons/compress/archivers/zip/GeneralPurposeBit.java,218,54,ReturnValsMutator,NO_COVERAGE,no,high,1 min,hashcode
+7212,org/apache/commons/compress/archivers/zip/X7875_NewUnix.java,293,16,MathMutator,SURVIVED,no,high,1 min,hashcode
+7213,org/apache/commons/compress/archivers/zip/X7875_NewUnix.java,294,24,MathMutator,SURVIVED,no,high,1 min,hashcode
+7246,org/apache/commons/compress/archivers/dump/DumpArchiveSummary.java,327,62,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+7253,org/apache/commons/compress/archivers/dump/DumpArchiveSummary.java,200,5,ReturnValsMutator,NO_COVERAGE,no,high,1 min,getter
+7314,org/apache/commons/compress/compressors/z/ZCompressorInputStream.java,142,43,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+7782,org/apache/commons/compress/archivers/zip/UnshrinkingInputStream.java,112,79,VoidMethodCallMutator,NO_COVERAGE,no,medium,1 min,
+7802,org/apache/commons/compress/archivers/sevenz/AES256SHA256Decoder.java,48,54,MathMutator,SURVIVED,no,high,1 min,decoding
+8249,org/apache/commons/compress/compressors/zstandard/ZstdUtils.java,138,4,ReturnValsMutator,NO_COVERAGE,no,low,2 min,"""only exists to support unit tests"""
+8251,org/apache/commons/compress/compressors/zstandard/ZstdUtils.java,78,18,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+8489,org/apache/commons/compress/utils/ChecksumVerifyingInputStream.java,100,9,ReturnValsMutator,SURVIVED,no,high,1 min,
+8585,org/apache/commons/compress/archivers/Lister.java,71,15,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+8790,org/apache/commons/compress/compressors/lzma/LZMACompressorInputStream.java,140,28,ReturnValsMutator,SURVIVED,no,high,1 min,
+8825,org/apache/commons/compress/archivers/zip/PKWareExtraHeader.java,191,18,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+8865,org/apache/commons/compress/archivers/sevenz/CLI.java,72,13,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,
+8895,org/apache/commons/compress/compressors/brotli/BrotliCompressorInputStream.java,72,6,ReturnValsMutator,NO_COVERAGE,no,low,10 min,broken project? Missing files? Could not find declaration/implementation
+9004,org/apache/commons/compress/archivers/zip/ParallelScatterZipCreator.java,272,14,MathMutator,SURVIVED,no,high,1 min,
+9043,org/apache/commons/compress/archivers/sevenz/CLI.java,130,86,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+9099,org/apache/commons/compress/archivers/sevenz/SevenZFile.java,1005,10,NegateConditionalsMutator,SURVIVED,no,high,1 min,
+9124,org/apache/commons/compress/compressors/pack200/Pack200Utils.java,147,288,VoidMethodCallMutator,NO_COVERAGE,no,medium,1 min,will not delete file on exit
+9125,org/apache/commons/compress/compressors/pack200/Pack200Utils.java,80,6,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+9193,org/apache/commons/compress/archivers/zip/ScatterZipOutputStream.java,130,20,VoidMethodCallMutator,SURVIVED,no,high,1 min,stream.close()
+9294,org/apache/commons/compress/archivers/dump/DumpArchiveEntry.java,842,60,ReturnValsMutator,SURVIVED,no,high,1 min,
+9328,org/apache/commons/compress/archivers/sevenz/Coders.java,212,6,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,outstream.write
+9411,org/apache/commons/compress/archivers/dump/DumpArchiveConstants.java,88,38,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+9503,org/apache/commons/compress/archivers/arj/MainHeader.java,100,278,ReturnValsMutator,NO_COVERAGE,no,high,1 min,

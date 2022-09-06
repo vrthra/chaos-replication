@@ -1,0 +1,101 @@
+Mutant,File,Line,Index,Mutator,Status,Equivalent,Confidence,Time,Comments
+233,org/apache/commons/lang3/ArrayUtils.java,3442,13,ConditionalsBoundaryMutator,SURVIVED,yes,medium,2 min,similar to mutant 1341
+370,org/apache/commons/lang3/ArrayUtils.java,8306,89,ConditionalsBoundaryMutator,SURVIVED,no,high,2 min,"since array, index are external to the function, can be unittested. When index==array.length it wiil throw an exception"
+895,org/apache/commons/lang3/ArrayUtils.java,7409,106,ConditionalsBoundaryMutator,SURVIVED,no,high,1 min,"loop also executes also when diff==length, so this might show effect on output, I.e line number 7417. I can create an array with length zero."
+957,org/apache/commons/lang3/ArrayUtils.java,7931,23,MathMutator,SURVIVED,no,low,10 min,"the size of indices array is increased which has no effect in this while loop, but during the computation of return value this mutation might effect"
+1148,org/apache/commons/lang3/ArrayUtils.java,1626,35,ConditionalsBoundaryMutator,SURVIVED,yes,medium,15 min,"for j==i, then nothing gets swaped, because the positions are same."
+1341,org/apache/commons/lang3/ArrayUtils.java,2912,38,ConditionalsBoundaryMutator,SURVIVED,yes,medium,10 min,"for both endIndexExclusive> and =  to array.length, then in the next line assigned to same value for both cases"
+1347,org/apache/commons/lang3/ArrayUtils.java,2932,122,ConditionalsBoundaryMutator,SURVIVED,no,medium,10 min,startIndexInclusice is updated in line2934
+1492,org/apache/commons/lang3/ArrayUtils.java,3165,81,ConditionalsBoundaryMutator,SURVIVED,no,medium,10 min,"Loop executes also when n==1,so the swap function in loop is executed"
+1526,org/apache/commons/lang3/ArrayUtils.java,2672,38,ConditionalsBoundaryMutator,SURVIVED,yes,medium,10 min,similar to mutant 1341
+1576,org/apache/commons/lang3/ArrayUtils.java,8634,7,VoidMethodCallMutator,NO_COVERAGE,no,high,2 min,method has some impl.
+1600,org/apache/commons/lang3/ArrayUtils.java,8559,7,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,method has some impl.
+1660,org/apache/commons/lang3/ArrayUtils.java,985,13,ConditionalsBoundaryMutator,SURVIVED,yes,medium,3 min,startIndexInclusice is external to the function but in next line it is updated with 0.
+1866,org/apache/commons/lang3/ArrayUtils.java,2456,33,ConditionalsBoundaryMutator,SURVIVED,yes,high,1 min,"when offset is <=0, it is assigned to zero in the next line"
+1884,org/apache/commons/lang3/ArrayUtils.java,2113,11,ConditionalsBoundaryMutator,SURVIVED,yes,high,2 min,In line 2122 len would be zero or negative. So it wouldn’t enter for loop. So itstands equivalent
+1977,org/apache/commons/lang3/ArrayUtils.java,4755,47,ReturnValsMutator,SURVIVED,no,high,2 min,return value mutated
+1979,org/apache/commons/lang3/ArrayUtils.java,4761,75,ReturnValsMutator,NO_COVERAGE,no,high,1 min,Return value mutated.
+1981,org/apache/commons/lang3/ArrayUtils.java,4766,94,ReturnValsMutator,NO_COVERAGE,no,high,3 min,returns null
+2137,org/apache/commons/lang3/StringUtils.java,7871,95,MathMutator,SURVIVED,no,medium,2 min,"the offset is assigned with unexpected value, so this effects further if loops, and return values"
+3118,org/apache/commons/lang3/StringUtils.java,2753,13,ConditionalsBoundaryMutator,SURVIVED,no,high,1 min,"len is external to the function, can be unittested"
+3119,org/apache/commons/lang3/StringUtils.java,2756,24,ConditionalsBoundaryMutator,SURVIVED,no,high,2 min,can be unitested
+3140,org/apache/commons/lang3/StringUtils.java,6545,79,ConditionalsBoundaryMutator,SURVIVED,yes,medium,10 min,"not reachable, because == is verrifed in line 6543"
+3204,org/apache/commons/lang3/StringUtils.java,2824,13,ConditionalsBoundaryMutator,SURVIVED,no,high,1 min,since all the variables in the if condition are external to the function
+3205,org/apache/commons/lang3/StringUtils.java,2824,17,ConditionalsBoundaryMutator,SURVIVED,no,high,1 min,all the variables used in the if condition are extrenal to the function
+3260,org/apache/commons/lang3/StringUtils.java,6063,37,ConditionalsBoundaryMutator,SURVIVED,yes,medium,2 min,similar to mutant 3723
+3261,org/apache/commons/lang3/StringUtils.java,6066,46,ConditionalsBoundaryMutator,SURVIVED,yes,medium,3 min,in the next line it is assigning the value with 0
+3330,org/apache/commons/lang3/StringUtils.java,6323,4,ConditionalsBoundaryMutator,SURVIVED,no,high,1 min,"repeat is external to the function, can be unit tested"
+3428,org/apache/commons/lang3/StringUtils.java,5877,243,MathMutator,SURVIVED,no,medium,3 min,"it is effecting the capacity of the string builder buffer, whcich may effect in line 5884,5886"
+3723,org/apache/commons/lang3/StringUtils.java,2717,59,ConditionalsBoundaryMutator,SURVIVED,yes,medium,3 min,since start is assigned with zero in liine 2718
+4019,org/apache/commons/lang3/text/StrBuilder.java,640,15,NegateConditionalsMutator,SURVIVED,no,low,10 min,
+4114,org/apache/commons/lang3/text/StrBuilder.java,1540,9,ReturnValsMutator,SURVIVED,no,high,1 min,return value mutated
+4288,org/apache/commons/lang3/text/StrBuilder.java,1890,42,ReturnValsMutator,SURVIVED,no,high,1 min,return value mutated
+4382,org/apache/commons/lang3/text/StrBuilder.java,2476,89,ConditionalsBoundaryMutator,SURVIVED,no,high,5 min,"the loop is aslo executed when i==len, then it might effect line 2482"
+4607,org/apache/commons/lang3/text/StrBuilder.java,1980,40,ReturnValsMutator,SURVIVED,no,high,1 min,return value mutated
+4768,org/apache/commons/lang3/Conversion.java,453,85,ConditionalsBoundaryMutator,SURVIVED,no,low,5 min,Can result in unexpected return value.
+4805,org/apache/commons/lang3/Conversion.java,465,232,MathMutator,SURVIVED,no,medium,3 min,Can result in unexpected return value.
+4983,org/apache/commons/lang3/Conversion.java,921,27,ConditionalsBoundaryMutator,SURVIVED,no,high,1 min,since both the variables in the if condition are external to the function.
+5067,org/apache/commons/lang3/Conversion.java,755,29,ConditionalsBoundaryMutator,SURVIVED,no,high,1 min,similar to mutant 4983
+5240,org/apache/commons/lang3/Conversion.java,853,21,ConditionalsBoundaryMutator,SURVIVED,no,high,1 min,similar to mutant 4983
+5286,org/apache/commons/lang3/Conversion.java,1441,17,MathMutator,SURVIVED,no,high,2 min,similar to mutant 4983
+5418,org/apache/commons/lang3/Conversion.java,1061,21,ConditionalsBoundaryMutator,SURVIVED,no,high,1 min,similar to mutant 4983
+5531,org/apache/commons/lang3/Conversion.java,1330,19,MathMutator,SURVIVED,no,high,1 min,similar to mutant 4983
+5558,org/apache/commons/lang3/math/NumberUtils.java,1775,15,ConditionalsBoundaryMutator,SURVIVED,yes,medium,10 min,"when x==y, then returns zero, and the mutation is not reachable."
+5613,org/apache/commons/lang3/math/NumberUtils.java,696,223,ConditionalsBoundaryMutator,SURVIVED,no,low,15 min,"the effect propogates through out the function, with dec value."
+5802,org/apache/commons/lang3/math/NumberUtils.java,1614,106,ReturnValsMutator,NO_COVERAGE,no,low,15 min,"return value mutated, but trying to trace the whole function about the effect of mutation"
+6156,org/apache/commons/lang3/reflect/TypeUtils.java,751,8,ReturnValsMutator,NO_COVERAGE,no,high,1 min,return value mutated
+6181,org/apache/commons/lang3/reflect/TypeUtils.java,830,144,ReturnValsMutator,NO_COVERAGE,no,high,1 min,One can alternatively extend an keep track of the output
+6267,org/apache/commons/lang3/reflect/TypeUtils.java,708,80,NegateConditionalsMutator,NO_COVERAGE,no,high,5 min,since type is external to the function
+6361,org/apache/commons/lang3/reflect/TypeUtils.java,1412,15,ConditionalsBoundaryMutator,NO_COVERAGE,no,Low,15 min,"It might throw out of bound exception, because condition from < to >="
+6587,org/apache/commons/lang3/builder/ToStringStyle.java,543,180,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,method has some impl.
+6643,org/apache/commons/lang3/builder/ToStringStyle.java,1739,5,ReturnValsMutator,NO_COVERAGE,no,high,1 min,return value mutated
+6654,org/apache/commons/lang3/builder/ToStringStyle.java,1697,5,ReturnValsMutator,NO_COVERAGE,no,high,2 min,
+6938,org/apache/commons/lang3/math/Fraction.java,543,37,MathMutator,SURVIVED,no,high,2 min,Effects the return value.
+6989,org/apache/commons/lang3/builder/EqualsBuilder.java,747,9,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+7038,org/apache/commons/lang3/builder/EqualsBuilder.java,1004,53,ReturnValsMutator,SURVIVED,no,high,1 min,
+7051,org/apache/commons/lang3/builder/EqualsBuilder.java,962,9,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+7320,org/apache/commons/lang3/ClassUtils.java,1058,9,NegateConditionalsMutator,SURVIVED,no,high,2 min,"loader value is assigned with unexpeted value, can effect further to the return value"
+7724,org/apache/commons/lang3/time/DateUtils.java,1781,18,ReturnValsMutator,NO_COVERAGE,no,high,1 min,return value mutated
+8257,org/apache/commons/lang3/time/FastDatePrinter.java,646,15,MathMutator,SURVIVED,no,high,1 min,
+8421,org/apache/commons/lang3/text/StrSubstitutor.java,1021,19,ReturnValsMutator,SURVIVED,no,high,1 min,return value mutated
+8434,org/apache/commons/lang3/text/StrSubstitutor.java,795,157,ConditionalsBoundaryMutator,SURVIVED,no,low,5 min,"loop also executes also when pos == bufEnd,so this might effect the other statements in the functon itself."
+8547,org/apache/commons/lang3/text/StrTokenizer.java,552,18,ReturnValsMutator,SURVIVED,no,high,1 min,return value mutated
+8677,org/apache/commons/lang3/reflect/MethodUtils.java,1002,75,IncrementsMutator,NO_COVERAGE,no,medium,10 min,it retrieves unexpected value and this effect propogates upto the return value
+8764,org/apache/commons/lang3/reflect/MethodUtils.java,475,46,VoidMethodCallMutator,SURVIVED,no,high,1 min,
+8825,org/apache/commons/lang3/time/DurationFormatUtils.java,198,88,NegateConditionalsMutator,SURVIVED,no,medium,2 min,could throw an exception
+8941,org/apache/commons/lang3/builder/DiffBuilder.java,325,5,VoidMethodCallMutator,SURVIVED,no,high,1 min,method has some impl.
+8951,org/apache/commons/lang3/builder/DiffBuilder.java,485,5,VoidMethodCallMutator,SURVIVED,no,high,1 min,method has some impl.
+8980,org/apache/commons/lang3/builder/DiffBuilder.java,829,100,ReturnValsMutator,SURVIVED,no,high,1 min,return value mutated
+9005,org/apache/commons/lang3/builder/DiffBuilder.java,167,5,VoidMethodCallMutator,SURVIVED,no,high,1 min,method has some impl.
+9097,org/apache/commons/lang3/Validate.java,985,6,ConditionalsBoundaryMutator,SURVIVED,no,high,2 min,"since start,value,compareTo() are external to the method."
+9369,org/apache/commons/lang3/builder/HashCodeBuilder.java,165,15,NegateConditionalsMutator,SURVIVED,no,high,1 min,NP exception
+9583,org/apache/commons/lang3/reflect/FieldUtils.java,732,83,VoidMethodCallMutator,SURVIVED,no,high,1 min,
+9597,org/apache/commons/lang3/reflect/FieldUtils.java,783,15,VoidMethodCallMutator,SURVIVED,no,high,1 min,method has some impl.
+9641,org/apache/commons/lang3/text/ExtendedMessageFormat.java,184,203,VoidMethodCallMutator,SURVIVED,no,high,1 min,
+9650,org/apache/commons/lang3/text/ExtendedMessageFormat.java,527,43,ReturnValsMutator,SURVIVED,no,medium,3 min,
+9937,org/apache/commons/lang3/reflect/MemberUtils.java,216,61,NegateConditionalsMutator,SURVIVED,no,high,2 min,it effects the return value ‘cost’
+9980,org/apache/commons/lang3/reflect/MemberUtils.java,156,44,ReturnValsMutator,NO_COVERAGE,no,medium,1 min,return value mutated
+10047,org/apache/commons/lang3/time/FastDateParser.java,642,57,ReturnValsMutator,NO_COVERAGE,no,high,1 min,return value mutated to null
+10077,org/apache/commons/lang3/time/FastDateParser.java,315,14,MathMutator,SURVIVED,no,high,1 min,Effects the return value.
+10642,org/apache/commons/lang3/builder/ReflectionToStringBuilder.java,397,8,ReturnValsMutator,SURVIVED,no,high,1 min,
+10679,org/apache/commons/lang3/builder/ToStringStyle.java,2479,34,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,method has some impl.
+10680,org/apache/commons/lang3/builder/ToStringStyle.java,2486,4,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,similar to mutant 10689
+10689,org/apache/commons/lang3/builder/ToStringStyle.java,2438,4,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,since fieldName is extrnal to the function.
+10690,org/apache/commons/lang3/builder/ToStringStyle.java,2442,18,NegateConditionalsMutator,NO_COVERAGE,no,high,2 min,
+10701,org/apache/commons/lang3/builder/ToStringStyle.java,2534,4,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,similar to mutant 10689
+11156,org/apache/commons/lang3/JavaVersion.java,194,140,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
+11244,org/apache/commons/lang3/text/StrBuilder.java,3012,13,ConditionalsBoundaryMutator,SURVIVED,no,high,2 min,"since pos,n are external to the function"
+11364,org/apache/commons/lang3/builder/StandardToStringStyle.java,405,5,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
+11783,org/apache/commons/lang3/text/translate/OctalUnescaper.java,43,6,MathMutator,SURVIVED,no,high,1 min,The effect of mutation is propogated furhter to the functions output
+11870,org/apache/commons/lang3/text/translate/UnicodeUnescaper.java,43,30,MathMutator,SURVIVED,no,high,1 min,the mutation effects propogates upto the return value of the function.
+12111,org/apache/commons/lang3/exception/DefaultExceptionContext.java,134,29,ConditionalsBoundaryMutator,SURVIVED,no,high,15 min,"when basemessage is empty or null then buffer length is zero, By this I can find change in return value of the function"
+12384,org/apache/commons/lang3/time/FastDatePrinter.java,1562,9,ReturnValsMutator,NO_COVERAGE,no,high,1 min,since obj is external to the function
+12658,org/apache/commons/lang3/reflect/TypeLiteral.java,111,7,MathMutator,NO_COVERAGE,no,high,1 min,this effects the return value
+12660,org/apache/commons/lang3/reflect/TypeLiteral.java,116,5,ReturnValsMutator,NO_COVERAGE,no,high,2 min,return value mutated
+12747,org/apache/commons/lang3/time/FormatCache.java,251,5,NegateConditionalsMutator,SURVIVED,no,high,1 min,since hashcode is external to the function
+12816,org/apache/commons/lang3/text/translate/JavaUnicodeEscaper.java,53,6,ReturnValsMutator,NO_COVERAGE,no,high,2 min,returns null
+12824,org/apache/commons/lang3/time/FastDatePrinter.java,1182,6,ReturnValsMutator,SURVIVED,no,low,10 min,
+12825,org/apache/commons/lang3/ThreadUtils.java,336,10,ConditionalsBoundaryMutator,SURVIVED,no,high,1 min,since threadId is external to the function
+12840,org/apache/commons/lang3/time/FastDateParser.java,924,10,VoidMethodCallMutator,SURVIVED,no,high,5 min,method has some impl.
+12883,org/apache/commons/lang3/concurrent/EventCountCircuitBreaker.java,538,5,ReturnValsMutator,SURVIVED,no,high,1 min,
+12887,org/apache/commons/lang3/text/StrMatcher.java,290,16,VoidMethodCallMutator,SURVIVED,no,high,1 min,
