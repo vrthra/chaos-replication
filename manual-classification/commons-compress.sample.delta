@@ -1,0 +1,24 @@
+788 rc:yes (low) rb:no (high)
+org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java:284 589 MathMutator
+	jh: trying to figure out what this method does...seems to be only changing local variable inside method??
+	sd: "Weight array is assigned with unexpected values Unit tested using reflection"
+875 rc:yes (low) rb:no (medium)
+org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java:778 87 NegateConditionalsMutator
+	jh: trying to figure out what this method does...seems to be only changing local variable inside method??
+	sd:
+2351 rc:yes (high) rb:no (high)
+org/apache/commons/compress/archivers/sevenz/SevenZFile.java:1105 13 ConditionalsBoundaryMutator
+	jh: x+=cnt when cnt is 0
+	sd:
+2455 rc:no (high) rb:yes (medium)
+org/apache/commons/compress/archivers/sevenz/SevenZFile.java:697 346 ConditionalsBoundaryMutator
+	jh:
+	sd: No further impl.
+4003 rc:no (high) rb:yes (low)
+org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java:294 43 VoidMethodCallMutator
+	jh: flush()
+	sd: "Flush used for flushing out left over data from stream but here no implementaion"
+7078 rc:no (high) rb:yes (medium)
+org/apache/commons/compress/archivers/zip/BinaryTree.java:145 160 ConditionalsBoundaryMutator
+	jh:
+	sd: "When k=length then the inner for loop is not executed  so behavioural change observed"

@@ -1,0 +1,40 @@
+830 rc:no (high) rb:yes (Low)
+org/apache/commons/math3/util/FastMath.java:988 333 MathMutator
+	jh:  
+	sd: "when functional execution reaches line 985hiPrec array is not used in any return value or as an argument to a method"
+3063 rc:no (high) rb:yes (low)
+org/apache/commons/math3/optim/nonlinear/scalar/noderiv/BOBYQAOptimizer.java:797 1977 MathMutator
+	jh:  
+	sd:  
+3368 rc:yes (high) rb:no (high)
+org/apache/commons/math3/optim/nonlinear/scalar/noderiv/BOBYQAOptimizer.java:1180 3765 VoidMethodCallMutator
+	jh: method currently does nothing! 
+	sd:  
+4050 rc:no (high) rb:yes (low)
+org/apache/commons/math3/optimization/direct/BOBYQAOptimizer.java:1532 1354 ConditionalsBoundaryMutator
+	jh:  
+	sd: "When =scale is 1."
+5290 rc:no (high) rb:yes (Low)
+org/apache/commons/math3/optimization/direct/BOBYQAOptimizer.java:2111 1173 MathMutator
+	jh:  
+	sd:  
+7776 rc:no (high) rb:yes (low)
+org/apache/commons/math3/linear/BlockFieldMatrix.java:337 69 MathMutator
+	jh:  
+	sd:  
+10514 rc:no (high) rb:yes (high)
+org/apache/commons/math3/stat/regression/MillerUpdatingRegression.java:1027 137 ConditionalsBoundaryMutator
+	jh:  
+	sd: "Length – 0 stands equivalent."
+10673 rc:no (medium) rb:yes (low)
+org/apache/commons/math3/stat/regression/MillerUpdatingRegression.java:734 170 ConditionalsBoundaryMutator
+	jh:  
+	sd:  
+36784 rc:yes (high) rb:no (high)
+org/apache/commons/math3/distribution/ZipfDistribution.java:446 15 ConditionalsBoundaryMutator
+	jh:  
+	sd: variable t can be calculated by using the external variable x. 
+39481 rc:no (high) rb:yes (low)
+org/apache/commons/math3/geometry/euclidean/twod/hull/MonotoneChain.java:166 137 ConditionalsBoundaryMutator
+	jh:  
+	sd:  
