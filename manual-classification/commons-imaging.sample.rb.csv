@@ -34,7 +34,7 @@ Mutant,File,Line,Index,Mutator,Status,Equivalent,Confidence,Time,Comments
 4965,org/apache/commons/imaging/formats/tiff/write/TiffOutputDirectory.java,465,57,VoidMethodCallMutator,NO_COVERAGE,no,high,2 min,
 4971,org/apache/commons/imaging/formats/tiff/write/TiffOutputDirectory.java,613,6,ReturnValsMutator,NO_COVERAGE,no,high,2 min,Return value mutated
 5027,org/apache/commons/imaging/formats/png/PngImageParser.java,681,93,VoidMethodCallMutator,NO_COVERAGE,no,high,2 min,
-5039,org/apache/commons/imaging/formats/png/PngImageParser.java,586,400,ConditionalsBoundaryMutator,SURVIVED,no,high,15 min,When diff==0, then gammaCorrection might not be created and it effects further functionality of this function
+5039,org/apache/commons/imaging/formats/png/PngImageParser.java,586,400,ConditionalsBoundaryMutator,SURVIVED,yes,high,15 min,When diff==0, then gammaCorrection might not be created and it effects further functionality of this function
 5075,org/apache/commons/imaging/formats/png/PngImageParser.java,107,36,MathMutator,NO_COVERAGE,no,high,2 min,
 5082,org/apache/commons/imaging/formats/png/PngImageParser.java,239,17,NegateConditionalsMutator,SURVIVED,no,high,5 min,"Since arguments to the method are external, and in chunks may or not be null."
 5245,org/apache/commons/imaging/Imaging.java,869,6,ReturnValsMutator,NO_COVERAGE,no,high,3 min,Return value mutated
@@ -64,7 +64,7 @@ Mutant,File,Line,Index,Mutator,Status,Equivalent,Confidence,Time,Comments
 7594,org/apache/commons/imaging/common/bytesource/ByteSourceInputStream.java,126,19,ConditionalsBoundaryMutator,SURVIVED,no,medium,5 min,"off is external to the function, can be unit tested"
 7664,org/apache/commons/imaging/formats/bmp/PixelParserBitFields.java,106,217,InvertNegsMutator,SURVIVED,no,low,10 min,
 7702,org/apache/commons/imaging/formats/bmp/PixelParserBitFields.java,116,23,MathMutator,NO_COVERAGE,no,high,2 min,
-8254,org/apache/commons/imaging/palette/MedianCutQuantizer.java,116,147,NegateConditionalsMutator,SURVIVED,no,high,15 min,since mediancut is external to the function, we can keep track of the calls
+8254,org/apache/commons/imaging/palette/MedianCutQuantizer.java,116,147,NegateConditionalsMutator,SURVIVED,yes,high,15 min,since mediancut is external to the function, we can keep track of the calls
 8269,org/apache/commons/imaging/FormatCompliance.java,130,37,ReturnValsMutator,NO_COVERAGE,no,high,1 min,Return value mutated
 8329,org/apache/commons/imaging/formats/jpeg/JpegUtils.java,141,94,ReturnValsMutator,NO_COVERAGE,no,high,2 min,marker is external to the function
 8366,org/apache/commons/imaging/formats/tiff/photometricinterpreters/PhotometricInterpreterYCbCr.java,55,36,MathMutator,NO_COVERAGE,no,high,2 min,"It effects line 59,63,64"

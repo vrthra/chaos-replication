@@ -11,8 +11,8 @@ Mutant,File,Line,Index,Mutator,Status,Equivalent,Confidence,Time,Comments
 1576,org/apache/commons/lang3/ArrayUtils.java,8634,7,VoidMethodCallMutator,NO_COVERAGE,no,high,2 min,method has some impl.
 1600,org/apache/commons/lang3/ArrayUtils.java,8559,7,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,method has some impl.
 1660,org/apache/commons/lang3/ArrayUtils.java,985,13,ConditionalsBoundaryMutator,SURVIVED,yes,medium,3 min,startIndexInclusice is external to the function but in next line it is updated with 0.
-1866,org/apache/commons/lang3/ArrayUtils.java,2456,33,ConditionalsBoundaryMutator,SURVIVED,yes,high,1 min,"when offset is <=0, it is assigned to zero in the next line"
-1884,org/apache/commons/lang3/ArrayUtils.java,2113,11,ConditionalsBoundaryMutator,SURVIVED,yes,high,2 min,In line 2122 len would be zero or negative. So it wouldn’t enter for loop. So itstands equivalent
+1866,org/apache/commons/lang3/ArrayUtils.java,2456,33,ConditionalsBoundaryMutator,SURVIVED,no,high,1 min,"when offset is <=0, it is assigned to zero in the next line"
+1884,org/apache/commons/lang3/ArrayUtils.java,2113,11,ConditionalsBoundaryMutator,SURVIVED,no,high,2 min,In line 2122 len would be zero or negative. So it wouldn’t enter for loop. So itstands equivalent
 1977,org/apache/commons/lang3/ArrayUtils.java,4755,47,ReturnValsMutator,SURVIVED,no,high,2 min,return value mutated
 1979,org/apache/commons/lang3/ArrayUtils.java,4761,75,ReturnValsMutator,NO_COVERAGE,no,high,1 min,Return value mutated.
 1981,org/apache/commons/lang3/ArrayUtils.java,4766,94,ReturnValsMutator,NO_COVERAGE,no,high,3 min,returns null
@@ -88,7 +88,7 @@ Mutant,File,Line,Index,Mutator,Status,Equivalent,Confidence,Time,Comments
 11364,org/apache/commons/lang3/builder/StandardToStringStyle.java,405,5,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,
 11783,org/apache/commons/lang3/text/translate/OctalUnescaper.java,43,6,MathMutator,SURVIVED,no,high,1 min,The effect of mutation is propogated furhter to the functions output
 11870,org/apache/commons/lang3/text/translate/UnicodeUnescaper.java,43,30,MathMutator,SURVIVED,no,high,1 min,the mutation effects propogates upto the return value of the function.
-12111,org/apache/commons/lang3/exception/DefaultExceptionContext.java,134,29,ConditionalsBoundaryMutator,SURVIVED,no,high,15 min,"when basemessage is empty or null then buffer length is zero, By this I can find change in return value of the function"
+12111,org/apache/commons/lang3/exception/DefaultExceptionContext.java,134,29,ConditionalsBoundaryMutator,SURVIVED,yes,high,15 min,"when basemessage is empty or null then buffer length is zero, By this I can find change in return value of the function"
 12384,org/apache/commons/lang3/time/FastDatePrinter.java,1562,9,ReturnValsMutator,NO_COVERAGE,no,high,1 min,since obj is external to the function
 12658,org/apache/commons/lang3/reflect/TypeLiteral.java,111,7,MathMutator,NO_COVERAGE,no,high,1 min,this effects the return value
 12660,org/apache/commons/lang3/reflect/TypeLiteral.java,116,5,ReturnValsMutator,NO_COVERAGE,no,high,2 min,return value mutated

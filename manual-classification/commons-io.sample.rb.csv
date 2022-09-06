@@ -31,7 +31,7 @@ Mutant,File,Line,Index,Mutator,Status,Equivalent,Confidence,Time,Comments
 1422,org/apache/commons/io/FileSystemUtils.java,284,57,ReturnValsMutator,NO_COVERAGE,no,high,2 min,
 1437,org/apache/commons/io/FileSystemUtils.java,322,85,ConditionalsBoundaryMutator,SURVIVED,no,medium,2 min,in line 323 get(0) will not be executed.
 1452,org/apache/commons/io/FileSystemUtils.java,360,52,ConditionalsBoundaryMutator,SURVIVED,no,high,2 min,CharAt(0) will not be verified in line 361.
-1453,org/apache/commons/io/FileSystemUtils.java,370,90,ConditionalsBoundaryMutator,SURVIVED,no,high,15 min,the loop can break at any time since line is external to the function
+1453,org/apache/commons/io/FileSystemUtils.java,370,90,ConditionalsBoundaryMutator,SURVIVED,yes,high,15 min,the loop can break at any time since line is external to the function
 1482,org/apache/commons/io/FileSystemUtils.java,532,164,VoidMethodCallMutator,SURVIVED,no,high,2 min,
 1484,org/apache/commons/io/FileSystemUtils.java,539,184,VoidMethodCallMutator,SURVIVED,no,high,2 min,
 1488,org/apache/commons/io/FileSystemUtils.java,557,276,VoidMethodCallMutator,SURVIVED,no,high,1 min,method has some implementation
@@ -45,7 +45,7 @@ Mutant,File,Line,Index,Mutator,Status,Equivalent,Confidence,Time,Comments
 1760,org/apache/commons/io/input/Tailer.java,478,317,VoidMethodCallMutator,NO_COVERAGE,no,high,3 min,
 1816,org/apache/commons/io/filefilter/FileFilterUtils.java,406,8,ReturnValsMutator,NO_COVERAGE,no,high,2 min,returns null
 1861,org/apache/commons/io/input/ReversedLinesFileReader.java,285,39,ConditionalsBoundaryMutator,SURVIVED,no,low,10 min,"since I, avoidNewlineSplitBufferSize are external to the function"
-1864,org/apache/commons/io/input/ReversedLinesFileReader.java,313,139,ConditionalsBoundaryMutator,SURVIVED,no,high,15 min,
+1864,org/apache/commons/io/input/ReversedLinesFileReader.java,313,139,ConditionalsBoundaryMutator,SURVIVED,yes,high,15 min,
 1936,org/apache/commons/io/input/CharSequenceInputStream.java,187,14,ConditionalsBoundaryMutator,SURVIVED,no,high,2 min,"n is external to the function, can be unittested."
 1953,org/apache/commons/io/input/NullInputStream.java,117,5,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
 1956,org/apache/commons/io/input/NullInputStream.java,307,4,ReturnValsMutator,NO_COVERAGE,no,high,1 min,

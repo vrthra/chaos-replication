@@ -65,7 +65,7 @@ Mutant,File,Line,Index,Mutator,Status,Equivalent,Confidence,Time,Comments
 2583,org/apache/commons/configuration2/CompositeConfiguration.java,263,53,VoidMethodCallMutator,SURVIVED,no,high,5 min,"It has no impl, but subclasses can override it an add some functionality"
 2588,org/apache/commons/configuration2/CompositeConfiguration.java,319,20,VoidMethodCallMutator,SURVIVED,no,high,5 min,
 2646,org/apache/commons/configuration2/plist/XMLPropertyListConfiguration.java,209,39,VoidMethodCallMutator,SURVIVED,no,low,10 min,
-2693,org/apache/commons/configuration2/plist/XMLPropertyListConfiguration.java,420,369,VoidMethodCallMutator,NO_COVERAGE,no,high,15 min,Here one can extend the print and check for any changes
+2693,org/apache/commons/configuration2/plist/XMLPropertyListConfiguration.java,420,369,VoidMethodCallMutator,NO_COVERAGE,yes,high,15 min,Here one can extend the print and check for any changes
 2805,org/apache/commons/configuration2/PatternSubtreeConfigurationWrapper.java,98,9,ReturnValsMutator,NO_COVERAGE,no,high,1 min,return value mutated
 2834,org/apache/commons/configuration2/PatternSubtreeConfigurationWrapper.java,254,9,ReturnValsMutator,NO_COVERAGE,no,high,2 min,
 2840,org/apache/commons/configuration2/PatternSubtreeConfigurationWrapper.java,284,9,ReturnValsMutator,NO_COVERAGE,no,high,2 min,
@@ -83,7 +83,7 @@ Mutant,File,Line,Index,Mutator,Status,Equivalent,Confidence,Time,Comments
 4081,org/apache/commons/configuration2/DatabaseConfiguration.java,236,5,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
 4291,org/apache/commons/configuration2/tree/xpath/ConfigurationNodeIteratorBase.java,104,6,ConditionalsBoundaryMutator,SURVIVED,no,high,3 min,
 4403,org/apache/commons/configuration2/plist/ParseException.java,174,117,NegateConditionalsMutator,NO_COVERAGE,no,high,2 min,
-4409,org/apache/commons/configuration2/plist/ParseException.java,108,124,ConditionalsBoundaryMutator,SURVIVED,no,high,15 min,change can be observed in line109.
+4409,org/apache/commons/configuration2/plist/ParseException.java,108,124,ConditionalsBoundaryMutator,SURVIVED,yes,high,15 min,change can be observed in line109.
 4585,org/apache/commons/configuration2/resolver/CatalogResolver.java,438,106,VoidMethodCallMutator,NO_COVERAGE,no,high,3 min,prints the message
 4671,org/apache/commons/configuration2/ConfigurationXMLReader.java,348,28,VoidMethodCallMutator,SURVIVED,no,high,5 min,subclasses can override the method and perform some impl.
 4758,org/apache/commons/configuration2/spring/ConfigurationPropertiesFactoryBean.java,170,5,ReturnValsMutator,NO_COVERAGE,no,high,2 min,

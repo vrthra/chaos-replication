@@ -30,11 +30,11 @@ Mutant,File,Line,Index,Mutator,Status,Equivalent,Confidence,Time,Comments
 2198,org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java,538,132,MathMutator,SURVIVED,no,high,3 min,can return an unexpexted toRead value
 2293,org/apache/commons/compress/archivers/sevenz/SevenZFile.java,937,215,ConditionalsBoundaryMutator,SURVIVED,no,medium,15 min,Does not throws when ‘nextFolderIndex = archive.folders.length
 2348,org/apache/commons/compress/archivers/sevenz/SevenZFile.java,1054,10,NegateConditionalsMutator,SURVIVED,no,low,15 min,
-2351,org/apache/commons/compress/archivers/sevenz/SevenZFile.java,1105,13,ConditionalsBoundaryMutator,SURVIVED,yes,high,3 min,"equivalant when the cnt is 0"
+2351,org/apache/commons/compress/archivers/sevenz/SevenZFile.java,1105,13,ConditionalsBoundaryMutator,SURVIVED,no,high,3 min,"equivalant when the cnt is 0"
 2361,org/apache/commons/compress/archivers/sevenz/SevenZFile.java,412,10,NegateConditionalsMutator,NO_COVERAGE,no,medium,5 min,"Line 415 call a method, but nid may or not assigned with same value"
 2392,org/apache/commons/compress/archivers/sevenz/SevenZFile.java,783,152,MathMutator,SURVIVED,no,high,5 min,Throws exception for unexpected length
 2395,org/apache/commons/compress/archivers/sevenz/SevenZFile.java,791,207,MathMutator,SURVIVED,no,medium,15 min,conditional comparision with unexpected positions of the array.
-2455,org/apache/commons/compress/archivers/sevenz/SevenZFile.java,697,346,ConditionalsBoundaryMutator,SURVIVED,no,high,15 min,It effects line number 701, 704
+2455,org/apache/commons/compress/archivers/sevenz/SevenZFile.java,697,346,ConditionalsBoundaryMutator,SURVIVED,yes,high,15 min,It effects line number 701, 704
 2572,org/apache/commons/compress/archivers/sevenz/SevenZFile.java,1143,79,ReturnValsMutator,NO_COVERAGE,no,high,3 min,
 2913,org/apache/commons/compress/archivers/tar/TarArchiveEntry.java,1130,5,NegateConditionalsMutator,NO_COVERAGE,no,high,2 min,
 2942,org/apache/commons/compress/archivers/tar/TarArchiveEntry.java,946,6,NegateConditionalsMutator,NO_COVERAGE,no,high,3 min,"since the variables are external to function, and due to mutation it returns unexpected value"
@@ -46,7 +46,7 @@ Mutant,File,Line,Index,Mutator,Status,Equivalent,Confidence,Time,Comments
 3912,org/apache/commons/compress/archivers/cpio/CpioArchiveInputStream.java,438,42,VoidMethodCallMutator,SURVIVED,no,high,10 min,"Updates mode value in CpioArchiveEntry file, and also it has impl"
 3939,org/apache/commons/compress/archivers/cpio/CpioArchiveInputStream.java,519,59,MathMutator,NO_COVERAGE,no,high,5 min,"results in unexpected remainingBytes value, unitTested using reflection"
 3996,org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java,617,57,VoidMethodCallMutator,SURVIVED,no,high,3 min,The method has some implementation
-4003,org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java,294,43,VoidMethodCallMutator,SURVIVED,no,high,5 min,"flush can have alternate implementation"
+4003,org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java,294,43,VoidMethodCallMutator,SURVIVED,yes,high,5 min,"flush can have alternate implementation"
 4015,org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java,669,37,ReturnValsMutator,SURVIVED,no,high,5 min,Return value mutated
 4101,org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java,184,9,ReturnValsMutator,NO_COVERAGE,no,high,5 min,
 4212,org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java,527,16,NegateConditionalsMutator,NO_COVERAGE,no,high,5 min,getRecord() method is external to the function which returns array.
@@ -72,7 +72,7 @@ Mutant,File,Line,Index,Mutator,Status,Equivalent,Confidence,Time,Comments
 5482,org/apache/commons/compress/archivers/zip/X0017_StrongEncryptionHeader.java,365,343,MathMutator,NO_COVERAGE,no,high,1 min,Similar to mutant 5450
 5699,org/apache/commons/compress/compressors/snappy/FramedSnappyCompressorInputStream.java,188,9,ReturnValsMutator,NO_COVERAGE,no,high,3 min,
 6396,org/apache/commons/compress/compressors/lz4/FramedLZ4CompressorOutputStream.java,220,75,VoidMethodCallMutator,NO_COVERAGE,no,high,3 min,Method has its impl
-7078,org/apache/commons/compress/archivers/zip/BinaryTree.java,145,160,ConditionalsBoundaryMutator,SURVIVED,no,high,15 min,"array in line 151 is updated, so can be unit tested"
+7078,org/apache/commons/compress/archivers/zip/BinaryTree.java,145,160,ConditionalsBoundaryMutator,SURVIVED,yes,high,15 min,"array in line 151 is updated, so can be unit tested"
 7152,org/apache/commons/compress/archivers/zip/GeneralPurposeBit.java,218,54,ReturnValsMutator,NO_COVERAGE,no,high,2 min,
 7212,org/apache/commons/compress/archivers/zip/X7875_NewUnix.java,293,16,MathMutator,SURVIVED,no,high,1 min,Similar to mutant 7213
 7213,org/apache/commons/compress/archivers/zip/X7875_NewUnix.java,294,24,MathMutator,SURVIVED,no,high,3 min,results in unexpectd hc value.
