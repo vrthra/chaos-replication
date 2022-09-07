@@ -114,4 +114,4 @@ Mutant,File,Line,Index,Mutator,Status,Equivalent,Confidence,Time,Comments
 628,org/apache/commons/csv/IOUtils.java,132,15,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,
 629,org/apache/commons/csv/IOUtils.java,136,35,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
 630,org/apache/commons/csv/IOUtils.java,133,22,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,removed call to out.write(buffer 0 n)
-632,org/apache/commons/csv/Token.java,71,19,ReturnValsMutator,NO_COVERAGE,no,high,1 min,toString() returns null nowMutant,File,Line,Index,Mutator,Status,Equivalent,Confidence,Time,Comments
+632,org/apache/commons/csv/Token.java,71,19,ReturnValsMutator,NO_COVERAGE,no,high,1 min,toString() returns null nowMutant
