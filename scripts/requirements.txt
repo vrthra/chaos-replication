@@ -1,0 +1,9 @@
+argparse
+mizani
+pandas
+pathlib
+plotnine
+plotnine
+scipy
+statsmodels
+tarfile
