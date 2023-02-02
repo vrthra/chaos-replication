@@ -11,6 +11,7 @@ commons-net,random,methods,5764,1844,bootstrap,2308.21235846327,2264.22120710305
 commons-net,random,methods,5764,1844,species_pcg,2385.0,2330.0,3122.0
 commons-net,random,methods,5764,1844,species_pnpmle,2403.0,2297.0,2974.0
 commons-net,random,methods,5764,1844,species_unpmle,2400.0,2298.0,2828.0
+commons-net,random,methods,5764,1844,chao_upperbound,2370.69183992642,2141.56549732568,2599.81818252716
 commons-net,random,classes,5764,1844,ice,18095.2690009367,15825.2659489902,20365.2720528831
 commons-net,random,classes,5764,1844,zelterman,5583.26906521747,4956.56683873334,6209.9712917016
 commons-net,random,classes,5764,1844,species_chaobunge,-2135.0,-1390.0,-3054.0
@@ -23,6 +24,7 @@ commons-net,random,classes,5764,1844,bootstrap,2655.80065198717,2468.28687790606
 commons-net,random,classes,5764,1844,species_pcg,5568.0,5400.0,10060.0
 commons-net,random,classes,5764,1844,species_pnpmle,5640.0,5086.0,7205.0
 commons-net,random,classes,5764,1844,species_unpmle,5643.0,5179.0,11645.0
+commons-net,random,classes,5764,1844,chao_upperbound,4787.01594902154,3861.29001836749,5712.74187967559
 commons-net,organic,methods,5764,1606,ice,9383.92259947555,8221.91027384066,10545.9349251104
 commons-net,organic,methods,5764,1606,zelterman,3575.14110192377,3183.04972884408,3967.23247500345
 commons-net,organic,methods,5764,1606,species_chaobunge,79963.0,4501.0,2052068.0
@@ -35,6 +37,7 @@ commons-net,organic,methods,5764,1606,bootstrap,2142.07212224545,1830.8012725922
 commons-net,organic,methods,5764,1606,species_pcg,5707.0,3369.0,6749.0
 commons-net,organic,methods,5764,1606,species_pnpmle,3935.0,3150.0,4030.0
 commons-net,organic,methods,5764,1606,species_unpmle,6456.0,3340.0,26680220.0
+commons-net,organic,methods,5764,1606,chao_upperbound,3196.86797886562,2441.30197352294,3952.4339842083
 commons-net,organic,classes,5764,1606,ice,9181.41185965782,8089.01510257332,10273.8086167423
 commons-net,organic,classes,5764,1606,zelterman,5731.19375044922,4979.3080418068,6483.07945909165
 commons-net,organic,classes,5764,1606,species_chaobunge,-1060.0,-699.0,-1477.0
@@ -47,6 +50,7 @@ commons-net,organic,classes,5764,1606,bootstrap,2329.00417441856,1986.9463995199
 commons-net,organic,classes,5764,1606,species_pcg,9485.0,40726.0,59142.0
 commons-net,organic,classes,5764,1606,species_pnpmle,7613.0,4994.0,6913.0
 commons-net,organic,classes,5764,1606,species_unpmle,65597346.0,5535.0,72548247.0
+commons-net,organic,classes,5764,1606,chao_upperbound,4702.00020063481,3687.1723414428,5716.82805982682
 commons-net,dynamosa,methods,5764,2012,ice,5403.31009230038,4680.78881341143,6125.83137118934
 commons-net,dynamosa,methods,5764,2012,zelterman,2756.48273458606,2563.75298133852,2949.21248783361
 commons-net,dynamosa,methods,5764,2012,species_chaobunge,2552.0,2442.0,2678.0
@@ -59,6 +63,7 @@ commons-net,dynamosa,methods,5764,2012,bootstrap,2447.93304884245,2411.051405199
 commons-net,dynamosa,methods,5764,2012,species_pcg,978849.0,978920.0,979317.0
 commons-net,dynamosa,methods,5764,2012,species_pnpmle,4306.0,3758.0,4384.0
 commons-net,dynamosa,methods,5764,2012,species_unpmle,2237.0,2224.0,2270.0
+commons-net,dynamosa,methods,5764,2012,chao_upperbound,2458.8650317147,2255.69387052664,2662.03619290276
 commons-net,dynamosa,classes,5764,2012,ice,14116.8857991767,12104.9921006167,16128.7794977367
 commons-net,dynamosa,classes,5764,2012,zelterman,6550.60066916613,5834.39768176571,7266.80365656654
 commons-net,dynamosa,classes,5764,2012,species_chaobunge,-2532.0,-1256.0,-4309.0
@@ -71,6 +76,7 @@ commons-net,dynamosa,classes,5764,2012,bootstrap,2961.29722341311,2732.513657125
 commons-net,dynamosa,classes,5764,2012,species_pcg,6754.0,6491.0,13791.0
 commons-net,dynamosa,classes,5764,2012,species_pnpmle,6895.0,6270.0,8677.0
 commons-net,dynamosa,classes,5764,2012,species_unpmle,6902.0,6230.0,26228.0
+commons-net,dynamosa,classes,5764,2012,chao_upperbound,5087.66868621782,4429.46918991244,5745.8681825232
 commons-math,random,methods,47881,36692,ice,402105.027160652,316657.958925641,487552.095395664
 commons-math,random,methods,47881,36692,zelterman,60210.8268508351,59147.4764880911,61274.1772135792
 commons-math,random,methods,47881,36692,species_chaobunge,119969.0,111356.0,129525.0
@@ -83,6 +89,7 @@ commons-math,random,methods,47881,36692,bootstrap,47470.3887530177,33333.2629730
 commons-math,random,methods,47881,36692,species_pcg,55837.0,55373.0,57740.0
 commons-math,random,methods,47881,36692,species_pnpmle,56085.0,55762.0,59377.0
 commons-math,random,methods,47881,36692,species_unpmle,56083.0,55713.0,58271.0
+commons-math,random,methods,47881,36692,chao_upperbound,47760.395255939,47641.4928716611,47879.2976402169
 commons-math,random,classes,47881,36692,ice,145397.771430968,98809.5807741896,191985.962087746
 commons-math,random,classes,47881,36692,zelterman,47615.6080169511,47068.5171851476,48162.6988487547
 commons-math,random,classes,47881,36692,species_chaobunge,66514.0,64703.0,68438.0
@@ -95,6 +102,7 @@ commons-math,random,classes,47881,36692,bootstrap,48928.0880482641,33005.4908058
 commons-math,random,classes,47881,36692,species_pcg,50402.0,50216.0,51685.0
 commons-math,random,classes,47881,36692,species_pnpmle,50429.0,50220.0,55640.0
 commons-math,random,classes,47881,36692,species_unpmle,50428.0,50202.0,53070.0
+commons-math,random,classes,47881,36692,chao_upperbound,47258.9926164411,46660.841597348,47857.1436355342
 commons-math,organic,methods,47881,36195,ice,40235.6507654644,39537.5412171959,40933.7603137329
 commons-math,organic,methods,47881,36195,zelterman,36195.0021121686,36194.9119603197,36195.0922640175
 commons-math,organic,methods,47881,36195,species_chaobunge,36279.0,36259.0,36299.0
@@ -107,6 +115,7 @@ commons-math,organic,methods,47881,36195,bootstrap,39097.0523754302,32633.355756
 commons-math,organic,methods,47881,36195,species_pcg,36710.0,36700.0,36777.0
 commons-math,organic,methods,47881,36195,species_pnpmle,36726.0,36716.0,36791.0
 commons-math,organic,methods,47881,36195,species_unpmle,36726.0,36739.0,36771.0
+commons-math,organic,methods,47881,36195,chao_upperbound,36227.2425639324,36205.8623569559,36248.6227709089
 commons-math,organic,classes,47881,36195,ice,37029.123166926,36893.4353345432,37164.8109993088
 commons-math,organic,classes,47881,36195,zelterman,36195.0,36194.9999996535,36195.0000003465
 commons-math,organic,classes,47881,36195,species_chaobunge,36328.0,36303.0,36354.0
@@ -119,6 +128,7 @@ commons-math,organic,classes,47881,36195,bootstrap,40990.6989706234,32171.744139
 commons-math,organic,classes,47881,36195,species_pcg,37682.0,37659.0,37900.0
 commons-math,organic,classes,47881,36195,species_pnpmle,70356.0,70285.0,71102.0
 commons-math,organic,classes,47881,36195,species_unpmle,37698.0,37690.0,37954.0
+commons-math,organic,classes,47881,36195,chao_upperbound,36215.6231039478,36199.7173763047,36231.528831591
 commons-math,dynamosa,methods,47881,8445,ice,57719.9419969401,39514.0472928352,75925.836701045
 commons-math,dynamosa,methods,47881,8445,zelterman,13002.5532944688,12521.5191969193,13483.5873920183
 commons-math,dynamosa,methods,47881,8445,species_chaobunge,15350.0,14465.0,16342.0
@@ -131,6 +141,7 @@ commons-math,dynamosa,methods,47881,8445,bootstrap,10671.3300317681,9553.1612057
 commons-math,dynamosa,methods,47881,8445,species_pcg,11695.0,11430.0,13270.0
 commons-math,dynamosa,methods,47881,8445,species_pnpmle,18061.0,17883.0,18988.0
 commons-math,dynamosa,methods,47881,8445,species_unpmle,11646.0,11499.0,12511.0
+commons-math,dynamosa,methods,47881,8445,chao_upperbound,11336.3651091394,10700.5759526595,11972.1542656193
 commons-math,dynamosa,classes,47881,8445,ice,51638.2964074835,41902.4778417333,61374.1149732336
 commons-math,dynamosa,classes,47881,8445,zelterman,23248.4559625203,22073.6099571405,24423.3019679
 commons-math,dynamosa,classes,47881,8445,species_chaobunge,-17612.0,-14050.0,-21742.0
@@ -142,6 +153,7 @@ commons-math,dynamosa,classes,47881,8445,spader_ice1,32499.508,30420.577,34775.1
 commons-math,dynamosa,classes,47881,8445,bootstrap,11988.2781156722,10863.0859534626,13113.4702778818
 commons-math,dynamosa,classes,47881,8445,species_pnpmle,46235.0,31720.0,43224.0
 commons-math,dynamosa,classes,47881,8445,species_unpmle,356514556.0,43121.0,358052652.0
+commons-math,dynamosa,classes,47881,8445,chao_upperbound,21551.4593227474,18648.2062635467,24454.7123819481
 commons-lang,random,methods,13061,9357,ice,38572.5057390191,32199.0745960234,44945.9368820147
 commons-lang,random,methods,13061,9357,zelterman,13318.3517119232,12919.9979997458,13716.7054241006
 commons-lang,random,methods,13061,9357,species_chaobunge,15136.0,14530.0,15803.0
@@ -154,6 +166,7 @@ commons-lang,random,methods,13061,9357,bootstrap,11868.2001460962,8349.800983156
 commons-lang,random,methods,13061,9357,species_pcg,12791.0,12609.0,15914.0
 commons-lang,random,methods,13061,9357,species_pnpmle,12804.0,12606.0,14204.0
 commons-lang,random,methods,13061,9357,species_unpmle,-1.0,-1.0,-1.0
+commons-lang,random,methods,13061,9357,chao_upperbound,12261.8053913879,11707.9325569173,12815.6782258584
 commons-lang,random,classes,13061,9357,ice,11700.9791716603,11337.1887796726,12064.769563648
 commons-lang,random,classes,13061,9357,zelterman,10140.7485123102,10028.8478778264,10252.649146794
 commons-lang,random,classes,13061,9357,species_chaobunge,11329.0,11124.0,11559.0
@@ -166,6 +179,7 @@ commons-lang,random,classes,13061,9357,bootstrap,12574.9836571018,8146.298648615
 commons-lang,random,classes,13061,9357,species_pcg,12580.0,12495.0,12861.0
 commons-lang,random,classes,13061,9357,species_pnpmle,21872.0,21739.0,23412.0
 commons-lang,random,classes,13061,9357,species_unpmle,12583.0,12498.0,13920.0
+commons-lang,random,classes,13061,9357,chao_upperbound,10742.1454447615,10507.4195004407,10976.8713890823
 commons-lang,organic,methods,13061,8576,ice,104318.173422457,96358.728178398,112277.618666515
 commons-lang,organic,methods,13061,8576,zelterman,15810.0977070995,15131.8285774925,16488.3668367065
 commons-lang,organic,methods,13061,8576,species_chaobunge,29590.0,24894.0,35540.0
@@ -178,6 +192,7 @@ commons-lang,organic,methods,13061,8576,bootstrap,11067.4001115942,10927.3486237
 commons-lang,organic,methods,13061,8576,species_pcg,4070061.0,4070404.0,4072042.0
 commons-lang,organic,methods,13061,8576,species_pnpmle,14486.0,14193.0,16352.0
 commons-lang,organic,methods,13061,8576,species_unpmle,14484.0,14195.0,17352.0
+commons-lang,organic,methods,13061,8576,chao_upperbound,12588.1697554778,12128.1221439354,13048.2173670203
 commons-lang,organic,classes,13061,8576,ice,49328.4268620773,43796.1802363226,54860.6734878321
 commons-lang,organic,classes,13061,8576,zelterman,32918.3436869529,30948.9425501568,34887.7448237489
 commons-lang,organic,classes,13061,8576,species_chaobunge,-4514.0,-3970.0,-5082.0
@@ -190,6 +205,7 @@ commons-lang,organic,classes,13061,8576,bootstrap,12373.668485005,11711.05116372
 commons-lang,organic,classes,13061,8576,species_pcg,43503.0,39696.0,94466.0
 commons-lang,organic,classes,13061,8576,species_pnpmle,50803.0,46833.0,55780.0
 commons-lang,organic,classes,13061,8576,species_unpmle,44270.0,37149.0,370606320.0
+commons-lang,organic,classes,13061,8576,chao_upperbound,12976.7403542058,12893.6647370542,13059.8159713575
 commons-lang,dynamosa,methods,13061,11294,ice,35342.8379063894,28882.3997941962,41803.2760185827
 commons-lang,dynamosa,methods,13061,11294,zelterman,13328.6405878464,13055.7243781323,13601.5567975604
 commons-lang,dynamosa,methods,13061,11294,species_chaobunge,13052.0,12897.0,13215.0
@@ -202,6 +218,7 @@ commons-lang,dynamosa,methods,13061,11294,bootstrap,13662.9427283902,10415.21977
 commons-lang,dynamosa,methods,13061,11294,species_pcg,12998.0,12837.0,13813.0
 commons-lang,dynamosa,methods,13061,11294,species_pnpmle,12774.0,12708.0,13385.0
 commons-lang,dynamosa,methods,13061,11294,species_unpmle,12772.0,12691.0,13284.0
+commons-lang,dynamosa,methods,13061,11294,chao_upperbound,12635.6477198537,12361.3378878056,12909.9575519017
 commons-lang,dynamosa,classes,13061,11294,ice,12618.6572285768,12580.8410678262,12656.4733893273
 commons-lang,dynamosa,classes,13061,11294,zelterman,11376.3712304005,11350.301411492,11402.4410493089
 commons-lang,dynamosa,classes,13061,11294,species_chaobunge,11948.0,11879.0,12024.0
@@ -214,6 +231,7 @@ commons-lang,dynamosa,classes,13061,11294,bootstrap,14880.8679797201,10367.28441
 commons-lang,dynamosa,classes,13061,11294,species_pcg,13736.0,13658.0,13990.0
 commons-lang,dynamosa,classes,13061,11294,species_pnpmle,13713.0,13669.0,13864.0
 commons-lang,dynamosa,classes,13061,11294,species_unpmle,13741.0,13651.0,14353.0
+commons-lang,dynamosa,classes,13061,11294,chao_upperbound,11813.452409059,11703.6055744396,11923.2992436785
 commons-io,random,methods,3273,1905,ice,4605.10413069604,4141.35890337302,5068.84935801905
 commons-io,random,methods,3273,1905,zelterman,2737.80987211844,2545.73971032683,2929.88003391006
 commons-io,random,methods,3273,1905,species_chaobunge,2891.0,2682.0,3145.0
@@ -226,6 +244,7 @@ commons-io,random,methods,3273,1905,bootstrap,2411.75102409789,2360.45229647108,
 commons-io,random,methods,3273,1905,species_pcg,2993.0,2636.0,3403.0
 commons-io,random,methods,3273,1905,species_pnpmle,2694.0,2379.0,2957.0
 commons-io,random,methods,3273,1905,species_unpmle,2631.0,2435.0,3436.0
+commons-io,random,methods,3273,1905,chao_upperbound,2505.56465601816,2250.2917565766,2760.83755545973
 commons-io,random,classes,3273,1905,ice,8513.9815833167,7094.04729195819,9933.91587467521
 commons-io,random,classes,3273,1905,zelterman,7596.18293202793,6622.01820727817,8570.34765677768
 commons-io,random,classes,3273,1905,species_chaobunge,-3896.0,-2210.0,-6274.0
@@ -238,6 +257,7 @@ commons-io,random,classes,3273,1905,bootstrap,2790.00225043764,2537.2712683647,3
 commons-io,random,classes,3273,1905,species_pcg,22290.0,17187.0,30459.0
 commons-io,random,classes,3273,1905,species_pnpmle,11696.0,8180.0,11507.0
 commons-io,random,classes,3273,1905,species_unpmle,20116.0,11048.0,123049789.0
+commons-io,random,classes,3273,1905,chao_upperbound,3157.71398617827,3044.25293862795,3271.1750337286
 commons-io,organic,methods,3273,3081,ice,4247.98392183524,4054.81822216066,4441.14962150981
 commons-io,organic,methods,3273,3081,zelterman,3528.91618679029,3365.51312816501,3692.31924541557
 commons-io,organic,methods,3273,3081,species_chaobunge,3249.0,3211.0,3289.0
@@ -250,6 +270,7 @@ commons-io,organic,methods,3273,3081,bootstrap,3443.63346429291,3373.37601753748
 commons-io,organic,methods,3273,3081,species_pcg,3271.0,3232.0,3514.0
 commons-io,organic,methods,3273,3081,species_pnpmle,4917.0,4870.0,5197.0
 commons-io,organic,methods,3273,3081,species_unpmle,3291.0,3257.0,3512.0
+commons-io,organic,methods,3273,3081,chao_upperbound,3221.81087696378,3173.24866451692,3270.37308941065
 commons-io,organic,classes,3273,3081,ice,4227.58956549944,4076.29743131855,4378.88169968033
 commons-io,organic,classes,3273,3081,zelterman,3594.97871682387,3488.22154348919,3701.73589015855
 commons-io,organic,classes,3273,3081,species_chaobunge,4198.0,4019.0,4411.0
@@ -262,6 +283,7 @@ commons-io,organic,classes,3273,3081,bootstrap,4110.54534642376,3313.37484307885
 commons-io,organic,classes,3273,3081,species_pcg,3966.0,3907.0,4210.0
 commons-io,organic,classes,3273,3081,species_pnpmle,6952.0,6875.0,7593.0
 commons-io,organic,classes,3273,3081,species_unpmle,3966.0,3907.0,4445.0
+commons-io,organic,classes,3273,3081,chao_upperbound,3266.11633056307,3259.3329697287,3272.89969139744
 commons-io,dynamosa,methods,3273,2837,ice,8331.02374644868,7098.84254115676,9563.20495174061
 commons-io,dynamosa,methods,3273,2837,zelterman,4219.47730853578,3958.88714180863,4480.06747526294
 commons-io,dynamosa,methods,3273,2837,species_chaobunge,4120.0,3900.0,4378.0
@@ -274,6 +296,7 @@ commons-io,dynamosa,methods,3273,2837,bootstrap,3593.92327144055,2833.9782158484
 commons-io,dynamosa,methods,3273,2837,species_pcg,5189.0,3811.0,5310.0
 commons-io,dynamosa,methods,3273,2837,species_pnpmle,4346.0,3757.0,4519.0
 commons-io,dynamosa,methods,3273,2837,species_unpmle,4548.0,3744.0,5097.0
+commons-io,dynamosa,methods,3273,2837,chao_upperbound,3236.88897201282,3201.37810939087,3272.39983463477
 commons-io,dynamosa,classes,3273,2837,ice,4133.79170286775,3938.71957927289,4328.86382646261
 commons-io,dynamosa,classes,3273,2837,zelterman,3573.10236256166,3444.78001904828,3701.42470607503
 commons-io,dynamosa,classes,3273,2837,species_chaobunge,3937.0,3726.0,4197.0
@@ -286,6 +309,7 @@ commons-io,dynamosa,classes,3273,2837,bootstrap,4022.44681819375,2981.7270066928
 commons-io,dynamosa,classes,3273,2837,species_pcg,4383.0,4295.0,4729.0
 commons-io,dynamosa,classes,3273,2837,species_pnpmle,7214.0,7098.0,8842.0
 commons-io,dynamosa,classes,3273,2837,species_unpmle,4385.0,4279.0,5811.0
+commons-io,dynamosa,classes,3273,2837,chao_upperbound,3253.1552258207,3233.61050208988,3272.69994955151
 commons-imaging,random,methods,11597,5121,ice,20023.2738679927,15975.7190543097,24070.8286816758
 commons-imaging,random,methods,11597,5121,zelterman,8037.34133553514,7659.21812118944,8415.46454988084
 commons-imaging,random,methods,11597,5121,species_chaobunge,9540.0,8848.0,10346.0
@@ -298,6 +322,7 @@ commons-imaging,random,methods,11597,5121,bootstrap,6583.04213824138,6246.340104
 commons-imaging,random,methods,11597,5121,species_pcg,8004.0,7898.0,10567.0
 commons-imaging,random,methods,11597,5121,species_pnpmle,7929.0,7587.0,9645.0
 commons-imaging,random,methods,11597,5121,species_unpmle,7924.0,7498.0,10512.0
+commons-imaging,random,methods,11597,5121,chao_upperbound,7130.1621777313,6587.06170306877,7673.26265239383
 commons-imaging,random,classes,11597,5121,ice,22759.1558884421,19237.1550292595,26281.1567476246
 commons-imaging,random,classes,11597,5121,zelterman,13446.844064668,12617.3798659741,14276.3082633618
 commons-imaging,random,classes,11597,5121,species_chaobunge,-6614.0,-5238.0,-8172.0
@@ -310,6 +335,7 @@ commons-imaging,random,classes,11597,5121,bootstrap,7323.72539664996,6780.696004
 commons-imaging,random,classes,11597,5121,species_pcg,14735.0,14323.0,29878.0
 commons-imaging,random,classes,11597,5121,species_pnpmle,14708.0,13908.0,17449.0
 commons-imaging,random,classes,11597,5121,species_unpmle,14730.0,13703.0,33024.0
+commons-imaging,random,classes,11597,5121,chao_upperbound,10928.3690738428,10274.2557951269,11582.4823525588
 commons-imaging,organic,methods,11597,5411,ice,13665.5431606842,12634.2006739502,14696.8856474182
 commons-imaging,organic,methods,11597,5411,zelterman,10562.9656929087,9900.87623579494,11225.0551500225
 commons-imaging,organic,methods,11597,5411,species_chaobunge,11866.0,10547.0,13461.0
@@ -322,6 +348,7 @@ commons-imaging,organic,methods,11597,5411,bootstrap,6730.75716261096,6341.44181
 commons-imaging,organic,methods,11597,5411,species_pcg,9049.0,8392.0,9823.0
 commons-imaging,organic,methods,11597,5411,species_pnpmle,8905.0,8287.0,10095.0
 commons-imaging,organic,methods,11597,5411,species_unpmle,8903.0,8243.0,12946.0
+commons-imaging,organic,methods,11597,5411,chao_upperbound,8190.10094620265,7328.44865534607,9051.75323705923
 commons-imaging,organic,classes,11597,5411,ice,13162.9562566169,12429.7212066797,13896.1913065541
 commons-imaging,organic,classes,11597,5411,zelterman,10063.5514799064,9547.51347305335,10579.5894867595
 commons-imaging,organic,classes,11597,5411,species_chaobunge,17326.0,14543.0,20932.0
@@ -334,6 +361,7 @@ commons-imaging,organic,classes,11597,5411,bootstrap,7264.16794819661,6689.01909
 commons-imaging,organic,classes,11597,5411,species_pcg,24329.0,10536.0,21218.0
 commons-imaging,organic,classes,11597,5411,species_pnpmle,19284.0,13221.0,16994.0
 commons-imaging,organic,classes,11597,5411,species_unpmle,118218125.0,10531.0,116046457.0
+commons-imaging,organic,classes,11597,5411,chao_upperbound,8952.06567751893,8036.16942120142,9867.96193383643
 commons-imaging,dynamosa,methods,11597,5221,ice,11761.0761551564,10765.8999443508,12756.252365962
 commons-imaging,dynamosa,methods,11597,5221,zelterman,7153.29608052452,6851.75723233611,7454.83492871292
 commons-imaging,dynamosa,methods,11597,5221,species_chaobunge,6703.0,6518.0,6907.0
@@ -346,6 +374,7 @@ commons-imaging,dynamosa,methods,11597,5221,bootstrap,6417.8966343356,6303.31490
 commons-imaging,dynamosa,methods,11597,5221,species_pcg,7339.0,6640.0,8258.0
 commons-imaging,dynamosa,methods,11597,5221,species_pnpmle,6817.0,6651.0,7962.0
 commons-imaging,dynamosa,methods,11597,5221,species_unpmle,6810.0,6527.0,7893.0
+commons-imaging,dynamosa,methods,11597,5221,chao_upperbound,6373.47132038608,6040.2489167385,6706.69372403366
 commons-imaging,dynamosa,classes,11597,5221,ice,21895.7388334663,19853.460635193,23938.0170317397
 commons-imaging,dynamosa,classes,11597,5221,zelterman,14555.0998533096,13632.3781850054,15477.8215216137
 commons-imaging,dynamosa,classes,11597,5221,species_chaobunge,-7802.0,-5948.0,-9965.0
@@ -358,6 +387,7 @@ commons-imaging,dynamosa,classes,11597,5221,bootstrap,7535.23665869065,7052.3278
 commons-imaging,dynamosa,classes,11597,5221,species_pcg,16032.0,15338.0,33254.0
 commons-imaging,dynamosa,classes,11597,5221,species_pnpmle,15926.0,15362.0,17838.0
 commons-imaging,dynamosa,classes,11597,5221,species_unpmle,15950.0,15054.0,28851.0
+commons-imaging,dynamosa,classes,11597,5221,chao_upperbound,11065.3654020331,10543.5245523121,11587.2062517541
 commons-dbcp,random,methods,4230,829,ice,2774.03700649244,2377.64309579674,3170.43091718814
 commons-dbcp,random,methods,4230,829,zelterman,1292.93131177077,1151.32452180126,1434.53810174029
 commons-dbcp,random,methods,4230,829,species_chaobunge,2310.0,1456.0,4079.0
@@ -370,6 +400,7 @@ commons-dbcp,random,methods,4230,829,bootstrap,1084.5517081647,1053.09498079555,
 commons-dbcp,random,methods,4230,829,species_pcg,1285.0,1179.0,1431.0
 commons-dbcp,random,methods,4230,829,species_pnpmle,1206.0,1172.0,1553.0
 commons-dbcp,random,methods,4230,829,species_unpmle,1204.0,1153.0,1830.0
+commons-dbcp,random,methods,4230,829,chao_upperbound,1253.50963301151,1016.54916863875,1490.47009738428
 commons-dbcp,random,classes,4230,829,ice,2831.46245822892,2365.32086487854,3297.6040515793
 commons-dbcp,random,classes,4230,829,zelterman,3496.42913581086,2764.13158114674,4228.72669047498
 commons-dbcp,random,classes,4230,829,species_chaobunge,-770.0,-505.0,-1088.0
@@ -382,6 +413,7 @@ commons-dbcp,random,classes,4230,829,bootstrap,1167.62415104439,1050.87192577718
 commons-dbcp,random,classes,4230,829,species_pcg,15984.0,114799.0,420822.0
 commons-dbcp,random,classes,4230,829,species_pnpmle,4596.0,3003.0,4293.0
 commons-dbcp,random,classes,4230,829,species_unpmle,43333970.0,3427.0,25042378.0
+commons-dbcp,random,classes,4230,829,chao_upperbound,2937.55756810918,1761.10005675052,4114.01507946783
 commons-dbcp,organic,methods,4230,4219,ice,4219.0,4219.0,4219.0
 commons-dbcp,organic,methods,4230,4219,zelterman,-1.0,-1.0,-1.0
 commons-dbcp,organic,methods,4230,4219,species_chaobunge,4219.0,4219.0,4219.0
@@ -393,6 +425,7 @@ commons-dbcp,organic,methods,4230,4219,spader_ice1,-1.0,-1.0,-1.0
 commons-dbcp,organic,methods,4230,4219,bootstrap,4219.23486106499,4218.52195841571,4219.94776371427
 commons-dbcp,organic,methods,4230,4219,species_pcg,4219.0,4219.0,4219.0
 commons-dbcp,organic,methods,4230,4219,species_unpmle,4219.0,4219.0,4219.0
+commons-dbcp,organic,methods,4230,4219,chao_upperbound,-1.0,-1.0,-1.0
 commons-dbcp,organic,classes,4230,4219,ice,4219.25081743059,4218.90344606429,4219.5981887969
 commons-dbcp,organic,classes,4230,4219,zelterman,-1.0,-1.0,-1.0
 commons-dbcp,organic,classes,4230,4219,species_chaobunge,4219.0,4219.0,4219.0
@@ -403,6 +436,7 @@ commons-dbcp,organic,classes,4230,4219,spader_ice,-1.0,-1.0,-1.0
 commons-dbcp,organic,classes,4230,4219,spader_ice1,-1.0,-1.0,-1.0
 commons-dbcp,organic,classes,4230,4219,bootstrap,4262.56670694169,3730.39717087935,4794.73624300404
 commons-dbcp,organic,classes,4230,4219,species_pcg,2113280.0,1058595605.0,1058596103.0
+commons-dbcp,organic,classes,4230,4219,chao_upperbound,4220.0,4220.0,4220.0
 commons-dbcp,dynamosa,methods,4230,1127,ice,12086.1173619708,4899.43088315002,19272.8038407916
 commons-dbcp,dynamosa,methods,4230,1127,zelterman,1943.84699201763,1722.74819955616,2164.94578447909
 commons-dbcp,dynamosa,methods,4230,1127,species_chaobunge,1926.0,1686.0,2248.0
@@ -415,6 +449,7 @@ commons-dbcp,dynamosa,methods,4230,1127,bootstrap,1444.52123273625,1420.49041795
 commons-dbcp,dynamosa,methods,4230,1127,species_pcg,3988.0,1842.0,3020.0
 commons-dbcp,dynamosa,methods,4230,1127,species_pnpmle,2511.0,1841.0,2304.0
 commons-dbcp,dynamosa,methods,4230,1127,species_unpmle,25860981.0,1732.0,28837665.0
+commons-dbcp,dynamosa,methods,4230,1127,chao_upperbound,1726.46990276925,1400.19350167704,2052.74630386145
 commons-dbcp,dynamosa,classes,4230,1127,ice,6031.92196914222,4347.23775818075,7716.6061801037
 commons-dbcp,dynamosa,classes,4230,1127,zelterman,5148.57818787452,4230.0228567213,6067.13351902775
 commons-dbcp,dynamosa,classes,4230,1127,species_chaobunge,-1027.0,-564.0,-1617.0
@@ -427,6 +462,7 @@ commons-dbcp,dynamosa,classes,4230,1127,bootstrap,1655.26174387033,1477.65890597
 commons-dbcp,dynamosa,classes,4230,1127,species_pcg,10860.0,77268.0,293820.0
 commons-dbcp,dynamosa,classes,4230,1127,species_pnpmle,7330.0,4944.0,7934.0
 commons-dbcp,dynamosa,classes,4230,1127,species_unpmle,154638.0,4385.0,37052492.0
+commons-dbcp,dynamosa,classes,4230,1127,chao_upperbound,3436.70188487708,2667.96714066849,4205.43662908567
 commons-csv,random,methods,635,378,ice,596.739030099142,524.04839011589,669.429670082394
 commons-csv,random,methods,635,378,zelterman,520.761325085595,420.403985706205,621.118664464985
 commons-csv,random,methods,635,378,species_chaobunge,448.0,410.0,494.0
@@ -439,6 +475,7 @@ commons-csv,random,methods,635,378,bootstrap,433.938932205481,420.094395257219,4
 commons-csv,random,methods,635,378,species_pcg,428.0,411.0,534.0
 commons-csv,random,methods,635,378,species_pnpmle,430.0,407.0,490.0
 commons-csv,random,methods,635,378,species_unpmle,430.0,414.0,534.0
+commons-csv,random,methods,635,378,chao_upperbound,471.543601171534,393.080298084854,550.006904258213
 commons-csv,random,classes,635,378,ice,563.53991784992,512.897249260511,614.182586439328
 commons-csv,random,classes,635,378,zelterman,574.068179875744,487.049784088996,661.086575662491
 commons-csv,random,classes,635,378,species_chaobunge,615.0,526.0,757.0
@@ -451,6 +488,7 @@ commons-csv,random,classes,635,378,bootstrap,493.003061118192,403.626715842647,5
 commons-csv,random,classes,635,378,species_pcg,647.0,605.0,860.0
 commons-csv,random,classes,635,378,species_pnpmle,654.0,510.0,799.0
 commons-csv,random,classes,635,378,species_unpmle,657.0,559.0,2117.0
+commons-csv,random,classes,635,378,chao_upperbound,534.768965732785,444.18902976879,625.348901696779
 commons-csv,organic,methods,635,515,ice,738.813112979381,672.407923649142,805.21830230962
 commons-csv,organic,methods,635,515,zelterman,618.887443061514,537.026750178887,700.748135944142
 commons-csv,organic,methods,635,515,species_chaobunge,556.0,534.0,580.0
@@ -463,6 +501,7 @@ commons-csv,organic,methods,635,515,bootstrap,574.61638931809,556.733477042671,5
 commons-csv,organic,methods,635,515,species_pcg,558.0,539.0,627.0
 commons-csv,organic,methods,635,515,species_pnpmle,562.0,543.0,658.0
 commons-csv,organic,methods,635,515,species_unpmle,561.0,539.0,636.0
+commons-csv,organic,methods,635,515,chao_upperbound,570.203053200129,525.990164408086,614.415941992173
 commons-csv,organic,classes,635,515,ice,783.580917346158,721.50186721522,845.659967477097
 commons-csv,organic,classes,635,515,zelterman,1018.24181831117,822.422767883819,1214.06086873853
 commons-csv,organic,classes,635,515,species_chaobunge,892.0,744.0,1122.0
@@ -475,6 +514,7 @@ commons-csv,organic,classes,635,515,bootstrap,654.827135638197,556.155820978689,
 commons-csv,organic,classes,635,515,species_pcg,257994.0,258012.0,258127.0
 commons-csv,organic,classes,635,515,species_pnpmle,1077.0,844.0,1250.0
 commons-csv,organic,classes,635,515,species_unpmle,1183.0,927.0,6262626.0
+commons-csv,organic,classes,635,515,chao_upperbound,607.556845343392,580.730281173369,634.383409513415
 commons-csv,dynamosa,methods,635,481,ice,992.509928950055,846.060186131338,1138.95967176877
 commons-csv,dynamosa,methods,635,481,zelterman,668.610588623478,557.640556614856,779.580620632099
 commons-csv,dynamosa,methods,635,481,species_chaobunge,600.0,541.0,673.0
@@ -487,6 +527,7 @@ commons-csv,dynamosa,methods,635,481,bootstrap,557.827051504828,540.490241904214
 commons-csv,dynamosa,methods,635,481,species_pcg,645.0,541.0,756.0
 commons-csv,dynamosa,methods,635,481,species_pnpmle,839.0,782.0,927.0
 commons-csv,dynamosa,methods,635,481,species_unpmle,582.0,548.0,825.0
+commons-csv,dynamosa,methods,635,481,chao_upperbound,565.536344502637,505.966420032416,625.106268972857
 commons-csv,dynamosa,classes,635,481,ice,908.076450089644,807.170773246829,1008.98212693246
 commons-csv,dynamosa,classes,635,481,zelterman,921.281572556342,769.501022952736,1073.06212215995
 commons-csv,dynamosa,classes,635,481,species_chaobunge,1291.0,918.0,1981.0
@@ -499,6 +540,7 @@ commons-csv,dynamosa,classes,635,481,bootstrap,649.937683475099,528.103836933724
 commons-csv,dynamosa,classes,635,481,species_pcg,1021.0,916.0,1655.0
 commons-csv,dynamosa,classes,635,481,species_pnpmle,1036.0,900.0,1399.0
 commons-csv,dynamosa,classes,635,481,species_unpmle,1049.0,867.0,2489120.0
+commons-csv,dynamosa,classes,635,481,chao_upperbound,605.124407100845,575.867543607561,634.38127059413
 commons-configuration,random,methods,6279,2429,ice,9646.35319269074,8023.22994328444,11269.476442097
 commons-configuration,random,methods,6279,2429,zelterman,3873.33665738515,3558.49383148755,4188.17948328275
 commons-configuration,random,methods,6279,2429,species_chaobunge,3423.0,3212.0,3667.0
@@ -511,6 +553,7 @@ commons-configuration,random,methods,6279,2429,bootstrap,2937.14786805108,2878.4
 commons-configuration,random,methods,6279,2429,species_pcg,3565.0,3234.0,4635.0
 commons-configuration,random,methods,6279,2429,species_pnpmle,3674.0,3270.0,4217.0
 commons-configuration,random,methods,6279,2429,species_unpmle,3696.0,3551.0,8432.0
+commons-configuration,random,methods,6279,2429,chao_upperbound,3180.91259900825,2847.85089874862,3513.97429926788
 commons-configuration,random,classes,6279,2429,ice,8022.05921236484,7119.41385928808,8924.7045654416
 commons-configuration,random,classes,6279,2429,zelterman,6166.25081570115,5568.60065740065,6763.90097400166
 commons-configuration,random,classes,6279,2429,species_chaobunge,-4670.0,-3081.0,-6736.0
@@ -523,6 +566,7 @@ commons-configuration,random,classes,6279,2429,bootstrap,3281.83310651264,3053.6
 commons-configuration,random,classes,6279,2429,species_pcg,9832.0,6897.0,12319.0
 commons-configuration,random,classes,6279,2429,species_pnpmle,7382.0,5500.0,8346.0
 commons-configuration,random,classes,6279,2429,species_unpmle,76980122.0,5773.0,86769473.0
+commons-configuration,random,classes,6279,2429,chao_upperbound,5140.46701432046,4155.03007132116,6125.90395731975
 commons-configuration,organic,methods,6279,6219,ice,6222.91077160969,6215.24025053976,6230.58129267962
 commons-configuration,organic,methods,6279,6219,zelterman,6219.00069985633,6218.94386260989,6219.05753710277
 commons-configuration,organic,methods,6279,6219,species_chaobunge,6219.0,6219.0,6219.0
@@ -534,6 +578,7 @@ commons-configuration,organic,methods,6279,6219,spader_ice1,6219.114,6219.006,62
 commons-configuration,organic,methods,6279,6219,bootstrap,6223.69973264972,6218.76242238819,6228.63704291125
 commons-configuration,organic,methods,6279,6219,species_pnpmle,6220.0,6216.0,6226.0
 commons-configuration,organic,methods,6279,6219,species_unpmle,6220.0,6219.0,6231.0
+commons-configuration,organic,methods,6279,6219,chao_upperbound,6220.76138755334,6219.00109219032,6222.52168291637
 commons-configuration,organic,classes,6279,6219,ice,6255.70305695177,6243.43700329807,6267.96911060547
 commons-configuration,organic,classes,6279,6219,zelterman,6219.02589979247,6218.69085130184,6219.3609482831
 commons-configuration,organic,classes,6279,6219,species_chaobunge,6223.0,6219.0,6227.0
@@ -546,6 +591,7 @@ commons-configuration,organic,classes,6279,6219,bootstrap,6468.07405829262,5825.
 commons-configuration,organic,classes,6279,6219,species_pcg,6243.0,6233.0,6252.0
 commons-configuration,organic,classes,6279,6219,species_pnpmle,7970.0,7960.0,8030.0
 commons-configuration,organic,classes,6279,6219,species_unpmle,6244.0,6238.0,6266.0
+commons-configuration,organic,classes,6279,6219,chao_upperbound,6228.79396220574,6219.43444780891,6238.15347660257
 commons-configuration,dynamosa,methods,6279,2509,ice,11474.6716244685,9290.30962564419,13659.0336232928
 commons-configuration,dynamosa,methods,6279,2509,zelterman,3434.3401567973,3208.13047360187,3660.54983999272
 commons-configuration,dynamosa,methods,6279,2509,species_chaobunge,3161.0,3031.0,3304.0
@@ -558,6 +604,7 @@ commons-configuration,dynamosa,methods,6279,2509,bootstrap,2987.8072568135,2940.
 commons-configuration,dynamosa,methods,6279,2509,species_pcg,3442.0,3016.0,3642.0
 commons-configuration,dynamosa,methods,6279,2509,species_pnpmle,3101.0,2999.0,3461.0
 commons-configuration,dynamosa,methods,6279,2509,species_unpmle,3095.0,2987.0,3699.0
+commons-configuration,dynamosa,methods,6279,2509,chao_upperbound,2998.51661021444,2785.51148745912,3211.52173296976
 commons-configuration,dynamosa,classes,6279,2509,ice,8965.14022055101,7881.69478691738,10048.5856541846
 commons-configuration,dynamosa,classes,6279,2509,zelterman,6414.26241522156,5809.17945499489,7019.34537544824
 commons-configuration,dynamosa,classes,6279,2509,species_chaobunge,-5171.0,-3347.0,-7585.0
@@ -570,6 +617,7 @@ commons-configuration,dynamosa,classes,6279,2509,bootstrap,3428.96695442622,3169
 commons-configuration,dynamosa,classes,6279,2509,species_pcg,13430.0,7069.0,15539.0
 commons-configuration,dynamosa,classes,6279,2509,species_pnpmle,7484.0,6103.0,8459.0
 commons-configuration,dynamosa,classes,6279,2509,species_unpmle,9510.0,6425.0,50846255.0
+commons-configuration,dynamosa,classes,6279,2509,chao_upperbound,5291.59385835071,4388.69302716225,6194.49468953916
 commons-compress,random,methods,9566,4239,ice,10974.8060559113,10121.7735825252,11827.8385292974
 commons-compress,random,methods,9566,4239,zelterman,5203.06462775503,5015.79236412806,5390.33689138199
 commons-compress,random,methods,9566,4239,species_chaobunge,5255.0,5114.0,5410.0
@@ -582,6 +630,7 @@ commons-compress,random,methods,9566,4239,bootstrap,5203.59710082788,4909.949957
 commons-compress,random,methods,9566,4239,species_pcg,4944.0,4887.0,5134.0
 commons-compress,random,methods,9566,4239,species_pnpmle,5543.0,4820.0,5884.0
 commons-compress,random,methods,9566,4239,species_unpmle,5486.0,5486.0,5486.0
+commons-compress,random,methods,9566,4239,chao_upperbound,4922.22844228609,4710.29194977518,5134.16493479699
 commons-compress,random,classes,9566,4239,ice,9990.39283156043,9132.34013962359,10848.4455234973
 commons-compress,random,classes,9566,4239,zelterman,7117.35233279056,6770.08298376128,7464.62168181984
 commons-compress,random,classes,9566,4239,species_chaobunge,14904.0,11954.0,18976.0
@@ -594,6 +643,7 @@ commons-compress,random,classes,9566,4239,bootstrap,5855.64742583561,5378.916589
 commons-compress,random,classes,9566,4239,species_pcg,2123875.0,2123955.0,2124868.0
 commons-compress,random,classes,9566,4239,species_pnpmle,11207.0,10786.0,12596.0
 commons-compress,random,classes,9566,4239,species_unpmle,7120.0,7120.0,7120.0
+commons-compress,random,classes,9566,4239,chao_upperbound,6884.76217199332,6197.35877879116,7572.16556519548
 commons-compress,organic,methods,9566,6258,ice,8769.84536502233,8446.52880726859,9093.16192277606
 commons-compress,organic,methods,9566,6258,zelterman,8557.8985907195,8129.45910691652,8986.33807452248
 commons-compress,organic,methods,9566,6258,species_chaobunge,7266.0,7111.0,7427.0
@@ -606,6 +656,7 @@ commons-compress,organic,methods,9566,6258,bootstrap,7038.11673017431,6893.92687
 commons-compress,organic,methods,9566,6258,species_pcg,2563445.0,1384863.0,2563840.0
 commons-compress,organic,methods,9566,6258,species_pnpmle,9979.0,9913.0,11580.0
 commons-compress,organic,methods,9566,6258,species_unpmle,7263.0,7263.0,7263.0
+commons-compress,organic,methods,9566,6258,chao_upperbound,7041.22847096841,6769.02127189243,7313.4356700444
 commons-compress,organic,classes,9566,6258,ice,9175.57179339547,8878.26482514383,9472.87876164712
 commons-compress,organic,classes,9566,6258,zelterman,8585.51606693372,8258.25427654833,8912.7778573191
 commons-compress,organic,classes,9566,6258,species_chaobunge,8072.0,7864.0,8300.0
@@ -618,6 +669,7 @@ commons-compress,organic,classes,9566,6258,bootstrap,7682.38157841635,7314.94899
 commons-compress,organic,classes,9566,6258,species_pcg,3120320.0,3120569.0,3121848.0
 commons-compress,organic,classes,9566,6258,species_pnpmle,13316.0,13121.0,13901.0
 commons-compress,organic,classes,9566,6258,species_unpmle,8234.0,8234.0,8234.0
+commons-compress,organic,classes,9566,6258,chao_upperbound,7672.70592757492,7301.84064307224,8043.5712120776
 commons-compress,dynamosa,methods,9566,4719,ice,10181.8002879026,8452.0889299109,11911.5116458944
 commons-compress,dynamosa,methods,9566,4719,zelterman,5782.18527971432,5557.19818370489,6007.17237572376
 commons-compress,dynamosa,methods,9566,4719,species_chaobunge,5402.0,5305.0,5506.0
@@ -630,6 +682,7 @@ commons-compress,dynamosa,methods,9566,4719,bootstrap,5568.06015255167,5337.6440
 commons-compress,dynamosa,methods,9566,4719,species_pcg,6816.0,5150.0,5652.0
 commons-compress,dynamosa,methods,9566,4719,species_pnpmle,5246.0,5218.0,5382.0
 commons-compress,dynamosa,methods,9566,4719,species_unpmle,36420.0,36420.0,36420.0
+commons-compress,dynamosa,methods,9566,4719,chao_upperbound,5280.34851481471,5089.4638561273,5471.23317350211
 commons-compress,dynamosa,classes,9566,4719,ice,9690.49457822639,8657.75124873037,10723.2379077224
 commons-compress,dynamosa,classes,9566,4719,zelterman,7944.47290787923,7566.88603020896,8322.05978554951
 commons-compress,dynamosa,classes,9566,4719,species_chaobunge,9152.0,8393.0,10066.0
@@ -642,6 +695,7 @@ commons-compress,dynamosa,classes,9566,4719,bootstrap,6462.17706866047,6012.7852
 commons-compress,dynamosa,classes,9566,4719,species_pcg,2363911.0,2363977.0,2365013.0
 commons-compress,dynamosa,classes,9566,4719,species_pnpmle,18275.0,12055.0,16231.0
 commons-compress,dynamosa,classes,9566,4719,species_unpmle,110729542.0,7202.0,122161930.0
+commons-compress,dynamosa,classes,9566,4719,chao_upperbound,7510.79449348843,6801.68850336619,8219.90048361066
 commons-collections,random,methods,8309,4761,ice,21460.2903635744,14296.1908915083,28624.3898356405
 commons-collections,random,methods,8309,4761,zelterman,6636.21331630801,6356.85007595422,6915.5765566618
 commons-collections,random,methods,8309,4761,species_chaobunge,7731.0,7280.0,8244.0
@@ -654,6 +708,7 @@ commons-collections,random,methods,8309,4761,bootstrap,5990.76488240785,5915.199
 commons-collections,random,methods,8309,4761,species_pcg,6183.0,6095.0,6672.0
 commons-collections,random,methods,8309,4761,species_pnpmle,6230.0,6109.0,6697.0
 commons-collections,random,methods,8309,4761,species_unpmle,6229.0,6164.0,7400.0
+commons-collections,random,methods,8309,4761,chao_upperbound,6072.71539901494,5706.90286242025,6438.52793560962
 commons-collections,random,classes,8309,4761,ice,20661.5509392874,17285.5784293063,24037.5234492686
 commons-collections,random,classes,8309,4761,zelterman,10756.1968752928,10119.3041867902,11393.0895637954
 commons-collections,random,classes,8309,4761,species_chaobunge,-19722.0,-11998.0,-31035.0
@@ -666,6 +721,7 @@ commons-collections,random,classes,8309,4761,bootstrap,6669.80956496492,6330.491
 commons-collections,random,classes,8309,4761,species_pcg,14293.0,11844.0,19828.0
 commons-collections,random,classes,8309,4761,species_pnpmle,12768.0,10357.0,13992.0
 commons-collections,random,classes,8309,4761,species_unpmle,23013.0,10249.0,73950.0
+commons-collections,random,classes,8309,4761,chao_upperbound,8056.74335746436,7808.80477922578,8304.68193570293
 commons-collections,organic,methods,8309,6249,ice,46885.7875604896,22478.8338082622,71292.7413127171
 commons-collections,organic,methods,8309,6249,zelterman,10131.9230599794,9575.83522921967,10688.0108907391
 commons-collections,organic,methods,8309,6249,species_chaobunge,8463.0,8144.0,8808.0
@@ -678,6 +734,7 @@ commons-collections,organic,methods,8309,6249,bootstrap,7381.00556264105,7261.59
 commons-collections,organic,methods,8309,6249,species_pcg,8360.0,7970.0,9554.0
 commons-collections,organic,methods,8309,6249,species_pnpmle,8409.0,8408.0,9893.0
 commons-collections,organic,methods,8309,6249,species_unpmle,8406.0,8222.0,9437.0
+commons-collections,organic,methods,8309,6249,chao_upperbound,7818.8012630111,7391.35914682673,8246.24337919548
 commons-collections,organic,classes,8309,6249,ice,21771.7815102404,18803.4584332207,24740.1045872602
 commons-collections,organic,classes,8309,6249,zelterman,12180.5706144182,11610.3808178489,12750.7604109874
 commons-collections,organic,classes,8309,6249,species_chaobunge,512220.0,30472.0,10515399.0
@@ -690,6 +747,7 @@ commons-collections,organic,classes,8309,6249,bootstrap,8652.17568229852,8100.69
 commons-collections,organic,classes,8309,6249,species_pcg,12095.0,11545.0,18526.0
 commons-collections,organic,classes,8309,6249,species_pnpmle,18058.0,17591.0,21567.0
 commons-collections,organic,classes,8309,6249,species_unpmle,12160.0,11739.0,16069.0
+commons-collections,organic,classes,8309,6249,chao_upperbound,8251.73629737224,8195.2999520397,8308.17264270477
 commons-collections,dynamosa,methods,8309,7762,ice,51745.8470737159,23877.880606072,79613.8135413597
 commons-collections,dynamosa,methods,8309,7762,zelterman,12281.8428136992,11795.2450865448,12768.4405408536
 commons-collections,dynamosa,methods,8309,7762,species_chaobunge,13329.0,12638.0,14102.0
@@ -702,6 +760,7 @@ commons-collections,dynamosa,methods,8309,7762,bootstrap,10138.6528611458,7494.4
 commons-collections,dynamosa,methods,8309,7762,species_pcg,18643.0,12102.0,19975.0
 commons-collections,dynamosa,methods,8309,7762,species_pnpmle,21707.0,16105.0,21218.0
 commons-collections,dynamosa,methods,8309,7762,species_unpmle,118365897.0,12004.0,127770867.0
+commons-collections,dynamosa,methods,8309,7762,chao_upperbound,8300.50983007547,8292.1382988865,8308.88136126444
 commons-collections,dynamosa,classes,8309,7762,ice,15595.3871266418,13692.0958196491,17498.6784336345
 commons-collections,dynamosa,classes,8309,7762,zelterman,9147.28666271754,8975.58719475445,9318.98613068063
 commons-collections,dynamosa,classes,8309,7762,species_chaobunge,11381.0,10963.0,11852.0
@@ -714,3 +773,4 @@ commons-collections,dynamosa,classes,8309,7762,bootstrap,10510.903298409,7332.36
 commons-collections,dynamosa,classes,8309,7762,species_pcg,10556.0,10476.0,11197.0
 commons-collections,dynamosa,classes,8309,7762,species_pnpmle,18050.0,17901.0,19611.0
 commons-collections,dynamosa,classes,8309,7762,species_unpmle,10550.0,10456.0,12058.0
+commons-collections,dynamosa,classes,8309,7762,chao_upperbound,8301.45329180923,8294.01211782737,8308.89446579108
