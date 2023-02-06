@@ -3,7 +3,7 @@ Mutant,File,Line,Index,Mutator,Status,Equivalent,Confidence,Time,Comments
 37,org/apache/commons/csv/CSVFormat.java,838,158,ReturnValsMutator,NO_COVERAGE,no,high,2 min,Similar to mutant 35
 43,org/apache/commons/csv/CSVFormat.java,857,235,ReturnValsMutator,NO_COVERAGE,no,high,5 min,Similar to mutant 35
 68,org/apache/commons/csv/CSVFormat.java,1061,13,MathMutator,SURVIVED,yes,high,5min,Mutation from * to / has no effect when the operand is 1
-69,org/apache/commons/csv/CSVFormat.java,1061,16,MathMutator,SURVIVED,no ,high,3 min,"Return value(int) of hash code change is observed, when it is tested against an object(Default)."
+69,org/apache/commons/csv/CSVFormat.java,1061,16,MathMutator,SURVIVED,no,high,3 min,"Return value(int) of hash code change is observed, when it is tested against an object(Default)."
 70,org/apache/commons/csv/CSVFormat.java,1062,22,MathMutator,SURVIVED,no,high,3 min,Similar to mutant 69
 71,org/apache/commons/csv/CSVFormat.java,1062,35,MathMutator,SURVIVED,yes,high,5 min,"can be killable, where quotemode is external to the function "
 72,org/apache/commons/csv/CSVFormat.java,1063,41,MathMutator,SURVIVED,no,high,3 min,Similar to mutant 69
@@ -29,8 +29,8 @@ Mutant,File,Line,Index,Mutator,Status,Equivalent,Confidence,Time,Comments
 93,org/apache/commons/csv/CSVFormat.java,1063,44,NegateConditionalsMutator,SURVIVED,no,medium,5 min,change in return value of hashcode is observed
 97,org/apache/commons/csv/CSVFormat.java,1067,120,NegateConditionalsMutator,SURVIVED,no,medium,3 min,change in return value of hashcode is observed
 98,org/apache/commons/csv/CSVFormat.java,1068,137,NegateConditionalsMutator,SURVIVED,no,medium,3 min,change in return value of hashcode is observed
-99,org/apache/commons/csv/CSVFormat.java,1069,154,NegateConditionalsMutator,SURVIVED,no ,medium,3 min,change in return value of hashcode is observed
-100,org/apache/commons/csv/CSVFormat.java,1070,171,NegateConditionalsMutator,SURVIVED,no ,medium,3 min,change in return value of hashcode is observed
+99,org/apache/commons/csv/CSVFormat.java,1069,154,NegateConditionalsMutator,SURVIVED,no,medium,3 min,change in return value of hashcode is observed
+100,org/apache/commons/csv/CSVFormat.java,1070,171,NegateConditionalsMutator,SURVIVED,no,medium,3 min,change in return value of hashcode is observed
 101,org/apache/commons/csv/CSVFormat.java,1071,188,NegateConditionalsMutator,SURVIVED,no,medium,3 min,change in return value of hashcode is observed
 102,org/apache/commons/csv/CSVFormat.java,1073,213,ReturnValsMutator,SURVIVED,no,medium,3 min,"Return value changed from integer > 0 to 0, change is observed"
 122,org/apache/commons/csv/CSVFormat.java,1259,30,NegateConditionalsMutator,NO_COVERAGE,no,high,15 min,Mutation doesn’t let elseif loop gets executed.
@@ -41,13 +41,13 @@ Mutant,File,Line,Index,Mutator,Status,Equivalent,Confidence,Time,Comments
 149,org/apache/commons/csv/CSVFormat.java,1394,122,IncrementsMutator,NO_COVERAGE,no,medium,5 min,"Variable gets decremented, it can result in run-time exception in some cases, when the ‘pos’ value runs in to negatives and append method is called."
 150,org/apache/commons/csv/CSVFormat.java,1392,117,MathMutator,NO_COVERAGE,no,medium,3 min,Can result in printing many duplicate characters.
 151,org/apache/commons/csv/CSVFormat.java,1375,36,NegateConditionalsMutator,NO_COVERAGE,no,high,5 min,Mutation refers to only appending the characters when the end of the stream is reached and also with out appending the escape chars.
-152,org/apache/commons/csv/CSVFormat.java,1377,48,NegateConditionalsMutator,NO_COVERAGE,no ,medium,5 min,"Only in case, if c==CR is the actual char. And the mutation leads to failure of the ‘if’ condition"
+152,org/apache/commons/csv/CSVFormat.java,1377,48,NegateConditionalsMutator,NO_COVERAGE,no,medium,5 min,"Only in case, if c==CR is the actual char. And the mutation leads to failure of the ‘if’ condition"
 153,org/apache/commons/csv/CSVFormat.java,1377,51,NegateConditionalsMutator,NO_COVERAGE,no,medium,2 min,Logically similar to mutant 152
 154,org/apache/commons/csv/CSVFormat.java,1377,54,NegateConditionalsMutator,NO_COVERAGE,no,medium,2 min,Logically similar to mutant 152
 155,org/apache/commons/csv/CSVFormat.java,1377,57,NegateConditionalsMutator,NO_COVERAGE,no,medium,2 min,Logically similar to mutant 152
 156,org/apache/commons/csv/CSVFormat.java,1379,63,NegateConditionalsMutator,NO_COVERAGE,no,high,3 min,Printing output might vary with some missing characters
 157,org/apache/commons/csv/CSVFormat.java,1383,83,NegateConditionalsMutator,NO_COVERAGE,no,medium,3 min,The char ‘n’ might append in place of other chars.
-158,org/apache/commons/csv/CSVFormat.java,1385,94,NegateConditionalsMutator,NO_COVERAGE,no ,medium,2 min,Logically similar to mutant 157
+158,org/apache/commons/csv/CSVFormat.java,1385,94,NegateConditionalsMutator,NO_COVERAGE,no,medium,2 min,Logically similar to mutant 157
 159,org/apache/commons/csv/CSVFormat.java,1398,129,NegateConditionalsMutator,NO_COVERAGE,no,high,15 min,"Due to mutation, we might miss some value to be printed, so killable"
 160,org/apache/commons/csv/CSVFormat.java,1381,77,VoidMethodCallMutator,NO_COVERAGE,no,high,10 min,
 162,org/apache/commons/csv/CSVFormat.java,1343,60,ConditionalsBoundaryMutator,SURVIVED,yes,medium,20 min,Nothing gets appended if the positions are same
@@ -85,6 +85,7 @@ Mutant,File,Line,Index,Mutator,Status,Equivalent,Confidence,Time,Comments
 398,org/apache/commons/csv/Lexer.java,342,30,ReturnValsMutator,NO_COVERAGE,no,high,5 min,similar to mutant 397
 399,org/apache/commons/csv/Lexer.java,344,35,ReturnValsMutator,NO_COVERAGE,no,high,2 min,similar to mutant 397
 403,org/apache/commons/csv/Lexer.java,365,10,ConditionalsBoundaryMutator,SURVIVED,yes,high,3 min,"Mutation can result in an outbound error, i.e. charAt(0-1);"
+463,org/apache/commons/csv/CSVParser.java,659,9,VoidMethodCallMutator,SURVIVED,no,high,2 min,reused buffer will contain wrong values
 472,org/apache/commons/csv/CSVParser.java,232,5,VoidMethodCallMutator,SURVIVED,yes,high,4 min,Assertion would check and throw an error if applicable
 473,org/apache/commons/csv/CSVParser.java,233,10,VoidMethodCallMutator,SURVIVED,yes,high,2 min,similar to mutant 472
 477,org/apache/commons/csv/CSVParser.java,297,10,VoidMethodCallMutator,SURVIVED,yes,high,2 min,similar to mutant 472
@@ -92,15 +93,18 @@ Mutant,File,Line,Index,Mutator,Status,Equivalent,Confidence,Time,Comments
 484,org/apache/commons/csv/CSVParser.java,255,10,VoidMethodCallMutator,SURVIVED,yes,high,2 min,similar to mutant 472
 504,org/apache/commons/csv/CSVPrinter.java,209,66,ConditionalsBoundaryMutator,NO_COVERAGE,no,high,5 min,"when i+1==coment.lenght(), then the charAt(i+1) would be out of bound, throws an error, can be killalbe"
 505,org/apache/commons/csv/CSVPrinter.java,210,76,IncrementsMutator,NO_COVERAGE,no,medium,5 min,Can result in printing unexpected comment
-507,org/apache/commons/csv/CSVPrinter.java,209,63,MathMutator,NO_COVERAGE,no ,medium,10 min,Can result in printing unexpected comments
-508,org/apache/commons/csv/CSVPrinter.java,209,70,MathMutator,NO_COVERAGE,no ,medium,3 min,Logically similar to mutant 507
+507,org/apache/commons/csv/CSVPrinter.java,209,63,MathMutator,NO_COVERAGE,no,medium,10 min,Can result in printing unexpected comments
+508,org/apache/commons/csv/CSVPrinter.java,209,70,MathMutator,NO_COVERAGE,no,medium,3 min,Logically similar to mutant 507
 512,org/apache/commons/csv/CSVPrinter.java,209,66,NegateConditionalsMutator,NO_COVERAGE,no,high,3 min,Logically similar to mutant 504
 513,org/apache/commons/csv/CSVPrinter.java,209,73,NegateConditionalsMutator,NO_COVERAGE,no,medium,15 min,"It may skip char after CR, which is other than LF."
 514,org/apache/commons/csv/CSVPrinter.java,201,19,VoidMethodCallMutator,NO_COVERAGE,no,medium,5 min,Mutation results in printing the comment string on the same line instead of new line
+527,org/apache/commons/csv/CSVPrinter.java,381,12,NegateConditionalsMutator,SURVIVED,no,medium,3 min,"Mutation doesn’t let loop gets executed."
 534,org/apache/commons/csv/ExtendedBufferedReader.java,188,14,VoidMethodCallMutator,SURVIVED,yes,high,2 min,"super.close() method has it own functionality, which are escaped due to mutation. So, can be killable."
 554,org/apache/commons/csv/ExtendedBufferedReader.java,87,21,ConditionalsBoundaryMutator,SURVIVED,yes,high,20 min,Not Reachable
 564,org/apache/commons/csv/ExtendedBufferedReader.java,106,122,MathMutator,SURVIVED,no,high,25 min,Observed from getposition(){}
+565,org/apache/commons/csv/ExtendedBufferedReader.java,81,4,NegateConditionalsMutator,SURVIVED,no,high,3 min,will produce wrong result for non empty strings
 572,org/apache/commons/csv/ExtendedBufferedReader.java,102,108,NegateConditionalsMutator,SURVIVED,yes,medium,15 min,printing the lastchar might be missed
+574,org/apache/commons/csv/ExtendedBufferedReader.java,107,127,ReturnValsMutator,SURVIVED,no,medium,5 min,will return wrong value
 580,org/apache/commons/csv/CSVRecord.java,68,7,ReturnValsMutator,SURVIVED,yes,high,15 min,return value mutation
 589,org/apache/commons/csv/CSVRecord.java,176,5,NegateConditionalsMutator,SURVIVED,yes,high,3 min,can produce opposite output
 590,org/apache/commons/csv/CSVRecord.java,176,13,ReturnValsMutator,SURVIVED,yes,high,2 min,Logically similar to the mutant 589

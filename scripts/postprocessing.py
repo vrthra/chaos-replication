@@ -19,7 +19,8 @@ estimator_map = {'ice': 'ICE_k0',
                  'species_pcg': 'PCG',
                  'bootstrap': 'Bootstrap',
                  'species_unpmle': 'Unpmle',
-                 'species_pnpmle': 'Pnpmle'}
+                 'species_pnpmle': 'Pnpmle',
+		 'chao_upperbound': 'Chao-up'}
 subject_map = {'commons-collections': "10",
                'commons-compress': "9",
                'commons-configuration': "8",
@@ -84,7 +85,7 @@ def ggplot_subject_testsuite(data, subject, testsuite, path=None, w=6.8, h=4.8):
           geom_errorbar(aes(ymin='CILower', ymax='CIUpper', color='type'), size=1, width=0.6, position=position_dodge(width=0.5)) +
           scale_color_manual(color_discrete_map) +
           geom_hline(yintercept=df.total_mutants) +
-          geom_hline(yintercept=df.killed, linetype='dashed') +
+          geom_hline(yintercept=df.killed, linetype='dotted') +
           geom_hline(yintercept=df.MEstimate, linetype='dashed', color='black') +
           geom_hline(yintercept=df.MUpper, linetype='dashed', color='gray') +
           geom_hline(yintercept=df.MLower, linetype='dashed', color='gray') +
@@ -140,6 +141,9 @@ def ggplot_estimate(data, estimator, w=6.8, h=4.8, path=None, norm_by_mest=False
                 "organic:classes": 'white', "random:classes": 'white', "dynamosa:classes": 'white'}
     linetype_map = {'methods': 'solid', 'classes': 'dotted', 'manual': 'solid'}
     num_subj = df.subject.size
+    print(df['rmax'].max())
+    ym = min(2 , df['rmax'].max())
+    y_max = max(1.1, ym)
     ch = (ggplot(df) +
           aes(x='subject', y='rest', color='testsuite', shape='tt', fill='tt') +
           geom_point(size=1.5, position=position_dodge(width=0.7)) +
@@ -154,12 +158,12 @@ def ggplot_estimate(data, estimator, w=6.8, h=4.8, path=None, norm_by_mest=False
           scale_linetype_manual(values=linetype_map) +
           geom_hline(yintercept=1, linetype='solid', color='black', size=0.25) +
           geom_vline(xintercept=list(map(0.5.__add__, range(1, num_subj, 1))), color="lightgray") +
-          coord_flip(ylim=[0.2, 2]) +
-          facet_wrap('estimator') +
+          coord_flip(ylim=[0.2, y_max]) +
+#          facet_wrap('estimator') +
           theme_light() +
-          theme(strip_background=element_rect(fill="gray", alpha=0),
-                text=element_text(colour="black")
-                ) +
+          #theme(strip_background=element_rect(fill="gray", alpha=0),
+          #      text=element_text(colour="black")
+          #      ) +
           theme(
               axis_text_y=element_text(size=16),  # element_blank(),
               axis_text_x=element_text(size=10),
@@ -236,16 +240,16 @@ def get_mean_difference(summary_path, out_file, testsuite, by_type=None):
 
 
 def load_classified(c_path, subject):
-    df = pd.read_csv(c_path / f"{subject}.sample.rc.csv", sep='`')
+    df = pd.read_csv(c_path / f"{subject}.sample.rb.csv", sep='`')
     head = df.columns[0].split(',')
     df = df.iloc[:, 0].str.split(',', expand=True, n=9).apply(lambda x: x.str.strip())
     df.columns = head
-    df.index = df.Mutant
+    df.index = pd.to_numeric(df.Mutant)
     if (c_path / f"{subject}.sample.decision").stat().st_size > 0:
         decision = pd.read_csv(c_path / f"{subject}.sample.decision", header=None)
         decision = decision.replace({"^\s*|\s*$": ""}, regex=True)  # remove spaces
         decision.columns = ['Mutant', 'Equivalent']
-        decision.index = decision.Mutant
+        decision.index = pd.to_numeric(decision.Mutant)
         decision = decision.Equivalent
         df.update(decision)
     df = df[['File', 'Line', 'Index', 'Equivalent', 'Mutator']]

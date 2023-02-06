@@ -1,4 +1,4 @@
-68 rc:no (high) rb:yes (high)
+68 rc:yes (high) rb:yes (high)
     rc: hashcode math mutator
     rb: Mutation from * to / has no effect when the operand is 1
 69 rc:no (high) rb:no (medium)

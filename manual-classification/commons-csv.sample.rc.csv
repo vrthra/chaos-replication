@@ -85,6 +85,7 @@ Mutant,File,Line,Index,Mutator,Status,Equivalent,Confidence,Time,Comments
 398,org/apache/commons/csv/Lexer.java,342,30,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
 399,org/apache/commons/csv/Lexer.java,344,35,ReturnValsMutator,NO_COVERAGE,no,high,1 min,
 403,org/apache/commons/csv/Lexer.java,365,10,ConditionalsBoundaryMutator,SURVIVED,no,high,2 min,conditional boundary -> would always end in OutOfBoundsException
+463,org/apache/commons/csv/CSVParser.java,659,9,VoidMethodCallMutator,SURVIVED,no,high,2 min,content of record will be wrong
 472,org/apache/commons/csv/CSVParser.java,232,5,VoidMethodCallMutator,SURVIVED,no,high,5 min,removed call to notNull-Assertion  that would throw IllegalArgumentException. Without it  NullPointerExceptions will be thrown by program.
 473,org/apache/commons/csv/CSVParser.java,233,10,VoidMethodCallMutator,SURVIVED,no,high,5 min,removed call to notNull-Assertion  that would throw IllegalArgumentException. Without it  NullPointerExceptions will be thrown by program.
 477,org/apache/commons/csv/CSVParser.java,297,10,VoidMethodCallMutator,SURVIVED,no,high,5 min,removed call to notNull-Assertion  that would throw IllegalArgumentException. Without it  NullPointerExceptions will be thrown by program.
@@ -96,11 +97,14 @@ Mutant,File,Line,Index,Mutator,Status,Equivalent,Confidence,Time,Comments
 508,org/apache/commons/csv/CSVPrinter.java,209,70,MathMutator,NO_COVERAGE,no,high,1 min,
 512,org/apache/commons/csv/CSVPrinter.java,209,66,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,
 513,org/apache/commons/csv/CSVPrinter.java,209,73,NegateConditionalsMutator,NO_COVERAGE,no,high,1 min,
-514,org/apache/commons/csv/CSVPrinter.java,201,19,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,remove of println() 
+514,org/apache/commons/csv/CSVPrinter.java,201,19,VoidMethodCallMutator,NO_COVERAGE,no,high,1 min,remove of println()
+527,org/apache/commons/csv/CSVPrinter.java,381,12,NegateConditionalsMutator,SURVIVED,no,medium,1 min,"loop not executed"
 534,org/apache/commons/csv/ExtendedBufferedReader.java,188,14,VoidMethodCallMutator,SURVIVED,no,high,5 min,removed call to BufferedReader close() -> does not effect the program output as such  but can be detected from outside
 554,org/apache/commons/csv/ExtendedBufferedReader.java,87,21,ConditionalsBoundaryMutator,SURVIVED,yes,high,5 min,conditionals boundary changed in if  but for loop still holds true  so no effect
 564,org/apache/commons/csv/ExtendedBufferedReader.java,106,122,MathMutator,SURVIVED,no,high,1 min,MathMutator -> position of buffer will be calculated wrongly
+565,org/apache/commons/csv/ExtendedBufferedReader.java,81,4,NegateConditionalsMutator,SURVIVED,no,high,1 min,ignores non-empty strings
 572,org/apache/commons/csv/ExtendedBufferedReader.java,102,108,NegateConditionalsMutator,SURVIVED,no,high,1 min,negate conditional -> always throw IllegalArgumentException
+574,org/apache/commons/csv/ExtendedBufferedReader.java,107,127,ReturnValsMutator,SURVIVED,no,medium,5 min,changes returned value of method
 580,org/apache/commons/csv/CSVRecord.java,68,7,ReturnValsMutator,SURVIVED,no,high,1 min,"* (+sd: ""Return value is not used by the method called/ jh: return null instead of enum)"
 589,org/apache/commons/csv/CSVRecord.java,176,5,NegateConditionalsMutator,SURVIVED,no,high,1 min,"* (+sd: ""Return value is not used by the method called /jh: hasComment() returns the opposite)"
 590,org/apache/commons/csv/CSVRecord.java,176,13,ReturnValsMutator,SURVIVED,no,high,1 min,"* (+sd: ""Return value is not used by the method called /jh: return null instead of bool)"

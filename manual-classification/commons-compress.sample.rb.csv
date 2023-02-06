@@ -34,7 +34,7 @@ Mutant,File,Line,Index,Mutator,Status,Equivalent,Confidence,Time,Comments
 2361,org/apache/commons/compress/archivers/sevenz/SevenZFile.java,412,10,NegateConditionalsMutator,NO_COVERAGE,no,medium,5 min,"Line 415 call a method, but nid may or not assigned with same value"
 2392,org/apache/commons/compress/archivers/sevenz/SevenZFile.java,783,152,MathMutator,SURVIVED,no,high,5 min,Throws exception for unexpected length
 2395,org/apache/commons/compress/archivers/sevenz/SevenZFile.java,791,207,MathMutator,SURVIVED,no,medium,15 min,conditional comparision with unexpected positions of the array.
-2455,org/apache/commons/compress/archivers/sevenz/SevenZFile.java,697,346,ConditionalsBoundaryMutator,SURVIVED,yes,high,15 min,It effects line number 701, 704
+2455,org/apache/commons/compress/archivers/sevenz/SevenZFile.java,697,346,ConditionalsBoundaryMutator,SURVIVED,yes,high,15 min,"It effects line number 701, 704"
 2572,org/apache/commons/compress/archivers/sevenz/SevenZFile.java,1143,79,ReturnValsMutator,NO_COVERAGE,no,high,3 min,
 2913,org/apache/commons/compress/archivers/tar/TarArchiveEntry.java,1130,5,NegateConditionalsMutator,NO_COVERAGE,no,high,2 min,
 2942,org/apache/commons/compress/archivers/tar/TarArchiveEntry.java,946,6,NegateConditionalsMutator,NO_COVERAGE,no,high,3 min,"since the variables are external to function, and due to mutation it returns unexpected value"

@@ -51,9 +51,10 @@ We generated the `dynamosa` test suites using the following parameters:
 ## Data about Test Execution in the Form of Kill Matrices
 The generated kill matrices are stored in the `killmatrix/killmatrix.tar.gz` file.
 They are represented as a compresses sparse row (csr) matrix and stored in npz format.
+To generate a readable kill matrix csv file, unpack the archive and use `python scripts/get_matrix.py -i ./data/killmatrix -o ./data/matrix -s <subject> -t <testsuite> -st <sample_type>`.
 The matrices are generated from the parsed JUGE output 
 (since it is very large, we don't provide it in this bundle, an example is in 
-`./raw/commons-csv.random.03-killmatrix.tar.gz`).  
+`./raw/commons-csv.random.03-execution.tar.gz`).  
 
 ## Scripts to Compute the Estimators
 The scripts are stored in the `scripts` folder.  
@@ -78,7 +79,7 @@ Next, one can compute mean difference across subjects with
 ## Plots and Scripts to Generate them
 The plots are stored in the `plots` folder.  
 To regenerate them use
-`python scripts/postprocessing.py plot -c estimators -s ./data/summary.csv 
--o ./plots/estimators` and
-`python scripts/postprocessing.py plot -c subjects -s ./data/summary.csv
--o ./plots/subjects`
+`python scripts/postprocessing.py plot -c estimators -s ./data/summary.csv -o ./plots/estimators`,
+original is red, evosuite random is blue, evosuite dynamosa is green, and violet is manual classification;  
+and `python scripts/postprocessing.py plot -c subjects -s ./data/summary.csv -o ./plots/subjects`,
+the blue color corresponds to class test set data, and red - method test set data.
