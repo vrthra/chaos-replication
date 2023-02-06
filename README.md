@@ -10,7 +10,7 @@ This replication package contains the following:
 - data about test execution in the form of kill matrices (`killmatrix/`)
 - scripts to compute the estimators
 - plots and scripts to generate them
-- A extended version of the original paper (`paper.pdf`)
+- an extended version of the original paper (`paper.pdf`)
 
 
 ## Automatically Generated Test Suites
