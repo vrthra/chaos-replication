@@ -1,12 +1,16 @@
 # Empirical Evaluation of Frequency Based Statistical Models for Estimating Killable Mutants
 
+## Date 
+This replication package was update on Feb the 06th, 2023
+
+## Replication Package Content
 This replication package contains the following:
 - results of the manual classification of live mutants (`manual-classification/`)
 - automatically generated test suites (`chaos-test-suites.tar.gz`)
 - data about test execution in the form of kill matrices (`killmatrix/`)
 - scripts to compute the estimators
 - plots and scripts to generate them
-- A extended version of the original paper
+- A extended version of the original paper (`paper.pdf`)
 
 
 ## Automatically Generated Test Suites
