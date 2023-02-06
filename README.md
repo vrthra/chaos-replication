@@ -1,4 +1,4 @@
-# Estimating Equivalent Mutants: Are we there yet?
+# Empirical Evaluation of Frequency Based Statistical Models for Estimating Killable Mutants
 
 This replication package contains the following:
 - results of the manual classification of live mutants (`manual-classification/`)
@@ -6,6 +6,7 @@ This replication package contains the following:
 - data about test execution in the form of kill matrices (`killmatrix/`)
 - scripts to compute the estimators
 - plots and scripts to generate them
+- A extended version of the original paper
 
 
 ## Automatically Generated Test Suites
