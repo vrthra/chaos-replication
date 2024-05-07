@@ -1,7 +1,7 @@
-# Empirical Evaluation of Frequency Based Statistical Models for Estimating Killable Mutants
+# An Empirical Evaluation of Frequency Based Statistical Models for Estimating Killable Mutants
 
 ## Date 
-This replication package was update on Feb the 06th, 2023
+This replication package was updated on May the 07th, 2024
 
 ## Replication Package Content
 This replication package contains the following:
