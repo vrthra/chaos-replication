@@ -526,20 +526,11 @@ get_upperbound <- function(n_samples, counts, upper_bound, alpha = 0.05) {
   # Estimating the Richness of a Population When the Maximum Number of Classes
   # Is Fixed: A Nonparametric Solution to an Archaeological Problem
   # 2012
-  n_mutants = upper_bound #sum(counts_with0)
-  print(paste("Upperbound value:", n_mutants))
-  U = n_mutants
-  f = sapply(c(1:2), function(x)get_order(counts, x))
+  U = upper_bound
+  chao_est = get_chao2(n_samples, counts)
+  s_hat = chao_est$N
+  var_s = se * se
   s_obs = sum(counts)
-  if (f[2] == 0) {
-    s_hat = s_obs + f[1] * (f[1] - 1) / 2
-    var_s = 0
-  }else {
-    s_hat = s_obs + f[1]^2 / (2 * f[2])
-    var_s = f[2] * ((f[1] / f[2])^2 / 0.5 +
-      (f[1] / f[2])^3 +
-      (f[1] / f[2])^4 / 0.25)
-  }
   mu_y = log(s_hat - s_obs)
   sigma2 = log(1 + var_s / (s_hat - s_obs)^2)
   sigma = sqrt(sigma2)
@@ -548,7 +539,10 @@ get_upperbound <- function(n_samples, counts, upper_bound, alpha = 0.05) {
   z_p_1alpha = qnorm(p * (1 - alpha / 2))
   s_lower = s_obs + (s_hat - s_obs) * exp(sigma * z_p_alpha)
   s_upper = s_obs + (s_hat - s_obs) * exp(sigma * z_p_1alpha)
-  return(list(N = 0, se = -1, lowCI = s_lower, uppCI = s_upper)) # N = s_hat
+  N = s_hat
+  # if (s_hat>upper_bound)
+  N = (s_upper-s_lower)/2 # sometimes CI doesn't contain point estimate, what if we take a middle point as a new estimate?
+  return(list(N = N, se = -1, lowCI = s_lower, uppCI = s_upper))
 }
 
 get_custom_jackknife_estimate <- function(n_samples, counts) {
@@ -757,7 +751,7 @@ estimate_all <- function(subjects, testsuites, estimators, catch_types, ci, inpu
       foreach(catch_type = catch_types, .combine = "rbind", .packages = c("data.table", "pathlibr", "glue", "SPECIES"),
               .export = c("compute_estimators", "get_npz_file", "load_data", "load_counts", "compute_estimator", "get_est_type", "counts_estimators", "matrix_estimators", "estimate_from_counts", "get_abundance_file",
                           "estimators_fun", "estimate_from_counts", "item_or_default", "estimators_additional_param", "run_estimator", "estimator_bootstrap", "estimator_zelterman", "estimate_from_matrix", "get_additional_params",
-                          "estimator_jackknife", "estimator_pcg", "estimator_ChaoBunge", "estimator_unpmle", "estimator_pnpmle")) %dopar% {
+                          "estimator_jackknife", "estimator_pcg", "estimator_ChaoBunge", "estimator_unpmle", "estimator_pnpmle")) %do% {
       withCallingHandlers({
         setTimeLimit(time_limit, transient = TRUE)
         compute_estimators(subject, testsuite, estimators, input_dir, catch_type, ci, data_type, log_dir, total_mutants_df)
