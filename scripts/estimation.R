@@ -65,7 +65,7 @@ default_subjects = c("commons-csv",
                      "commons-math")
 
 all_testsuites = c("organic", "evosuite", "randoop", "dynamosa", "random")
-default_testsuites = c("organic", "evosuite", "random")
+default_testsuites = c("organic", "random")#c("organic", "evosuite", "random")
 
 estimators_fun = list(chao_lower = 'get_lowerbound',
                       bootstrap = 'estimator_bootstrap', # should be fixed
@@ -80,7 +80,8 @@ estimators_fun = list(chao_lower = 'get_lowerbound',
                       species_pnpmle = 'estimator_pnpmle',
                       species_chaobunge = 'estimator_ChaoBunge',
                       species_jackknife = 'estimator_jackknife',
-                      spader = 'estimators_spader')
+                      spader = 'estimators_spader',
+                      double_bound = 'estimator_doublebounded')
 
 # Encode total number of mutants per program
 all_estimators = names(estimators_fun)
@@ -93,7 +94,8 @@ default_estimators = c('spader',
                        'species_pnpmle',
                        'species_chaobunge',
                        'species_jackknife',
-                       'sample_coverage'
+                       'sample_coverage',
+                       'double_bound'
 )
 
 counts_estimators = c('chao_lower',
@@ -275,9 +277,10 @@ compute_estimators <- function(subject, testsuite, estimators, data_dir, catch_t
   n_samples = counts_obj$n_samples
   Sn = counts_obj$Sn
   total_mutants = counts_obj$total_mutants # if total mutants is not available, take form killmatrix
-  if (!is.na(total_mutants_df)) {
-    total_mutants = total_mutants_df[which(total_mutants_df$subject == subject & total_mutants_df$testsuite == testsuite), 'total_mutants']
-  }
+  #if (!is.na(total_mutants_df)) {
+  #  total_mutants = total_mutants_df[which(total_mutants_df$subject == subject & total_mutants_df$testsuite == testsuite), 'total_mutants']
+  #}
+  total_mutants = total_mutants_df[which(total_mutants_df$subject == subject & total_mutants_df$testsuite == testsuite), 'total_mutants']
   res_df = list()
   for (estimator in estimators) {
     file.create(as.character(log_dir %//% glue("{estimator}_{subject}_{testsuite}_{catch_type}_log.txt")))
@@ -476,6 +479,45 @@ get_lowerbound <- function(n_samples, counts) {
   S_upper <- S_obs + (S_chao1 - S_obs) * R
 
   return(list(N = S_chao1, se = -1, lowCI = S_lower, uppCI = S_upper))
+}
+
+estimator_doublebounded <- function(data, n_samples, counts, t = 100) {
+
+  bootstrap <- function(data) {
+    n = ncol(data)
+    # k = nrow(data)
+    idx = sample(n, size = n, replace = TRUE)
+    S0 = length(which(rowSums(data) > 0)) # number of caought mutants
+    B = data[, idx]
+    Y = rowSums(B)
+    Bs = sum((1 - Y / n)^n)
+    Bn = S0 + Bs
+    # return(list(Bn, B))
+    return(Bn)
+  }
+
+  data = data[rowSums(data) > 0,] # reduce matrix size by getting only caught mutants
+  bres = replicate(t, bootstrap(data), simplify = TRUE)
+  bres = bres[bres < counts$total_mutants]
+  mu_y = mean(bres)
+  v = log(counts$total_mutants - S_obs)
+
+  S_star <- estimator_bootstrap(data)
+  S_obs <- sum(counts)
+  n <- S_obs
+  f1 <- counts[1]
+  f2 <- counts[2]
+  f3 <- counts[3]
+  f4 <- counts[4]
+  var_Schao1 <- f2 * (1 / 4 * ((n - 1) / n)^2 * (f1 / f2)^4 +
+    ((n - 1) / n)^2 * (f1 / f2)^3 +
+    1 / 2 * (n - 1) / n * (f1 / f2)^2)
+  S_chao1 <- S_obs + (n - 1) / n * f1^2 / (2 * f2)
+  se <- log((1 + var_Schao1 / (S_chao1 - S_obs)^2))^0.5
+  S_lower <- S_obs + (S_chao1 - S_obs) * exp(se * qnorm(pnorm(v) * (0.05 / 2)))
+  S_upper <- S_obs + (S_chao1 - S_obs) * exp(se * qnorm(pnorm(v) * (0.95 / 2)))
+
+  return(list(N = 0, se = se, lowCI = S_lower, uppCI = S_upper))
 }
 
 get_sample_coverage_estimate <- function(n_samples, counts) {
@@ -741,9 +783,11 @@ print_counts <- function(subjects, testsuites, catch_types, input_dir, results_f
 }
 
 get_total_mutants <- function(killed_mutants_path) {
-  if (is.na(killed_mutants_path))
+  if (is.na(killed_mutants_path)){
     return(NA)
-  return(read.csv(file = killed_mutants_path))
+  } else{
+    return(read.csv(file = killed_mutants_path))
+  }
 }
 
 estimate_all <- function(subjects, testsuites, estimators, catch_types, ci, input_dir, results_file, data_type, killed_mutants_path, log_dir, time_limit = 3600) {
@@ -754,22 +798,22 @@ estimate_all <- function(subjects, testsuites, estimators, catch_types, ci, inpu
   all_data =
     foreach(testsuite = testsuites, .combine = "rbind") %:%
       foreach(subject = subjects, .combine = "rbind") %:%
-      foreach(catch_type = catch_types, .combine = "rbind", .packages = c("data.table", "pathlibr", "glue", "SPECIES"),
-              .export = c("compute_estimators", "get_npz_file", "load_data", "load_counts", "compute_estimator", "get_est_type", "counts_estimators", "matrix_estimators", "estimate_from_counts", "get_abundance_file",
-                          "estimators_fun", "estimate_from_counts", "item_or_default", "estimators_additional_param", "run_estimator", "estimator_bootstrap", "estimator_zelterman", "estimate_from_matrix", "get_additional_params",
-                          "estimator_jackknife", "estimator_pcg", "estimator_ChaoBunge", "estimator_unpmle", "estimator_pnpmle")) %dopar% {
-      withCallingHandlers({
-        setTimeLimit(time_limit, transient = TRUE)
-        compute_estimators(subject, testsuite, estimators, input_dir, catch_type, ci, data_type, log_dir, total_mutants_df)
-      },
-        error = function(e) {
-          message = return(data.frame(subject = subject, testsuite = testsuite, type = catch_type, total_mutants = -1,
-                                      killed = -1, estimation = -1, CILower = -1, CIUpper = 1))
-          # timeout hit
-          # do stuff to capture error messages here
+        foreach(catch_type = catch_types, .combine = "rbind", .packages = c("data.table", "pathlibr", "glue", "SPECIES"),
+                .export = c("compute_estimators", "get_npz_file", "load_data", "load_counts", "compute_estimator", "get_est_type", "counts_estimators", "matrix_estimators", "estimate_from_counts", "get_abundance_file",
+                            "estimators_fun", "estimate_from_counts", "item_or_default", "estimators_additional_param", "run_estimator", "estimator_bootstrap", "estimator_zelterman", "estimate_from_matrix", "get_additional_params",
+                            "estimator_jackknife", "estimator_pcg", "estimator_ChaoBunge", "estimator_unpmle", "estimator_pnpmle", "estimator_doublebounded")) %dopar% {
+        withCallingHandlers({
+          setTimeLimit(time_limit, transient = TRUE)
+          compute_estimators(subject, testsuite, estimators, input_dir, catch_type, ci, data_type, log_dir, total_mutants_df)
+        },
+          error = function(e) {
+            message = return(data.frame(subject = subject, testsuite = testsuite, type = catch_type, total_mutants = -1,
+                                        killed = -1, estimation = -1, CILower = -1, CIUpper = 1))
+            # timeout hit
+            # do stuff to capture error messages here
+          }
+        )
         }
-      )
-    }
   parallel::stopCluster(cl)
   fwrite(as.data.table(all_data), file = results_file)
 }
