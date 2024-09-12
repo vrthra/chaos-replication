@@ -65,7 +65,7 @@ default_subjects = c("commons-csv",
                      "commons-math")
 
 all_testsuites = c("organic", "evosuite", "randoop", "dynamosa", "random")
-default_testsuites = c("organic", "evosuite", "random")
+default_testsuites = c("organic", "dynamosa", "random")
 
 estimators_fun = list(chao_lower = 'get_lowerbound',
                       bootstrap = 'estimator_bootstrap', # should be fixed
@@ -260,8 +260,8 @@ compute_estimator <- function(counts_no0, identity_matrix, estimator, n_samples,
   return(res_df)
 }
 
-compute_estimators <- function(subject, testsuite, estimators, data_dir, catch_type, ci, data_type, log_dir, total_mutants_df = None) {
-  if (data_type == 'npz') {
+compute_estimators <- function(subject, testsuite, estimators, data_dir, catch_type, ci, data_type, log_dir, total_mutants_df = NULL) {
+      if (data_type == 'npz') {
     data_file = get_npz_file(data_dir, catch_type, subject, testsuite)
   }else if (data_type == 'abundance') {
     data_file = get_abundance_file(data_dir, catch_type, subject, testsuite)
@@ -275,7 +275,7 @@ compute_estimators <- function(subject, testsuite, estimators, data_dir, catch_t
   n_samples = counts_obj$n_samples
   Sn = counts_obj$Sn
   total_mutants = counts_obj$total_mutants # if total mutants is not available, take form killmatrix
-  if (!is.na(total_mutants_df)) {
+  if (!is.null(total_mutants_df)) {
     total_mutants = total_mutants_df[which(total_mutants_df$subject == subject & total_mutants_df$testsuite == testsuite), 'total_mutants']
   }
   res_df = list()
@@ -529,6 +529,7 @@ get_upperbound <- function(n_samples, counts, upper_bound, alpha = 0.05) {
   U = upper_bound
   chao_est = get_chao2(n_samples, counts)
   s_hat = chao_est$N
+  se = chao_est$se
   var_s = se * se
   s_obs = sum(counts)
   mu_y = log(s_hat - s_obs)
@@ -541,7 +542,7 @@ get_upperbound <- function(n_samples, counts, upper_bound, alpha = 0.05) {
   s_upper = s_obs + (s_hat - s_obs) * exp(sigma * z_p_1alpha)
   N = s_hat
   # if (s_hat>upper_bound)
-  N = (s_upper-s_lower)/2 # sometimes CI doesn't contain point estimate, what if we take a middle point as a new estimate?
+  N = (s_upper+s_lower)/2 # sometimes CI doesn't contain point estimate, what if we take a middle point as a new estimate?
   return(list(N = N, se = -1, lowCI = s_lower, uppCI = s_upper))
 }
 
@@ -751,7 +752,7 @@ estimate_all <- function(subjects, testsuites, estimators, catch_types, ci, inpu
       foreach(catch_type = catch_types, .combine = "rbind", .packages = c("data.table", "pathlibr", "glue", "SPECIES"),
               .export = c("compute_estimators", "get_npz_file", "load_data", "load_counts", "compute_estimator", "get_est_type", "counts_estimators", "matrix_estimators", "estimate_from_counts", "get_abundance_file",
                           "estimators_fun", "estimate_from_counts", "item_or_default", "estimators_additional_param", "run_estimator", "estimator_bootstrap", "estimator_zelterman", "estimate_from_matrix", "get_additional_params",
-                          "estimator_jackknife", "estimator_pcg", "estimator_ChaoBunge", "estimator_unpmle", "estimator_pnpmle")) %do% {
+                          "estimator_jackknife", "estimator_pcg", "estimator_ChaoBunge", "estimator_unpmle", "estimator_pnpmle")) %dopar% {
       withCallingHandlers({
         setTimeLimit(time_limit, transient = TRUE)
         compute_estimators(subject, testsuite, estimators, input_dir, catch_type, ci, data_type, log_dir, total_mutants_df)
